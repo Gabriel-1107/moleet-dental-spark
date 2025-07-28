@@ -60,6 +60,23 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Gradients for modern dental aesthetics */
+    --gradient-dental: linear-gradient(135deg, hsl(var(--dental-navy)), hsl(var(--dental-blue)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--dental-navy)), hsl(var(--primary-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent)));
+    
+    /* Shadows with dental theme */
+    --shadow-dental: 0 10px 30px -10px hsl(var(--dental-navy) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--dental-navy) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--dental-light) / 0.4);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* Dental professional spacing */
+    --spacing-section: 5rem;
+    --spacing-component: 2rem;
   }
 
   .dark {
@@ -105,26 +122,6 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-    /* Gradients for modern dental aesthetics */
-    --gradient-dental: linear-gradient(135deg, hsl(var(--dental-navy)), hsl(var(--dental-blue)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--dental-navy)), hsl(var(--primary-light)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent)));
-    
-    /* Shadows with dental theme */
-    --shadow-dental: 0 10px 30px -10px hsl(var(--dental-navy) / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(var(--dental-navy) / 0.15);
-    --shadow-glow: 0 0 40px hsl(var(--dental-light) / 0.4);
-
-    /* Smooth transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    /* Dental professional spacing */
-    --spacing-section: 5rem;
-    --spacing-component: 2rem;
   }
 }
 
