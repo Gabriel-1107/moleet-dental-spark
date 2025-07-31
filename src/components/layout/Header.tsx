@@ -16,6 +16,7 @@ const Header = () => {
     { name: t('nav.locations'), href: '/ubicaciones' },
     { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
+    { name: t('nav.transport'), href: '/transporte' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Precios = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [currency, setCurrency] = useState<'MXN' | 'USD'>('MXN');
 
   const priceCategories = [

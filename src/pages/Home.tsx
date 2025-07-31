@@ -1,15 +1,15 @@
 import Hero from '@/components/home/Hero';
 import Services from '@/components/home/Services';
-import Testimonials from '@/components/home/Testimonials';
-import Gallery from '@/components/home/Gallery';
+import TestimonialsCarousel from '@/components/home/TestimonialsCarousel';
+import VideoCarousel from '@/components/home/VideoCarousel';
 
 const Home = () => {
   return (
     <main>
       <Hero />
       <Services />
-      <Testimonials />
-      <Gallery />
+      <TestimonialsCarousel />
+      <VideoCarousel />
     </main>
   );
 };

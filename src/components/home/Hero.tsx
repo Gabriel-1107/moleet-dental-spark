@@ -50,7 +50,7 @@ const Hero = () => {
                 className="border-white text-white hover:bg-white hover:text-dental-navy font-semibold text-lg px-8 py-4"
                 onClick={() => document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Ver Servicios
+                {t('hero.viewServices')}
               </Button>
             </div>
 
@@ -58,15 +58,15 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
               <div className="text-center">
                 <div className="text-3xl font-bold text-dental-accent">15+</div>
-                <div className="text-sm text-white/80">Años de Experiencia</div>
+                <div className="text-sm text-white/80">{t('hero.stats.experience')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-dental-accent">5000+</div>
-                <div className="text-sm text-white/80">Pacientes Satisfechos</div>
+                <div className="text-sm text-white/80">{t('hero.stats.patients')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-dental-accent">2</div>
-                <div className="text-sm text-white/80">Ubicaciones</div>
+                <div className="text-sm text-white/80">{t('hero.stats.locations')}</div>
               </div>
             </div>
           </div>
