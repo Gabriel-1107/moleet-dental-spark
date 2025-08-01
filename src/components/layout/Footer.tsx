@@ -21,14 +21,14 @@ const Footer = () => {
     { name: t('nav.doctors'), href: '/doctores' }
   ];
 
-  const services = [
-    'Odontología General',
-    'Estética Dental',
-    'Endodoncia',
-    'Periodoncia',
-    'Cirugía Maxilofacial',
-    'Ortodoncia'
-  ];
+  // const services = [
+  //   'Odontología General',
+  //   'Estética Dental',
+  //   'Endodoncia',
+  //   'Periodoncia',
+  //   'Cirugía Maxilofacial',
+  //   'Ortodoncia'
+  // ];
 
   return (
     <footer className="bg-dental-navy text-white">
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <h3 className="text-lg font-semibold">{t('footer.services')}</h3>
             <nav className="space-y-3">
               {services.map((service) => (
@@ -94,7 +94,7 @@ const Footer = () => {
                 </div>
               ))}
             </nav>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="space-y-6">
@@ -161,14 +161,14 @@ const Footer = () => {
               © {currentYear} Moleet Dental Unit. Todos los derechos reservados.
             </div>
             <div className="flex gap-6 text-sm text-white/60">
+              <a href="https://udigitalbusiness.com/" className="hover:text-dental-accent transition-colors">
+                Hecho por UdigitalBusiness
+              </a>
               <a href="/privacidad" className="hover:text-dental-accent transition-colors">
                 Política de Privacidad
               </a>
               <a href="/terminos" className="hover:text-dental-accent transition-colors">
                 Términos y Condiciones
-              </a>
-              <a href="/cookies" className="hover:text-dental-accent transition-colors">
-                Política de Cookies
               </a>
             </div>
           </div>

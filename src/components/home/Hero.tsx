@@ -47,7 +47,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-dental-navy font-semibold text-lg px-8 py-4"
+                className="border-white text-blue-900 hover:bg-white/90 font-semibold text-lg px-8 py-4 group"
                 onClick={() => document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 {t('hero.viewServices')}

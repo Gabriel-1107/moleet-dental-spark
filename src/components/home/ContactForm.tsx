@@ -28,40 +28,34 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
 
-    // Simulate form submission
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "¡Formulario enviado!",
-        description: "Nos pondremos en contacto contigo pronto.",
-      });
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-        location: '',
-        isNewPatient: ''
-      });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Hubo un problema al enviar el formulario. Inténtalo de nuevo.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  const { name, email, phone, message, location, isNewPatient } = formData;
+
+  
+  const whatsappMessage = `
+¡Nuevo contacto desde el sitio web!
+ -Nombre: ${name}
+ -Email: ${email}
+ -Teléfono: ${phone}
+ -Ubicación: ${location}
+ -¿Paciente nuevo?: ${isNewPatient === 'yes' ? 'Sí' : 'No'}
+ -Mensaje: ${message}
+  `.trim();
+
+  const phoneNumber = "523326312137"; 
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(url, '_blank');
+};
+
+
+
+
 
   return (
-    <Card id="contacto" className="bg-white/95 backdrop-blur-sm shadow-2xl border-0">
+    <Card id="contacto" className="max-w-md mx-auto bg-white/95 backdrop-blur-sm shadow-2xl border-0">
+
       <CardHeader className="text-center">
         <CardTitle className="text-2xl font-display font-bold text-dental-navy">
           {t('contact.title')}
