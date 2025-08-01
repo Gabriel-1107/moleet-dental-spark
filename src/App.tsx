@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import Layout from "@/components/layout/Layout";
 import Home from "./pages/Home";
+import Servicios from "./pages/Servicios";
 import Ubicaciones from "./pages/Ubicaciones";
 import Precios from "./pages/Precios";
 import Doctores from "./pages/Doctores";
@@ -26,6 +27,7 @@ const App = () => (
             <Layout>
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/servicios" element={<Servicios />} />
                 <Route path="/ubicaciones" element={<Ubicaciones />} />
                 <Route path="/precios" element={<Precios />} />
                 <Route path="/doctores" element={<Doctores />} />

@@ -1,118 +1,94 @@
-import { Stethoscope, Shield, Sparkles, Users, Award, Heart } from 'lucide-react';
+import { Stethoscope, Shield, Sparkles, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Services = () => {
   const { t } = useLanguage();
 
-  const services = [
+  const featuredServices = [
     {
       icon: Stethoscope,
-      title: "Odontología General",
-      description: "Cuidado integral de tu salud dental con tratamientos preventivos y curativos.",
-      features: ["Limpiezas", "Empastes", "Extracciones", "Revisiones"]
+      titleKey: "services.general.title",
+      descriptionKey: "services.general.description",
+      color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Sparkles,
-      title: "Estética Dental",
-      description: "Transforma tu sonrisa con tratamientos estéticos de última generación.",
-      features: ["Blanqueamiento", "Carillas", "Coronas", "Diseño de Sonrisa"]
+      titleKey: "services.aesthetic.title", 
+      descriptionKey: "services.aesthetic.description",
+      color: "from-purple-500 to-pink-500"
     },
     {
       icon: Shield,
-      title: "Endodoncia",
-      description: "Especialistas en tratamientos de conducto para salvar tus dientes.",
-      features: ["Tratamientos de Conducto", "Retratamientos", "Apicectomías", "Pulpotomías"]
-    },
-    {
-      icon: Users,
-      title: "Periodoncia",
-      description: "Cuidado especializado de encías y soporte dental.",
-      features: ["Tratamiento de Gingivitis", "Cirugía Periodontal", "Implantes", "Mantenimiento"]
-    },
-    {
-      icon: Award,
-      title: "Cirugía Maxilofacial",
-      description: "Procedimientos quirúrgicos especializados en boca y mandíbula.",
-      features: ["Extracciones Complejas", "Implantes", "Cirugía Orthognática", "Traumatología"]
-    },
-    {
-      icon: Heart,
-      title: "Odontopediatría",
-      description: "Cuidado dental especializado para los más pequeños de la familia.",
-      features: ["Revisiones Infantiles", "Selladores", "Tratamientos Preventivos", "Ortodoncia Temprana"]
+      titleKey: "services.endodontics.title",
+      descriptionKey: "services.endodontics.description", 
+      color: "from-green-500 to-emerald-500"
     }
   ];
 
   return (
-    <section id="servicios" className="py-section bg-gradient-subtle">
+    <section id="servicios" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-dental-navy mb-4">
+          <h2 className="font-display text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary via-dental-blue to-dental-accent bg-clip-text text-transparent mb-6">
             {t('services.title')}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             {t('services.subtitle')}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+        {/* Featured Services Preview */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {featuredServices.map((service, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-dental transition-all duration-300 hover:-translate-y-2 border-0 bg-white/80 backdrop-blur-sm"
+              className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-0 bg-white/80 backdrop-blur-lg rounded-3xl overflow-hidden"
             >
-              <CardContent className="p-8">
-                <div className="flex flex-col items-center text-center space-y-4">
-                  {/* Icon */}
-                  <div className="w-16 h-16 bg-gradient-dental rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-display font-semibold text-dental-navy">
-                    {service.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
-
-                  {/* Features */}
-                  <div className="w-full pt-4">
-                    <div className="grid grid-cols-2 gap-2">
-                      {service.features.map((feature, idx) => (
-                        <div 
-                          key={idx} 
-                          className="text-sm text-dental-blue bg-dental-light/20 rounded-full px-3 py-1 text-center"
-                        >
-                          {feature}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+              <CardContent className="p-8 text-center">
+                <div className={`w-20 h-20 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500`}>
+                  <service.icon className="h-10 w-10 text-white" />
                 </div>
+                <h3 className="text-2xl font-display font-bold text-primary mb-4">
+                  {t(service.titleKey)}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t(service.descriptionKey)}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto shadow-card-dental">
-            <h3 className="text-2xl font-display font-bold text-dental-navy mb-4">
-              ¿Necesitas un tratamiento específico?
+        <div className="text-center">
+          <div className="bg-gradient-to-br from-primary via-dental-blue to-dental-accent rounded-3xl p-12 text-white shadow-2xl max-w-4xl mx-auto">
+            <h3 className="text-3xl font-display font-bold mb-6">
+              {t('services.cta.title')}
             </h3>
-            <p className="text-muted-foreground mb-6">
-              Nuestros especialistas están aquí para ayudarte. Agenda una consulta personalizada.
+            <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
+              {t('services.cta.description')}
             </p>
-            <button 
-              onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-gradient-dental text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-            >
-              Agenda tu Consulta
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg"
+                variant="secondary"
+                className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 rounded-2xl shadow-lg"
+                onClick={() => window.location.href = '/servicios'}
+              >
+                {t('hero.viewServices')}
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Button>
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-2xl"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                {t('hero.cta')}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
