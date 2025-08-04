@@ -10,14 +10,14 @@ const BranchesSection = () => {
   const branches = [
     {
       name: t('branches.guadalajara.name'),
-      image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop',
+      image: 'lovable-uploads/guadalajara.png',
       location: 'Guadalajara, Jalisco',
       description: 'Moderna clínica dental en el corazón de Guadalajara con tecnología de vanguardia.',
       link: '/sucursales/guadalajara'
     },
     {
       name: t('branches.chapala.name'),
-      image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop',
+      image: 'lovable-uploads/chapala.png',
       location: 'Chapala, Jalisco',
       description: 'Sucursal especializada en turismo dental con servicios integrales y transporte incluido.',
       link: '/sucursales/chapala'

@@ -41,7 +41,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/c806f455-7ab9-4e65-9742-bd63755e4558.png" 
                 alt="Moleet Dental Unit" 
-                className="h-12 w-auto filter brightness-0 invert"
+                className="h-12 w-auto"
               />
               <div className="flex flex-col">
                 <span className="font-display font-bold text-xl">Moleet</span>
@@ -164,12 +164,12 @@ const Footer = () => {
               <a href="https://udigitalbusiness.com/" className="hover:text-dental-accent transition-colors">
                 Hecho por UdigitalBusiness
               </a>
-              <a href="/privacidad" className="hover:text-dental-accent transition-colors">
+              {/* <a href="/privacidad" className="hover:text-dental-accent transition-colors">
                 Política de Privacidad
               </a>
               <a href="/terminos" className="hover:text-dental-accent transition-colors">
                 Términos y Condiciones
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

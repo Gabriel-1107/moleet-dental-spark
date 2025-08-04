@@ -40,7 +40,6 @@ const App = () => (
                 <Route path="/ubicaciones" element={<Ubicaciones />} />
                 <Route path="/precios" element={<Precios />} />
                 <Route path="/doctores" element={<Doctores />} />
-                <Route path="/transporte" element={<Transport />} />
                 <Route path="/especialidades/odontologia-general" element={<OdontologiaGeneral />} />
                 <Route path="/especialidades/endodoncia" element={<Endodoncia />} />
                 <Route path="/especialidades/periodoncia" element={<Periodoncia />} />
@@ -49,6 +48,7 @@ const App = () => (
                 <Route path="/especialidades/ortodoncia" element={<Ortodoncia />} />
                 <Route path="/especialidades/odontopediatria" element={<Odontopediatria />} />
                 <Route path="/sucursales/guadalajara" element={<Guadalajara />} />
+                <Route path="/transporte" element={<Transport />} />
                 <Route path="/sucursales/chapala" element={<Chapala />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />

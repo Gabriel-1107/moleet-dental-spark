@@ -15,7 +15,7 @@ const Header = () => {
   const navigation = [
     { name: t('nav.home'), href: '/' },
     { name: t('nav.services'), href: '/servicios' },
-    { name: t('nav.locations'), href: '/ubicaciones' },
+    // { name: t('nav.locations'), href: '/ubicaciones' },
     { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
     { name: t('nav.transport'), href: '/transporte' },
@@ -109,7 +109,7 @@ const Header = () => {
               asChild
               className="bg-gradient-dental hover:opacity-90 text-white font-semibold"
             >
-              <Link to="/#contacto">
+              <Link to="https://wa.me/523326312137" target="_blank">
                 {t('contact.title')}
               </Link>
             </Button>

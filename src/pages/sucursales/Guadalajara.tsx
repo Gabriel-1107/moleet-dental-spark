@@ -178,11 +178,22 @@ const Guadalajara = () => {
             <Card className="h-fit shadow-dental rounded-2xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="h-96 bg-gradient-to-br from-dental-light to-dental-blue/20 flex items-center justify-center">
-                  <div className="text-center text-dental-navy">
-                    <MapPin className="h-16 w-16 mx-auto mb-4 text-dental-blue" />
-                    <h3 className="font-display text-xl font-bold mb-2">Ubicación Interactiva</h3>
-                    <p className="text-muted-foreground">Mapa de Google Maps aquí</p>
+                 <div className="text-center text-dental-navy">
+                      <MapPin className="h-16 w-16 mx-auto mb-4 text-dental-blue" />
+                      <h3 className="font-display text-xl font-bold mb-2">Ubicación Interactiva</h3>
+                    <div className="flex justify-center">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3732.9231309389825!2d-103.4209521!3d20.6727061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9063727195%3A0xb658138b4ecc912b!2sMOLEET%20DENTAL%20UNIT%20(Dentistas%20Especializados)!5e0!3m2!1ses-419!2smx!4v1754328402650!5m2!1ses-419!2smx"
+                        width="600"
+                        height="450"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-xl shadow-lg"
+                      ></iframe>
+                    </div>
                   </div>
+
                 </div>
               </CardContent>
             </Card>

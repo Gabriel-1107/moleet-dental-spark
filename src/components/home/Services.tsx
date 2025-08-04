@@ -83,7 +83,7 @@ const Services = () => {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-2xl"
+                className="border-white text-blue-800 hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-2xl"
                 onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 {t('hero.cta')}
