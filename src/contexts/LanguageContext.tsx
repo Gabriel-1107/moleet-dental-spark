@@ -15,6 +15,7 @@ const translations = {
     // Navigation
     'nav.home': 'Home',
     'nav.services': 'Services',
+    'nav.specialties': 'Specialties',
     'nav.locations': 'Locations',
     'nav.prices': 'Prices',
     'nav.doctors': 'Doctors',
@@ -39,6 +40,7 @@ const translations = {
     'contact.phone': 'Phone number',
     'contact.message': 'Message',
     'contact.location': 'Select your preferred location',
+    'contact.branch': 'Branch',
     'contact.guadalajara': 'Guadalajara',
     'contact.chapala': 'Chapala',
     'contact.newPatient': 'Are you a new patient?',
@@ -201,6 +203,20 @@ const translations = {
     'treatment.oral.biopsy': 'Oral Biopsy',
     'treatment.periodontal.surgery': 'Periodontal Surgery',
     
+    // Branches
+    'branches.title': 'Our Branches',
+    'branches.subtitle': 'Visit our modern facilities',
+    'branches.guadalajara.name': 'Guadalajara Branch',
+    'branches.chapala.name': 'Chapala Branch',
+    'branches.ourDoctors': 'Meet our doctors',
+    'branches.contactInfo': 'Contact information',
+    'branches.schedule': 'Office hours',
+    'branches.phone': 'Phone',
+    'branches.email': 'Email',
+    'branches.website': 'Website',
+    'branches.whatsapp': 'WhatsApp',
+    'branches.call': 'Call',
+
     // Footer
     'footer.contact': 'Contact',
     'footer.hours': 'Hours',
@@ -211,6 +227,7 @@ const translations = {
     // Navigation
     'nav.home': 'Inicio',
     'nav.services': 'Servicios',
+    'nav.specialties': 'Especialidades',
     'nav.locations': 'Ubicaciones',
     'nav.prices': 'Precios',
     'nav.doctors': 'Doctores',
@@ -235,6 +252,7 @@ const translations = {
     'contact.phone': 'Número de teléfono',
     'contact.message': 'Mensaje',
     'contact.location': 'Selecciona tu ubicación preferida',
+    'contact.branch': 'Sucursal',
     'contact.guadalajara': 'Guadalajara',
     'contact.chapala': 'Chapala',
     'contact.newPatient': '¿Eres nuevo paciente?',
@@ -397,6 +415,20 @@ const translations = {
     'treatment.oral.biopsy': 'Biopsia Oral',
     'treatment.periodontal.surgery': 'Cirugía Periodontal',
     
+    // Branches
+    'branches.title': 'Nuestras Sucursales',
+    'branches.subtitle': 'Visita nuestras modernas instalaciones',
+    'branches.guadalajara.name': 'Sucursal Guadalajara',
+    'branches.chapala.name': 'Sucursal Chapala',
+    'branches.ourDoctors': 'Conoce a nuestros doctores',
+    'branches.contactInfo': 'Información de contacto',
+    'branches.schedule': 'Horarios de atención',
+    'branches.phone': 'Teléfono',
+    'branches.email': 'Email',
+    'branches.website': 'Sitio web',
+    'branches.whatsapp': 'WhatsApp',
+    'branches.call': 'Llamar',
+
     // Footer
     'footer.contact': 'Contacto',
     'footer.hours': 'Horarios',

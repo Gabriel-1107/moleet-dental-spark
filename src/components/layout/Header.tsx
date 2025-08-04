@@ -4,6 +4,7 @@ import { Menu, X, Phone, Clock, Moon, Sun, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useTheme } from '@/contexts/ThemeContext';
+import SpecialtiesDropdown from './SpecialtiesDropdown';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,6 +99,8 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            {/* Specialties Dropdown */}
+            <SpecialtiesDropdown />
           </nav>
 
           {/* CTA Button */}

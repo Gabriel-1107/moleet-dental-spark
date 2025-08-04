@@ -2,14 +2,20 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ContactForm from './ContactForm';
+import heroBackground from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-dental-navy/80"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        <div className="absolute inset-0 bg-dental-navy/80"></div>
+      </div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">

@@ -20,6 +20,7 @@ const ContactForm = () => {
     phone: '',
     message: '',
     location: '',
+    branch: '',
     isNewPatient: ''
   });
 
@@ -30,22 +31,28 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
-  const { name, email, phone, message, location, isNewPatient } = formData;
+  const { name, email, phone, message, location, branch, isNewPatient } = formData;
 
+  // Different WhatsApp numbers for each branch
+  const whatsappNumbers = {
+    guadalajara: "523326312137",
+    chapala: "523333123456" // Different number for Chapala
+  };
+
+  const selectedBranch = branch || location; // Use branch if selected, fallback to location
+  const phoneNumber = whatsappNumbers[selectedBranch as keyof typeof whatsappNumbers] || whatsappNumbers.guadalajara;
   
   const whatsappMessage = `
 ¡Nuevo contacto desde el sitio web!
  -Nombre: ${name}
  -Email: ${email}
  -Teléfono: ${phone}
- -Ubicación: ${location}
+ -Sucursal: ${selectedBranch === 'guadalajara' ? 'Guadalajara' : 'Chapala'}
  -¿Paciente nuevo?: ${isNewPatient === 'yes' ? 'Sí' : 'No'}
  -Mensaje: ${message}
   `.trim();
 
-  const phoneNumber = "523326312137"; 
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
   window.open(url, '_blank');
 };
 
@@ -112,15 +119,15 @@ const ContactForm = () => {
             />
           </div>
 
-          {/* Location */}
+          {/* Branch Selection */}
           <div className="space-y-2">
             <Label className="text-sm font-medium text-dental-navy">
               <MapPin className="inline h-4 w-4 mr-1" />
-              {t('contact.location')}
+              {t('contact.branch')}
             </Label>
-            <Select value={formData.location} onValueChange={(value) => handleInputChange('location', value)}>
+            <Select value={formData.branch} onValueChange={(value) => handleInputChange('branch', value)} required>
               <SelectTrigger className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue">
-                <SelectValue placeholder="Selecciona una ubicación" />
+                <SelectValue placeholder="Selecciona una sucursal" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="guadalajara">{t('contact.guadalajara')}</SelectItem>

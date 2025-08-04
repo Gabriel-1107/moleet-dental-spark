@@ -12,6 +12,7 @@ import Ubicaciones from "./pages/Ubicaciones";
 import Precios from "./pages/Precios";
 import Doctores from "./pages/Doctores";
 import Transport from "./pages/Transport";
+import OdontologiaGeneral from "./pages/especialidades/OdontologiaGeneral";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
                 <Route path="/precios" element={<Precios />} />
                 <Route path="/doctores" element={<Doctores />} />
                 <Route path="/transporte" element={<Transport />} />
+                <Route path="/especialidades/odontologia-general" element={<OdontologiaGeneral />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
