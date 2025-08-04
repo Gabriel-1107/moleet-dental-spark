@@ -6,25 +6,31 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 interface SpecialtyTemplateProps {
   title: string;
+  titleEn?: string;
   description: string;
+  descriptionEn?: string;
   image: string;
   features: string[];
+  featuresEn?: string[];
   testimonials: Array<{
     name: string;
     text: string;
+    textEn?: string;
     rating: number;
     treatment: string;
+    treatmentEn?: string;
   }>;
   doctors: Array<{
     name: string;
     image: string;
     experience: number;
     description: string;
+    descriptionEn?: string;
     location: string;
   }>;
 }
 
-const SpecialtyTemplate = ({ title, description, image, features, testimonials, doctors }: SpecialtyTemplateProps) => {
+const SpecialtyTemplate = ({ title, titleEn, description, descriptionEn, image, features, featuresEn, testimonials, doctors }: SpecialtyTemplateProps) => {
   const { t } = useLanguage();
 
   return (
@@ -39,10 +45,10 @@ const SpecialtyTemplate = ({ title, description, image, features, testimonials, 
         </div>
         <div className="relative container mx-auto px-4 text-center text-white">
           <h1 className="font-display text-5xl lg:text-6xl font-bold mb-6">
-            {title}
+            {t('language') === 'es' ? title : (titleEn || title)}
           </h1>
           <p className="text-xl lg:text-2xl max-w-3xl mx-auto mb-8 opacity-90">
-            {description}
+            {t('language') === 'es' ? description : (descriptionEn || description)}
           </p>
           <Button 
             size="lg"
@@ -73,7 +79,9 @@ const SpecialtyTemplate = ({ title, description, image, features, testimonials, 
                   <div className="w-16 h-16 bg-dental-light rounded-full flex items-center justify-center mx-auto mb-4">
                     <div className="w-8 h-8 bg-dental-navy rounded-full"></div>
                   </div>
-                  <h3 className="font-semibold text-dental-navy mb-2">{feature}</h3>
+                  <h3 className="font-semibold text-dental-navy mb-2">
+                    {t('language') === 'es' ? feature : (featuresEn ? featuresEn[index] : feature)}
+                  </h3>
                 </CardContent>
               </Card>
             ))}
@@ -89,7 +97,10 @@ const SpecialtyTemplate = ({ title, description, image, features, testimonials, 
               Nuestros Especialistas
             </h2>
             <p className="text-xl text-muted-foreground">
-              Conoce a nuestro equipo especializado en {title.toLowerCase()}
+              {t('language') === 'es' 
+                ? `Conoce a nuestro equipo especializado en ${title.toLowerCase()}`
+                : `Meet our specialized team in ${(titleEn || title).toLowerCase()}`
+              }
             </p>
           </div>
 
@@ -111,15 +122,19 @@ const SpecialtyTemplate = ({ title, description, image, features, testimonials, 
                 <CardContent className="p-6">
                   <h3 className="font-bold text-xl text-dental-navy mb-2">{doctor.name}</h3>
                   <p className="text-dental-blue font-medium mb-2">{doctor.location}</p>
-                  <p className="text-muted-foreground text-sm mb-4">{doctor.description}</p>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {t('language') === 'es' ? doctor.description : (doctor.descriptionEn || doctor.description)}
+                  </p>
                   <Button 
                     className="w-full bg-gradient-dental hover:opacity-90 text-white"
                     onClick={() => {
-                      const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} para ${title.toLowerCase()}.`);
-                      window.open(`https://wa.me/523312345678?text=${message}`, '_blank');
+                      const specialty = t('language') === 'es' ? title.toLowerCase() : (titleEn || title).toLowerCase();
+                      const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} para ${specialty}.`);
+                      const phone = doctor.location === 'Guadalajara' ? '523312345678' : '523376543210';
+                      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
                     }}
                   >
-                    Agendar Cita
+                    {t('language') === 'es' ? 'Agendar Cita' : 'Book Appointment'}
                   </Button>
                 </CardContent>
               </Card>
@@ -136,7 +151,10 @@ const SpecialtyTemplate = ({ title, description, image, features, testimonials, 
               Testimonios de Pacientes
             </h2>
             <p className="text-xl text-muted-foreground">
-              Lo que dicen nuestros pacientes sobre {title.toLowerCase()}
+              {t('language') === 'es' 
+                ? `Lo que dicen nuestros pacientes sobre ${title.toLowerCase()}`
+                : `What our patients say about ${(titleEn || title).toLowerCase()}`
+              }
             </p>
           </div>
 
@@ -155,12 +173,14 @@ const SpecialtyTemplate = ({ title, description, image, features, testimonials, 
                   </div>
 
                   <blockquote className="text-gray-700 mb-6 text-center">
-                    "{testimonial.text}"
+                    "{t('language') === 'es' ? testimonial.text : (testimonial.textEn || testimonial.text)}"
                   </blockquote>
 
                   <div className="text-center">
                     <h4 className="font-semibold text-dental-navy">{testimonial.name}</h4>
-                    <p className="text-sm text-dental-blue">{testimonial.treatment}</p>
+                    <p className="text-sm text-dental-blue">
+                      {t('language') === 'es' ? testimonial.treatment : (testimonial.treatmentEn || testimonial.treatment)}
+                    </p>
                   </div>
                 </CardContent>
               </Card>

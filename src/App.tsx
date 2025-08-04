@@ -13,6 +13,14 @@ import Precios from "./pages/Precios";
 import Doctores from "./pages/Doctores";
 import Transport from "./pages/Transport";
 import OdontologiaGeneral from "./pages/especialidades/OdontologiaGeneral";
+import Endodoncia from "./pages/especialidades/Endodoncia";
+import Periodoncia from "./pages/especialidades/Periodoncia";
+import CirugiaMaxilofacial from "./pages/especialidades/CirugiaMaxilofacial";
+import EsteticaDental from "./pages/especialidades/EsteticaDental";
+import Ortodoncia from "./pages/especialidades/Ortodoncia";
+import Odontopediatria from "./pages/especialidades/Odontopediatria";
+import Guadalajara from "./pages/sucursales/Guadalajara";
+import Chapala from "./pages/sucursales/Chapala";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +42,14 @@ const App = () => (
                 <Route path="/doctores" element={<Doctores />} />
                 <Route path="/transporte" element={<Transport />} />
                 <Route path="/especialidades/odontologia-general" element={<OdontologiaGeneral />} />
+                <Route path="/especialidades/endodoncia" element={<Endodoncia />} />
+                <Route path="/especialidades/periodoncia" element={<Periodoncia />} />
+                <Route path="/especialidades/cirugia-maxilofacial" element={<CirugiaMaxilofacial />} />
+                <Route path="/especialidades/estetica-dental" element={<EsteticaDental />} />
+                <Route path="/especialidades/ortodoncia" element={<Ortodoncia />} />
+                <Route path="/especialidades/odontopediatria" element={<Odontopediatria />} />
+                <Route path="/sucursales/guadalajara" element={<Guadalajara />} />
+                <Route path="/sucursales/chapala" element={<Chapala />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
