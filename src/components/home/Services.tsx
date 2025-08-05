@@ -1,7 +1,7 @@
 import { Stethoscope, Shield, Sparkles, ArrowRight } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import ServiceCard from './ServiceCard';
 
 const Services = () => {
   const { t } = useLanguage();
@@ -11,18 +11,21 @@ const Services = () => {
       icon: Stethoscope,
       titleKey: "services.general.title",
       descriptionKey: "services.general.description",
+      fullDescriptionKey: "services.general.fullDescription",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Sparkles,
       titleKey: "services.aesthetic.title", 
       descriptionKey: "services.aesthetic.description",
+      fullDescriptionKey: "services.aesthetic.fullDescription",
       color: "from-purple-500 to-pink-500"
     },
     {
       icon: Shield,
       titleKey: "services.endodontics.title",
-      descriptionKey: "services.endodontics.description", 
+      descriptionKey: "services.endodontics.description",
+      fullDescriptionKey: "services.endodontics.fullDescription",
       color: "from-green-500 to-emerald-500"
     }
   ];
@@ -42,22 +45,7 @@ const Services = () => {
         {/* Featured Services Preview */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {featuredServices.map((service, index) => (
-            <Card 
-              key={index} 
-              className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-0 bg-white/80 backdrop-blur-lg rounded-3xl overflow-hidden"
-            >
-              <CardContent className="p-8 text-center">
-                <div className={`w-20 h-20 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500`}>
-                  <service.icon className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-2xl font-display font-bold text-primary mb-4">
-                  {t(service.titleKey)}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {t(service.descriptionKey)}
-                </p>
-              </CardContent>
-            </Card>
+            <ServiceCard key={index} service={service} index={index} />
           ))}
         </div>
 
