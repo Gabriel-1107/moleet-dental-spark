@@ -217,6 +217,24 @@ const translations = {
     'branches.whatsapp': 'WhatsApp',
     'branches.call': 'Call',
 
+    // Blog
+    'blog.title': 'Dental Blog',
+    'blog.subtitle': 'Updated information about dental health and treatments',
+    'blog.post1.title': 'The Importance of Daily Dental Hygiene',
+    'blog.post1.excerpt': 'Discover how to maintain an effective dental hygiene routine to prevent diseases and keep your smile healthy.',
+    'blog.post1.date': 'January 15, 2024',
+    'blog.post1.author': 'Dr. María González',
+    'blog.post2.title': 'Teeth Whitening: Everything You Need to Know',
+    'blog.post2.excerpt': 'Learn about the different types of teeth whitening available at our clinics in Chapala and Guadalajara.',
+    'blog.post2.date': 'January 8, 2024',
+    'blog.post2.author': 'Dr. Ana Martínez',
+    'blog.post3.title': 'Invisible Orthodontics: The Revolution at Moleet Dental',
+    'blog.post3.excerpt': 'Learn about the advantages of invisible orthodontics and how it can transform your smile without compromising your lifestyle.',
+    'blog.post3.date': 'January 2, 2024',
+    'blog.post3.author': 'Dr. Carlos López',
+    'blog.readMore': 'Read more',
+    'blog.viewAll': 'View all articles',
+
     // Footer
     'footer.contact': 'Contact',
     'footer.hours': 'Hours',
@@ -428,6 +446,24 @@ const translations = {
     'branches.website': 'Sitio web',
     'branches.whatsapp': 'WhatsApp',
     'branches.call': 'Llamar',
+
+    // Blog
+    'blog.title': 'Blog Dental',
+    'blog.subtitle': 'Información actualizada sobre salud dental y tratamientos',
+    'blog.post1.title': 'La Importancia de la Higiene Dental Diaria',
+    'blog.post1.excerpt': 'Descubre cómo mantener una rutina de higiene dental efectiva para prevenir enfermedades y mantener tu sonrisa saludable.',
+    'blog.post1.date': '15 de Enero, 2024',
+    'blog.post1.author': 'Dr. María González',
+    'blog.post2.title': 'Blanqueamiento Dental: Todo lo que Necesitas Saber',
+    'blog.post2.excerpt': 'Conoce los diferentes tipos de blanqueamiento dental disponibles en nuestras clínicas de Chapala y Guadalajara.',
+    'blog.post2.date': '8 de Enero, 2024',
+    'blog.post2.author': 'Dra. Ana Martínez',
+    'blog.post3.title': 'Ortodoncia Invisible: La Revolución en Moleet Dental',
+    'blog.post3.excerpt': 'Aprende sobre las ventajas de la ortodoncia invisible y cómo puede transformar tu sonrisa sin comprometer tu estilo de vida.',
+    'blog.post3.date': '2 de Enero, 2024',
+    'blog.post3.author': 'Dr. Carlos López',
+    'blog.readMore': 'Leer más',
+    'blog.viewAll': 'Ver todos los artículos',
 
     // Footer
     'footer.contact': 'Contacto',
