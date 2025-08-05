@@ -106,13 +106,12 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-dental-accent" />
                   <span className="text-sm text-white/80">
-                    Av. Juárez 123, Col. Centro<br />
-                    Guadalajara, Jalisco
+                   Av. Sebastian Bach 4754, Prados Guadalupe, 45030 Zapopan, Jal.
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-dental-accent" />
-                  <span className="text-sm text-white/80">(33) 1234-5678</span>
+                  <span className="text-sm text-white/80">(33) 3629 2077</span>
                 </div>
               </div>
 
@@ -128,7 +127,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-dental-accent" />
-                  <span className="text-sm text-white/80">(376) 765-4321</span>
+                  <span className="text-sm text-white/80">(33) 5021 1248</span>
                 </div>
               </div>
 
@@ -146,7 +145,7 @@ const Footer = () => {
               {/* Email */}
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-dental-accent" />
-                <span className="text-sm text-white/80">info@moleetdental.com</span>
+                <span className="text-sm text-white/80">moleetmedicalunit@gmail.com</span>
               </div>
             </div>
           </div>

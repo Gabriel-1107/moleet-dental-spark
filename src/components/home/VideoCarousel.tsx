@@ -15,35 +15,35 @@ const VideoCarousel = () => {
       title: 'Tour Virtual de la Clínica',
       description: 'Conoce nuestras modernas instalaciones',
       thumbnail: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=600&fit=crop',
-      videoUrl: 'https://player.vimeo.com/video/123456789'
+      videoUrl: 'lovable-uploads/tour-virtual.mp4'
     },
     {
       id: 'implantes',
       title: 'Proceso de Implantes Dentales',
       description: 'Descubre cómo realizamos los implantes',
       thumbnail: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&h=600&fit=crop',
-      videoUrl: 'https://player.vimeo.com/video/123456790'
+      videoUrl: 'lovable-uploads/implantes.mp4'
     },
     {
       id: 'testimonios-video',
       title: 'Testimonios de Pacientes',
       description: 'Historias reales de transformación',
       thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop',
-      videoUrl: 'https://player.vimeo.com/video/123456791'
+      videoUrl: 'lovable-uploads/testimonios.mp4'
     },
     {
       id: 'tecnologia',
       title: 'Tecnología Avanzada',
       description: 'Equipos de última generación',
       thumbnail: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop',
-      videoUrl: 'https://player.vimeo.com/video/123456792'
+      videoUrl: 'lovable-uploads/tecnologia.mp4'
     },
     {
       id: 'blanqueamiento',
       title: 'Blanqueamiento Dental',
       description: 'Proceso paso a paso',
       thumbnail: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=600&fit=crop',
-      videoUrl: 'https://player.vimeo.com/video/123456793'
+      videoUrl: 'lovable-uploads/blanqueamiento.mp4'
     }
   ];
 

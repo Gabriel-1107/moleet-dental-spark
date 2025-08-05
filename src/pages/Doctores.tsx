@@ -88,13 +88,13 @@ const Doctores = () => {
       description: 'Especialista en odontología infantil con enfoque en técnicas de manejo conductual y prevención en niños.'
     },
     {
-      name: 'Dr. Miguel Ángel Torres',
+      name: 'Dr. Ramón Alejandro Monroy Salcedo ',
       specialty: 'Odontología General',
       location: 'Chapala',
       experience: 20,
       education: ['Universidad Nacional Autónoma de México', 'Diplomado en Rehabilitación Oral'],
       certifications: ['Colegio Nacional de Cirujanos Dentistas', 'Academy of General Dentistry'],
-      image: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&h=400&fit=crop&crop=face',
+      image: 'lovable-uploads/dr-monrroy.png',
       languages: ['Español', 'Inglés'],
       description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },

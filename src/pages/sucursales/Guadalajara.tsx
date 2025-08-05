@@ -66,11 +66,11 @@ const Guadalajara = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, me gustaría agendar una cita en su sucursal de Guadalajara.`);
-    window.open(`https://wa.me/523312345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/3326312137?text=${message}`, '_blank');
   };
 
   const handleCall = () => {
-    window.open('tel:+523312345678', '_self');
+    window.open('tel:3336291846', '_self');
   };
 
   return (
@@ -124,7 +124,7 @@ const Guadalajara = () => {
                     <MapPin className="h-5 w-5 text-dental-blue mt-1" />
                     <div>
                       <p className="font-medium text-dental-navy">Dirección</p>
-                      <p className="text-muted-foreground">Av. Revolución 1234, Col. Centro, Guadalajara, Jalisco</p>
+                      <p className="text-muted-foreground">Av. Sebastian Bach 4754, Prados Guadalupe, 45030 Zapopan, Jal.</p>
                     </div>
                   </div>
                   
@@ -132,7 +132,7 @@ const Guadalajara = () => {
                     <Phone className="h-5 w-5 text-dental-blue mt-1" />
                     <div>
                       <p className="font-medium text-dental-navy">{t('branches.phone')}</p>
-                      <p className="text-muted-foreground">+52 33 1234-5678</p>
+                      <p className="text-muted-foreground">+523336291846</p>
                     </div>
                   </div>
                   
@@ -140,7 +140,7 @@ const Guadalajara = () => {
                     <Mail className="h-5 w-5 text-dental-blue mt-1" />
                     <div>
                       <p className="font-medium text-dental-navy">{t('branches.email')}</p>
-                      <p className="text-muted-foreground">guadalajara@moleetdental.com</p>
+                      <p className="text-muted-foreground">moleetmedicalunit@gmail.com</p>
                     </div>
                   </div>
                   
@@ -184,8 +184,8 @@ const Guadalajara = () => {
                     <div className="flex justify-center">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3732.9231309389825!2d-103.4209521!3d20.6727061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9063727195%3A0xb658138b4ecc912b!2sMOLEET%20DENTAL%20UNIT%20(Dentistas%20Especializados)!5e0!3m2!1ses-419!2smx!4v1754328402650!5m2!1ses-419!2smx"
-                        width="600"
-                        height="450"
+                        width="750"
+                        height="478"
                         style={{ border: 0 }}
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"

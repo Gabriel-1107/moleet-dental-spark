@@ -56,7 +56,7 @@ const OdontologiaGeneral = () => {
     doctors: [
       {
         name: "Dr. Miguel Ángel Torres",
-        image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&h=400&fit=crop&crop=face",
+        image: 'lovable-uploads/chapala.png',
         experience: 20,
         description: "Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.",
         descriptionEn: "General dentist with two decades of experience. Specialized in comprehensive oral rehabilitation and prosthetics.",

@@ -75,11 +75,11 @@ const Chapala = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, me gustaría agendar una cita en su sucursal de Chapala.`);
-    window.open(`https://wa.me/523376543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/523326312137?text=${message}`, '_blank');
   };
 
   const handleCall = () => {
-    window.open('tel:+523376543210', '_self');
+    window.open('tel:+523326312137', '_self');
   };
 
   return (
@@ -134,6 +134,7 @@ const Chapala = () => {
                     <div>
                       <p className="font-medium text-dental-navy">Dirección</p>
                       <p className="text-muted-foreground">Av. Madero 567, Centro, Chapala, Jalisco</p>
+                      
                     </div>
                   </div>
                   
@@ -141,7 +142,7 @@ const Chapala = () => {
                     <Phone className="h-5 w-5 text-dental-blue mt-1" />
                     <div>
                       <p className="font-medium text-dental-navy">{t('branches.phone')}</p>
-                      <p className="text-muted-foreground">+52 33 7654-3210</p>
+                      <p className="text-muted-foreground">+523350211248</p>
                     </div>
                   </div>
                   
@@ -149,7 +150,7 @@ const Chapala = () => {
                     <Mail className="h-5 w-5 text-dental-blue mt-1" />
                     <div>
                       <p className="font-medium text-dental-navy">{t('branches.email')}</p>
-                      <p className="text-muted-foreground">chapala@moleetdental.com</p>
+                      <p className="text-muted-foreground">moleetmedicalunit@gmail.com</p>
                     </div>
                   </div>
                   
@@ -187,11 +188,19 @@ const Chapala = () => {
             <Card className="h-fit shadow-dental rounded-2xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="h-96 bg-gradient-to-br from-dental-light to-dental-blue/20 flex items-center justify-center">
-                  <div className="text-center text-dental-navy">
-                    <MapPin className="h-16 w-16 mx-auto mb-4 text-dental-blue" />
-                    <h3 className="font-display text-xl font-bold mb-2">Ubicación Interactiva</h3>
-                    <p className="text-muted-foreground">Mapa de Google Maps aquí</p>
-                  </div>
+                   <MapPin className="h-16 w-16 mx-auto mb-4 text-dental-blue" />
+                      <h3 className="font-display text-xl font-bold mb-2">Ubicación Interactiva</h3>
+                    <div className="flex justify-center">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3732.9231309389825!2d-103.4209521!3d20.6727061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9063727195%3A0xb658138b4ecc912b!2sMOLEET%20DENTAL%20UNIT%20(Dentistas%20Especializados)!5e0!3m2!1ses-419!2smx!4v1754328402650!5m2!1ses-419!2smx"
+                        width="800"
+                        height="400"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-xl shadow-lg"
+                      ></iframe>
+                    </div>
                 </div>
               </CardContent>
             </Card>

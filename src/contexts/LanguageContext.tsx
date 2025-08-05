@@ -32,6 +32,7 @@ const translations = {
     'hero.stats.patients': 'Satisfied Patients',
     'hero.stats.locations': 'Locations',
     
+    
     // Contact Form
     'contact.title': 'Schedule Your Appointment',
     'contact.subtitle': 'We are here to help you achieve the smile you have always dreamed of',
@@ -240,6 +241,14 @@ const translations = {
     'footer.hours': 'Hours',
     'footer.services': 'Services',
     'footer.followUs': 'Follow Us',
+    'specialties.general.title': 'General Dentistry',
+    'specialties.endodontics.title': 'Endodontics',   
+    'specialties.periodontics.title': 'Periodontics',
+    'specialties.oral_surgery.title': 'Oral and Maxillofacial Surgery',
+    'specialties.cosmetic.title': 'Cosmetic Dentistry',
+    'specialties.orthodontics.title': 'Orthodontics',
+    'specialties.pediatric.title': 'Pediatric Dentistry',
+
   },
   es: {
     // Navigation
@@ -470,6 +479,13 @@ const translations = {
     'footer.hours': 'Horarios',
     'footer.services': 'Servicios',
     'footer.followUs': 'Síguenos',
+    'specialties.general.title': 'Odontologia general',
+    'specialties.endodontics.title': 'Endodoncia',
+    'specialties.periodontics.title': 'Periodoncia',
+    'specialties.oral_surgery.title': 'Cirugía Maxilofacial',
+    'specialties.cosmetic.title': 'Estética Dental',
+    'specialties.orthodontics.title': 'Ortodoncia',
+    'specialties.pediatric.title': 'Odontopediatría',
   }
 };
 
