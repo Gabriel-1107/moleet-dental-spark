@@ -21,6 +21,7 @@ const translations = {
     'nav.doctors': 'Doctors',
     'nav.transport': 'Airport Transport',
     'nav.contact': 'Contact',
+    'sucursal.desc': 'View Branch',
     
     // Hero Section
     'hero.title': 'Your Perfect Smile',
@@ -31,6 +32,8 @@ const translations = {
     'hero.stats.experience': 'Years of Experience',
     'hero.stats.patients': 'Satisfied Patients',
     'hero.stats.locations': 'Locations',
+    "services.back": 'Explore Our Services',
+    'seo.home.title': 'Moleet Dental Unit - Professional Dental Services',
     
     
     // Contact Form
@@ -69,6 +72,10 @@ const translations = {
     
     'services.aesthetic.title': 'Cosmetic Dentistry',
     'services.aesthetic.description': 'Transform your smile with cutting-edge aesthetic treatments.',
+    "services.aesthetic.fullDescription": "We offer a wide range of aesthetic treatments to enhance the appearance of your smile.",
+    "services.general.fullDescription": "Our general dentistry services include cleanings, fillings, and regular check-ups.",
+    "services.endodontics.fullDescription": "Specialists in root canal treatments to save your natural teeth.",
+
     'services.aesthetic.feature1': 'Teeth whitening',
     'services.aesthetic.feature2': 'Porcelain veneers',
     'services.aesthetic.feature3': 'Dental crowns',
@@ -248,6 +255,7 @@ const translations = {
     'specialties.cosmetic.title': 'Cosmetic Dentistry',
     'specialties.orthodontics.title': 'Orthodontics',
     'specialties.pediatric.title': 'Pediatric Dentistry',
+    'context.footer.text': 'Committed to your oral health, we offer quality dental services with advanced technology and a team of highly qualified specialists.',
 
   },
   es: {
@@ -260,6 +268,9 @@ const translations = {
     'nav.doctors': 'Doctores',
     'nav.transport': 'Transporte Aeropuerto',
     'nav.contact': 'Contacto',
+    "services.back": 'Conoce nuestros servicios',
+    'seo.home.title': 'Moleet Dental Unit - Servicios Dentales Profesionales',
+    'sucursal.desc': 'Conocer Sucursal',
     
     // Hero Section
     'hero.title': 'Tu Sonrisa Perfecta',
@@ -307,6 +318,9 @@ const translations = {
     
     'services.aesthetic.title': 'Estética Dental',
     'services.aesthetic.description': 'Transforma tu sonrisa con tratamientos estéticos de última generación.',
+    "services.aesthetic.fullDescription": "Ofrecemos una amplia gama de tratamientos estéticos para mejorar la apariencia de tu sonrisa.",
+    "services.general.fullDescription": "Nuestros servicios de odontología general incluyen limpiezas, empastes y revisiones regulares.",
+    "services.endodontics.fullDescription": "Especialistas en tratamientos de conducto para salvar tus dientes naturales.",
     'services.aesthetic.feature1': 'Blanqueamiento dental',
     'services.aesthetic.feature2': 'Carillas de porcelana',
     'services.aesthetic.feature3': 'Coronas dentales',
@@ -486,6 +500,7 @@ const translations = {
     'specialties.cosmetic.title': 'Estética Dental',
     'specialties.orthodontics.title': 'Ortodoncia',
     'specialties.pediatric.title': 'Odontopediatría',
+    'context.footer.text': 'Comprometidos con tu salud oral, ofrecemos servicios dentales de calidad con tecnología avanzada y un equipo de especialistas altamente calificados.',
   }
 };
 

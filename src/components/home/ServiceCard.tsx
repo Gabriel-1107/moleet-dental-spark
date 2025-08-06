@@ -65,7 +65,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
               </p>
             </div>
             <Button
-              onClick={() => setIsFlipped(false)}
+              onClick={() => window.location.href = '/servicios'}
               variant="secondary"
               className="mt-6 bg-white text-primary hover:bg-white/90 rounded-2xl"
             >

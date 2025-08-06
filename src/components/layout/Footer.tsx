@@ -49,8 +49,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
-              Comprometidos con tu salud oral, ofrecemos servicios dentales de calidad con tecnología avanzada 
-              y un equipo de especialistas altamente calificados.
+               {t('context.footer.text')}
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (

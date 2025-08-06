@@ -69,7 +69,7 @@ const BranchesSection = () => {
                   className="w-full bg-gradient-dental hover:opacity-90 text-white group"
                 >
                   <Link to={branch.link}>
-                    Conocer Sucursal
+                       {t('sucursal.desc')}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>

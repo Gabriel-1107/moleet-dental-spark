@@ -226,7 +226,7 @@ const Servicios = () => {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-2xl"
+                className="border-white text-blue-950 hover:bg-white/90 hover:text-primary font-semibold px-8 py-4 rounded-2xl"
                 onClick={() => window.location.href = '/precios'}
               >
                 {t('services.cta.prices')}
