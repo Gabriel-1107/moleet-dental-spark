@@ -110,53 +110,40 @@ const Precios = () => {
           </div>
         </div>
 
-        {/* Price Categories */}
-        <div className="space-y-12">
+        {/* Price Categories - Simplified View */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {priceCategories.map((category, categoryIndex) => (
-            <Card key={categoryIndex} className="overflow-hidden shadow-2xl rounded-3xl border-0 bg-white/90 backdrop-blur-sm">
-              <CardHeader className="bg-gradient-to-br from-primary via-dental-blue to-dental-accent text-white rounded-t-3xl">
-                <CardTitle className="text-2xl font-display flex items-center gap-3">
-                  <DollarSign className="h-6 w-6" />
+            <Card key={categoryIndex} className="overflow-hidden shadow-2xl rounded-3xl border-0 bg-white/90 backdrop-blur-sm hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
+              <CardHeader className="bg-gradient-to-br from-primary via-dental-blue to-dental-accent text-white">
+                <CardTitle className="text-xl font-display flex items-center gap-3">
+                  <DollarSign className="h-5 w-5" />
                   {t(category.categoryKey)}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-0">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead className="bg-primary/10">
-                      <tr>
-                        <th className="text-left p-6 font-semibold text-primary">{t('prices.treatment')}</th>
-                        <th className="text-right p-6 font-semibold text-primary">{t('prices.price')}</th>
-                        <th className="text-center p-6 font-semibold text-primary">{t('prices.status')}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {category.treatments.map((treatment, treatmentIndex) => (
-                        <tr
-                          key={treatmentIndex}
-                          className="border-b border-primary/10 hover:bg-primary/5 transition-all duration-300"
-                        >
-                          <td className="p-6">
-                            <div className="font-medium text-primary">
-                              {t(treatment.nameKey)}
-                            </div>
-                          </td>
-                          <td className="p-6 text-right">
-                            <div className="text-lg font-bold text-dental-blue">
-                              {formatPrice(treatment.priceMXN, treatment.priceUSD)}
-                            </div>
-                          </td>
-                          <td className="p-6 text-center">
-                            {treatment.popular && (
-                              <Badge className="bg-gradient-to-r from-amber-400 to-orange-500 text-white border-0 rounded-full px-4 py-1">
-                                {t('prices.popular')}
-                              </Badge>
-                            )}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  {category.treatments.slice(0, 3).map((treatment, treatmentIndex) => (
+                    <div key={treatmentIndex} className="flex justify-between items-center border-b border-primary/10 pb-3 last:border-b-0">
+                      <div className="flex-1">
+                        <div className="font-medium text-primary text-sm">
+                          {t(treatment.nameKey)}
+                        </div>
+                        {treatment.popular && (
+                          <Badge className="bg-gradient-to-r from-amber-400 to-orange-500 text-white border-0 rounded-full px-2 py-0.5 text-xs mt-1">
+                            {t('prices.popular')}
+                          </Badge>
+                        )}
+                      </div>
+                      <div className="text-sm font-bold text-dental-blue">
+                        {formatPrice(treatment.priceMXN, treatment.priceUSD)}
+                      </div>
+                    </div>
+                  ))}
+                  {category.treatments.length > 3 && (
+                    <div className="text-center text-sm text-muted-foreground pt-2">
+                      +{category.treatments.length - 3} tratamientos más
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>

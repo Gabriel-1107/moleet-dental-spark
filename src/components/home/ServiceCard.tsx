@@ -42,9 +42,9 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
             </div>
             <Button
               onClick={() => setIsFlipped(true)}
-              className="mt-6 bg-gradient-to-r from-primary to-dental-blue text-white hover:opacity-90 rounded-2xl"
+              className="mt-6 bg-gradient-to-r from-primary to-dental-blue text-white hover:opacity-90 rounded-2xl transition-all duration-300 hover:scale-105"
             >
-              {t('services.learnMore')}
+              {t('services.moreInfo')}
               <ArrowRight className="h-4 w-4 ml-2" />
             </Button>
           </CardContent>
@@ -64,14 +64,24 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
                 {t(service.fullDescriptionKey)}
               </p>
             </div>
-            <Button
-              onClick={() => window.location.href = '/servicios'}
-              variant="secondary"
-              className="mt-6 bg-white text-primary hover:bg-white/90 rounded-2xl"
-            >
-              <X className="h-4 w-4 mr-2" />
-              {t('services.back')}
-            </Button>
+            <div className="flex gap-3">
+              <Button
+                onClick={() => setIsFlipped(false)}
+                variant="secondary"
+                className="bg-white/20 text-white hover:bg-white/30 rounded-2xl border-white/30"
+              >
+                <X className="h-4 w-4 mr-2" />
+                {t('common.back')}
+              </Button>
+              <Button
+                onClick={() => window.location.href = '/servicios'}
+                variant="secondary"
+                className="bg-white text-primary hover:bg-white/90 rounded-2xl"
+              >
+                {t('services.learnMore')}
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>

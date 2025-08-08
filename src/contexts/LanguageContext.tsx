@@ -21,7 +21,13 @@ const translations = {
     'nav.doctors': 'Doctors',
     'nav.transport': 'Airport Transport',
     'nav.contact': 'Contact',
+    'nav.blog': 'Blog',
     'sucursal.desc': 'View Branch',
+    
+    // Common
+    'common.back': 'Back',
+    'common.close': 'Close',
+    'common.loading': 'Loading...',
     
     // Hero Section
     'hero.title': 'Your Perfect Smile',
@@ -32,9 +38,12 @@ const translations = {
     'hero.stats.experience': 'Years of Experience',
     'hero.stats.patients': 'Satisfied Patients',
     'hero.stats.locations': 'Locations',
-    "services.back": 'Explore Our Services',
-    'seo.home.title': 'Moleet Dental Unit - Professional Dental Services',
+    'services.back': 'Explore Our Services',
     
+    // SEO
+    'seo.home.title': 'Moleet Dental Unit - Professional Dental Services in Guadalajara and Chapala',
+    'seo.home.description': 'Quality dental services with advanced technology. Dental clinic in Guadalajara and Chapala with specialists in general dentistry, orthodontics, endodontics and cosmetic dentistry.',
+    'seo.home.keywords': 'dentist Guadalajara, dentist Chapala, dental clinic, dental whitening, dental implants, orthodontics, endodontics',
     
     // Contact Form
     'contact.title': 'Schedule Your Appointment',
@@ -61,10 +70,14 @@ const translations = {
     'services.badge': 'Professional Excellence',
     'services.popular': 'Popular',
     'services.learnMore': 'Learn More',
+    'services.moreInfo': 'More Information',
+    'services.cta.title': 'Ready to Transform Your Smile?',
+    'services.cta.description': 'Contact us today and discover how we can help you achieve the perfect smile.',
     
     // Service Categories
     'services.general.title': 'General Dentistry',
     'services.general.description': 'Comprehensive dental care with preventive and curative treatments.',
+    'services.general.fullDescription': 'Our general dentistry services include cleanings, fillings, and regular check-ups to maintain your oral health.',
     'services.general.feature1': 'Professional cleanings',
     'services.general.feature2': 'Composite fillings',
     'services.general.feature3': 'Tooth extractions',
@@ -72,10 +85,7 @@ const translations = {
     
     'services.aesthetic.title': 'Cosmetic Dentistry',
     'services.aesthetic.description': 'Transform your smile with cutting-edge aesthetic treatments.',
-    "services.aesthetic.fullDescription": "We offer a wide range of aesthetic treatments to enhance the appearance of your smile.",
-    "services.general.fullDescription": "Our general dentistry services include cleanings, fillings, and regular check-ups.",
-    "services.endodontics.fullDescription": "Specialists in root canal treatments to save your natural teeth.",
-
+    'services.aesthetic.fullDescription': 'We offer a wide range of aesthetic treatments including whitening, veneers, and smile design to enhance the appearance of your smile.',
     'services.aesthetic.feature1': 'Teeth whitening',
     'services.aesthetic.feature2': 'Porcelain veneers',
     'services.aesthetic.feature3': 'Dental crowns',
@@ -83,6 +93,7 @@ const translations = {
     
     'services.endodontics.title': 'Endodontics',
     'services.endodontics.description': 'Root canal specialists to save your natural teeth.',
+    'services.endodontics.fullDescription': 'Specialists in root canal treatments using advanced techniques to save your natural teeth and relieve pain.',
     'services.endodontics.feature1': 'Root canal therapy',
     'services.endodontics.feature2': 'Retreatments',
     'services.endodontics.feature3': 'Apicoectomies',
@@ -109,29 +120,59 @@ const translations = {
     'services.pediatric.feature3': 'Preventive treatments',
     'services.pediatric.feature4': 'Early orthodontics',
     
-    // Advanced Services
-    'services.advanced.title': 'Advanced Technology & Care',
-    'services.advanced.subtitle': 'State-of-the-art equipment and personalized attention',
-    'services.technology.title': 'Latest Technology',
-    'services.technology.description': 'Digital equipment and advanced techniques',
-    'services.safety.title': 'Safety Standards',
-    'services.safety.description': 'Strict protocols and sterilization',
-    'services.care.title': 'Personalized Care',
-    'services.care.description': 'Individual treatment plans',
+    // Videos
+    'videos.title': 'Educational Videos',
+    'videos.subtitle': 'Discover our treatments and learn more about our services',
+    'videos.tour.title': 'Virtual Clinic Tour',
+    'videos.tour.description': 'Explore our modern facilities',
+    'videos.implants.title': 'Dental Implant Process',
+    'videos.implants.description': 'Discover how we perform implants',
+    'videos.testimonials.title': 'Patient Testimonials',
+    'videos.testimonials.description': 'Real transformation stories',
+    'videos.technology.title': 'Advanced Technology',
+    'videos.technology.description': 'State-of-the-art equipment',
+    'videos.whitening.title': 'Teeth Whitening',
+    'videos.whitening.description': 'Step-by-step process',
     
-    // Services CTA
-    'services.cta.title': 'Ready to Transform Your Smile?',
-    'services.cta.description': 'Schedule a consultation and discover how we can help you achieve the perfect smile you\'ve always wanted.',
-    'services.cta.contact': 'Schedule Consultation',
-    'services.cta.prices': 'View Prices',
+    // Blog
+    'blog.title': 'Dental Blog',
+    'blog.subtitle': 'Updated information about dental health and treatments',
+    'blog.featured': 'Featured',
+    'blog.readMore': 'Read More',
+    'blog.viewAll': 'View All Articles',
+    'blog.cta.title': 'Need a Dental Consultation?',
+    'blog.cta.description': 'Contact us today to schedule your appointment and start your journey to a perfect smile.',
+    'blog.cta.button': 'Schedule Consultation',
     
-    // Testimonials
-    'testimonials.title': 'What Our Patients Say',
-    'testimonials.subtitle': 'Real stories of transformed smiles',
+    // Blog Posts
+    'blog.post1.title': 'Teeth Whitening in Chapala and Guadalajara: Complete Guide',
+    'blog.post1.excerpt': 'Discover everything about professional teeth whitening, types of treatments, benefits and why choose our dental clinic.',
+    'blog.post1.content': 'Professional teeth whitening has become one of the most requested treatments in our dental clinics in Chapala and Guadalajara. At Moleet Dental Unit, we offer different whitening techniques adapted to each patient\'s needs.',
+    'blog.post1.author': 'Dr. María González',
+    'blog.post1.date': 'January 15, 2024',
+    'blog.post1.readTime': '5 min read',
+    'blog.post1.category': 'Cosmetic Dentistry',
     
-    // Gallery
-    'gallery.title': 'Our Facilities',
-    'gallery.subtitle': 'Discover our modern offices equipped with the latest dental technology',
+    'blog.post2.title': 'Dental Implants in Guadalajara: Prices and Complete Process',
+    'blog.post2.excerpt': 'Learn about dental implant treatment, recovery process, costs and benefits of choosing our clinic in Guadalajara.',
+    'blog.post2.content': 'Dental implants represent the best solution for replacing lost teeth. In our Guadalajara clinic, we use the latest technology to guarantee successful and long-lasting results.',
+    'blog.post2.author': 'Dr. Ana Martínez',
+    'blog.post2.date': 'January 8, 2024',
+    'blog.post2.readTime': '7 min read',
+    'blog.post2.category': 'Implantology',
+    
+    'blog.post3.title': 'Invisible Orthodontics in Chapala: The Modern Solution',
+    'blog.post3.excerpt': 'Discover the advantages of invisible orthodontics and how it can transform your smile without affecting your daily life.',
+    'blog.post3.content': 'Invisible orthodontics has revolutionized dental treatment. At our Chapala clinic, we offer this innovative solution for patients seeking discretion and comfort.',
+    'blog.post3.author': 'Dr. Carlos López',
+    'blog.post3.date': 'January 2, 2024',
+    'blog.post3.readTime': '6 min read',
+    'blog.post3.category': 'Orthodontics',
+    
+    // Blog SEO
+    'blog.seo.title': 'Dental Blog - Moleet Dental Unit | Information and Tips',
+    'blog.seo.description': 'Dental blog with updated information about treatments, oral health, dental implants, whitening and orthodontics in Guadalajara and Chapala.',
+    'blog.seo.keywords': 'dental blog, oral health, dental treatments, dentist Guadalajara, dentist Chapala, dental information',
     
     // Transport
     'transport.title': 'Airport Transportation Service',
@@ -144,6 +185,14 @@ const translations = {
     'transport.features.safe': 'Safe and reliable',
     'transport.booking.title': 'Book Your Transport',
     'transport.booking.description': 'Contact us to coordinate your pickup',
+    'transport.routes.title': 'Available Routes',
+    'transport.routes.subtitle': 'Comfortable transportation to make your visit seamless',
+    'transport.pickup.title': 'Airport Pickup',
+    'transport.pickup.description': 'We pick you up directly at the airport',
+    'transport.comfort.title': 'Comfortable Vehicles',
+    'transport.comfort.description': 'Modern, air-conditioned vehicles for your comfort',
+    'transport.hotel.title': 'Hotel Transfer',
+    'transport.hotel.description': 'Direct transfer to your accommodation',
     
     // Prices
     'prices.title': 'Price List',
@@ -171,83 +220,7 @@ const translations = {
     'prices.cta.description': 'Each case is unique. Schedule a free consultation to get a personalized treatment plan.',
     'prices.cta.button': 'Schedule Free Consultation',
     
-    // Price Categories
-    'prices.general': 'General Dentistry',
-    'prices.aesthetic': 'Cosmetic Dentistry', 
-    'prices.endodontics': 'Endodontics',
-    'prices.prosthetics': 'Prosthetics and Dentures',
-    'prices.implantology': 'Implantology',
-    'prices.surgery': 'Oral Surgery',
-    
-    // Treatments
-    'treatment.consultation': 'General Consultation',
-    'treatment.cleaning': 'Dental Cleaning',
-    'treatment.filling': 'Composite Filling',
-    'treatment.extraction.simple': 'Simple Extraction',
-    'treatment.extraction.complex': 'Complex Extraction',
-    'treatment.whitening': 'Teeth Whitening',
-    'treatment.veneer': 'Porcelain Veneer',
-    'treatment.crown': 'Porcelain Crown',
-    'treatment.smile.design': 'Smile Design',
-    'treatment.inlay': 'Aesthetic Inlay',
-    'treatment.root.canal.1': 'Root Canal Treatment 1 Root',
-    'treatment.root.canal.2': 'Root Canal Treatment 2 Roots',
-    'treatment.root.canal.3': 'Root Canal Treatment 3 Roots',
-    'treatment.retreatment': 'Root Canal Retreatment',
-    'treatment.apicoectomy': 'Apicoectomy',
-    'treatment.partial.denture': 'Partial Metal Denture',
-    'treatment.full.denture': 'Full Porcelain Denture',
-    'treatment.flexible.denture': 'Flexible Denture',
-    'treatment.implant.prosthesis': 'Implant-Supported Prosthesis',
-    'treatment.denture.repair': 'Denture Repair',
-    'treatment.single.implant': 'Single Dental Implant',
-    'treatment.implant.crown': 'Crown on Implant',
-    'treatment.all.on.4': 'All-on-4 (Full Arch)',
-    'treatment.all.on.6': 'All-on-6 (Full Arch)',
-    'treatment.bone.graft': 'Bone Graft',
-    'treatment.wisdom.tooth': 'Wisdom Tooth Extraction',
-    'treatment.cyst.surgery': 'Cyst Surgery',
-    'treatment.frenectomy': 'Frenectomy',
-    'treatment.oral.biopsy': 'Oral Biopsy',
-    'treatment.periodontal.surgery': 'Periodontal Surgery',
-    
-    // Branches
-    'branches.title': 'Our Branches',
-    'branches.subtitle': 'Visit our modern facilities',
-    'branches.guadalajara.name': 'Guadalajara Branch',
-    'branches.chapala.name': 'Chapala Branch',
-    'branches.ourDoctors': 'Meet our doctors',
-    'branches.contactInfo': 'Contact information',
-    'branches.schedule': 'Office hours',
-    'branches.phone': 'Phone',
-    'branches.email': 'Email',
-    'branches.website': 'Website',
-    'branches.whatsapp': 'WhatsApp',
-    'branches.call': 'Call',
-
-    // Blog
-    'blog.title': 'Dental Blog',
-    'blog.subtitle': 'Updated information about dental health and treatments',
-    'blog.post1.title': 'The Importance of Daily Dental Hygiene',
-    'blog.post1.excerpt': 'Discover how to maintain an effective dental hygiene routine to prevent diseases and keep your smile healthy.',
-    'blog.post1.date': 'January 15, 2024',
-    'blog.post1.author': 'Dr. María González',
-    'blog.post2.title': 'Teeth Whitening: Everything You Need to Know',
-    'blog.post2.excerpt': 'Learn about the different types of teeth whitening available at our clinics in Chapala and Guadalajara.',
-    'blog.post2.date': 'January 8, 2024',
-    'blog.post2.author': 'Dr. Ana Martínez',
-    'blog.post3.title': 'Invisible Orthodontics: The Revolution at Moleet Dental',
-    'blog.post3.excerpt': 'Learn about the advantages of invisible orthodontics and how it can transform your smile without compromising your lifestyle.',
-    'blog.post3.date': 'January 2, 2024',
-    'blog.post3.author': 'Dr. Carlos López',
-    'blog.readMore': 'Read more',
-    'blog.viewAll': 'View all articles',
-
-    // Footer
-    'footer.contact': 'Contact',
-    'footer.hours': 'Hours',
-    'footer.services': 'Services',
-    'footer.followUs': 'Follow Us',
+    // Specialties
     'specialties.general.title': 'General Dentistry',
     'specialties.endodontics.title': 'Endodontics',   
     'specialties.periodontics.title': 'Periodontics',
@@ -255,8 +228,13 @@ const translations = {
     'specialties.cosmetic.title': 'Cosmetic Dentistry',
     'specialties.orthodontics.title': 'Orthodontics',
     'specialties.pediatric.title': 'Pediatric Dentistry',
+    
+    // Footer
+    'footer.contact': 'Contact',
+    'footer.hours': 'Hours',
+    'footer.services': 'Services',
+    'footer.followUs': 'Follow Us',
     'context.footer.text': 'Committed to your oral health, we offer quality dental services with advanced technology and a team of highly qualified specialists.',
-
   },
   es: {
     // Navigation
@@ -268,9 +246,13 @@ const translations = {
     'nav.doctors': 'Doctores',
     'nav.transport': 'Transporte Aeropuerto',
     'nav.contact': 'Contacto',
-    "services.back": 'Conoce nuestros servicios',
-    'seo.home.title': 'Moleet Dental Unit - Servicios Dentales Profesionales',
+    'nav.blog': 'Blog',
     'sucursal.desc': 'Conocer Sucursal',
+    
+    // Common
+    'common.back': 'Volver',
+    'common.close': 'Cerrar',
+    'common.loading': 'Cargando...',
     
     // Hero Section
     'hero.title': 'Tu Sonrisa Perfecta',
@@ -281,6 +263,12 @@ const translations = {
     'hero.stats.experience': 'Años de Experiencia',
     'hero.stats.patients': 'Pacientes Satisfechos',
     'hero.stats.locations': 'Ubicaciones',
+    'services.back': 'Conoce nuestros servicios',
+    
+    // SEO
+    'seo.home.title': 'Moleet Dental Unit - Servicios Dentales Profesionales en Guadalajara y Chapala',
+    'seo.home.description': 'Servicios dentales de calidad con tecnología avanzada. Clínica dental en Guadalajara y Chapala con especialistas en odontología general, ortodoncia, endodoncia y estética dental.',
+    'seo.home.keywords': 'dentista Guadalajara, dentista Chapala, clínica dental, blanqueamiento dental, implantes dentales, ortodoncia, endodoncia',
     
     // Contact Form
     'contact.title': 'Agenda tu Consulta',
@@ -307,10 +295,14 @@ const translations = {
     'services.badge': 'Excelencia Profesional',
     'services.popular': 'Popular',
     'services.learnMore': 'Conoce Más',
+    'services.moreInfo': 'Más Información',
+    'services.cta.title': '¿Listo para Transformar tu Sonrisa?',
+    'services.cta.description': 'Contáctanos hoy y descubre cómo podemos ayudarte a lograr la sonrisa perfecta.',
     
     // Service Categories
     'services.general.title': 'Odontología General',
     'services.general.description': 'Cuidado integral de tu salud dental con tratamientos preventivos y curativos.',
+    'services.general.fullDescription': 'Nuestros servicios de odontología general incluyen limpiezas, empastes y revisiones regulares para mantener tu salud oral.',
     'services.general.feature1': 'Limpiezas profesionales',
     'services.general.feature2': 'Empastes de resina',
     'services.general.feature3': 'Extracciones dentales',
@@ -318,9 +310,7 @@ const translations = {
     
     'services.aesthetic.title': 'Estética Dental',
     'services.aesthetic.description': 'Transforma tu sonrisa con tratamientos estéticos de última generación.',
-    "services.aesthetic.fullDescription": "Ofrecemos una amplia gama de tratamientos estéticos para mejorar la apariencia de tu sonrisa.",
-    "services.general.fullDescription": "Nuestros servicios de odontología general incluyen limpiezas, empastes y revisiones regulares.",
-    "services.endodontics.fullDescription": "Especialistas en tratamientos de conducto para salvar tus dientes naturales.",
+    'services.aesthetic.fullDescription': 'Ofrecemos una amplia gama de tratamientos estéticos incluyendo blanqueamiento, carillas y diseño de sonrisa para mejorar la apariencia de tu sonrisa.',
     'services.aesthetic.feature1': 'Blanqueamiento dental',
     'services.aesthetic.feature2': 'Carillas de porcelana',
     'services.aesthetic.feature3': 'Coronas dentales',
@@ -328,6 +318,7 @@ const translations = {
     
     'services.endodontics.title': 'Endodoncia',
     'services.endodontics.description': 'Especialistas en tratamientos de conducto para salvar tus dientes naturales.',
+    'services.endodontics.fullDescription': 'Especialistas en tratamientos de conducto utilizando técnicas avanzadas para salvar tus dientes naturales y aliviar el dolor.',
     'services.endodontics.feature1': 'Tratamientos de conducto',
     'services.endodontics.feature2': 'Retratamientos',
     'services.endodontics.feature3': 'Apicectomías',
@@ -354,29 +345,59 @@ const translations = {
     'services.pediatric.feature3': 'Tratamientos preventivos',
     'services.pediatric.feature4': 'Ortodoncia temprana',
     
-    // Advanced Services
-    'services.advanced.title': 'Tecnología Avanzada y Cuidado',
-    'services.advanced.subtitle': 'Equipos de última generación y atención personalizada',
-    'services.technology.title': 'Última Tecnología',
-    'services.technology.description': 'Equipos digitales y técnicas avanzadas',
-    'services.safety.title': 'Estándares de Seguridad',
-    'services.safety.description': 'Protocolos estrictos y esterilización',
-    'services.care.title': 'Atención Personalizada',
-    'services.care.description': 'Planes de tratamiento individuales',
+    // Videos
+    'videos.title': 'Videos Informativos',
+    'videos.subtitle': 'Descubre nuestros tratamientos y conoce mejor nuestros servicios',
+    'videos.tour.title': 'Tour Virtual de la Clínica',
+    'videos.tour.description': 'Conoce nuestras modernas instalaciones',
+    'videos.implants.title': 'Proceso de Implantes Dentales',
+    'videos.implants.description': 'Descubre cómo realizamos los implantes',
+    'videos.testimonials.title': 'Testimonios de Pacientes',
+    'videos.testimonials.description': 'Historias reales de transformación',
+    'videos.technology.title': 'Tecnología Avanzada',
+    'videos.technology.description': 'Equipos de última generación',
+    'videos.whitening.title': 'Blanqueamiento Dental',
+    'videos.whitening.description': 'Proceso paso a paso',
     
-    // Services CTA
-    'services.cta.title': '¿Listo para Transformar tu Sonrisa?',
-    'services.cta.description': 'Agenda una consulta y descubre cómo podemos ayudarte a lograr la sonrisa perfecta que siempre has deseado.',
-    'services.cta.contact': 'Agendar Consulta',
-    'services.cta.prices': 'Ver Precios',
+    // Blog
+    'blog.title': 'Blog Dental',
+    'blog.subtitle': 'Información actualizada sobre salud dental y tratamientos',
+    'blog.featured': 'Destacado',
+    'blog.readMore': 'Leer Más',
+    'blog.viewAll': 'Ver Todos los Artículos',
+    'blog.cta.title': '¿Necesitas una Consulta Dental?',
+    'blog.cta.description': 'Contáctanos hoy para agendar tu cita y comenzar tu camino hacia una sonrisa perfecta.',
+    'blog.cta.button': 'Agendar Consulta',
     
-    // Testimonials
-    'testimonials.title': 'Lo que Dicen Nuestros Pacientes',
-    'testimonials.subtitle': 'Historias reales de sonrisas transformadas',
+    // Blog Posts
+    'blog.post1.title': 'Blanqueamiento Dental en Chapala y Guadalajara: Guía Completa',
+    'blog.post1.excerpt': 'Descubre todo sobre el blanqueamiento dental profesional, tipos de tratamientos, beneficios y por qué elegir nuestra clínica dental.',
+    'blog.post1.content': 'El blanqueamiento dental profesional se ha convertido en uno de los tratamientos más solicitados en nuestras clínicas dentales de Chapala y Guadalajara. En Moleet Dental Unit, ofrecemos diferentes técnicas de blanqueamiento adaptadas a las necesidades de cada paciente.',
+    'blog.post1.author': 'Dra. María González',
+    'blog.post1.date': '15 de Enero, 2024',
+    'blog.post1.readTime': '5 min de lectura',
+    'blog.post1.category': 'Estética Dental',
     
-    // Gallery
-    'gallery.title': 'Nuestras Instalaciones',
-    'gallery.subtitle': 'Conoce nuestros modernos consultorios equipados con la última tecnología dental',
+    'blog.post2.title': 'Implantes Dentales en Guadalajara: Precios y Proceso Completo',
+    'blog.post2.excerpt': 'Conoce sobre el tratamiento de implantes dentales, proceso de recuperación, costos y beneficios de elegir nuestra clínica en Guadalajara.',
+    'blog.post2.content': 'Los implantes dentales representan la mejor solución para reemplazar dientes perdidos. En nuestra clínica de Guadalajara, utilizamos la tecnología más avanzada para garantizar resultados exitosos y duraderos.',
+    'blog.post2.author': 'Dra. Ana Martínez',
+    'blog.post2.date': '8 de Enero, 2024',
+    'blog.post2.readTime': '7 min de lectura',
+    'blog.post2.category': 'Implantología',
+    
+    'blog.post3.title': 'Ortodoncia Invisible en Chapala: La Solución Moderna',
+    'blog.post3.excerpt': 'Descubre las ventajas de la ortodoncia invisible y cómo puede transformar tu sonrisa sin afectar tu vida diaria.',
+    'blog.post3.content': 'La ortodoncia invisible ha revolucionado el tratamiento dental. En nuestra clínica de Chapala, ofrecemos esta solución innovadora para pacientes que buscan discreción y comodidad.',
+    'blog.post3.author': 'Dr. Carlos López',
+    'blog.post3.date': '2 de Enero, 2024',
+    'blog.post3.readTime': '6 min de lectura',
+    'blog.post3.category': 'Ortodoncia',
+    
+    // Blog SEO
+    'blog.seo.title': 'Blog Dental - Moleet Dental Unit | Información y Consejos',
+    'blog.seo.description': 'Blog dental con información actualizada sobre tratamientos, salud oral, implantes dentales, blanqueamiento y ortodoncia en Guadalajara y Chapala.',
+    'blog.seo.keywords': 'blog dental, salud oral, tratamientos dentales, dentista Guadalajara, dentista Chapala, información dental',
     
     // Transport
     'transport.title': 'Servicio de Transporte al Aeropuerto',
@@ -389,6 +410,14 @@ const translations = {
     'transport.features.safe': 'Seguro y confiable',
     'transport.booking.title': 'Reserva tu Transporte',
     'transport.booking.description': 'Contáctanos para coordinar tu recogida',
+    'transport.routes.title': 'Rutas Disponibles',
+    'transport.routes.subtitle': 'Transporte cómodo para hacer tu visita perfecta',
+    'transport.pickup.title': 'Recogida en Aeropuerto',
+    'transport.pickup.description': 'Te recogemos directamente en el aeropuerto',
+    'transport.comfort.title': 'Vehículos Cómodos',
+    'transport.comfort.description': 'Vehículos modernos y climatizados para tu comodidad',
+    'transport.hotel.title': 'Traslado a Hotel',
+    'transport.hotel.description': 'Traslado directo a tu hospedaje',
     
     // Prices
     'prices.title': 'Lista de Precios',
@@ -416,90 +445,20 @@ const translations = {
     'prices.cta.description': 'Cada caso es único. Agenda una consulta gratuita para obtener un plan de tratamiento personalizado.',
     'prices.cta.button': 'Agendar Consulta Gratuita',
     
-    // Price Categories
-    'prices.general': 'Odontología General',
-    'prices.aesthetic': 'Estética Dental',
-    'prices.endodontics': 'Endodoncia',
-    'prices.prosthetics': 'Prótesis y Dentaduras',
-    'prices.implantology': 'Implantología',
-    'prices.surgery': 'Cirugía Maxilofacial',
-    
-    // Treatments
-    'treatment.consultation': 'Consulta General',
-    'treatment.cleaning': 'Limpieza Dental',
-    'treatment.filling': 'Empaste Resina',
-    'treatment.extraction.simple': 'Extracción Simple',
-    'treatment.extraction.complex': 'Extracción Compleja',
-    'treatment.whitening': 'Blanqueamiento Dental',
-    'treatment.veneer': 'Carilla de Porcelana',
-    'treatment.crown': 'Corona de Porcelana',
-    'treatment.smile.design': 'Diseño de Sonrisa',
-    'treatment.inlay': 'Incrustación Estética',
-    'treatment.root.canal.1': 'Tratamiento de Conducto 1 Raíz',
-    'treatment.root.canal.2': 'Tratamiento de Conducto 2 Raíces',
-    'treatment.root.canal.3': 'Tratamiento de Conducto 3 Raíces',
-    'treatment.retreatment': 'Retratamiento de Conducto',
-    'treatment.apicoectomy': 'Apicectomía',
-    'treatment.partial.denture': 'Dentadura Parcial Metal',
-    'treatment.full.denture': 'Dentadura Completa Porcelana',
-    'treatment.flexible.denture': 'Dentadura Flexible',
-    'treatment.implant.prosthesis': 'Prótesis sobre Implantes',
-    'treatment.denture.repair': 'Reparación de Dentadura',
-    'treatment.single.implant': 'Implante Dental Individual',
-    'treatment.implant.crown': 'Corona sobre Implante',
-    'treatment.all.on.4': 'All-on-4 (Arcada Completa)',
-    'treatment.all.on.6': 'All-on-6 (Arcada Completa)',
-    'treatment.bone.graft': 'Injerto de Hueso',
-    'treatment.wisdom.tooth': 'Extracción de Muela del Juicio',
-    'treatment.cyst.surgery': 'Cirugía de Quiste',
-    'treatment.frenectomy': 'Frenectomía',
-    'treatment.oral.biopsy': 'Biopsia Oral',
-    'treatment.periodontal.surgery': 'Cirugía Periodontal',
-    
-    // Branches
-    'branches.title': 'Nuestras Sucursales',
-    'branches.subtitle': 'Visita nuestras modernas instalaciones',
-    'branches.guadalajara.name': 'Sucursal Guadalajara',
-    'branches.chapala.name': 'Sucursal Chapala',
-    'branches.ourDoctors': 'Conoce a nuestros doctores',
-    'branches.contactInfo': 'Información de contacto',
-    'branches.schedule': 'Horarios de atención',
-    'branches.phone': 'Teléfono',
-    'branches.email': 'Email',
-    'branches.website': 'Sitio web',
-    'branches.whatsapp': 'WhatsApp',
-    'branches.call': 'Llamar',
-
-    // Blog
-    'blog.title': 'Blog Dental',
-    'blog.subtitle': 'Información actualizada sobre salud dental y tratamientos',
-    'blog.post1.title': 'La Importancia de la Higiene Dental Diaria',
-    'blog.post1.excerpt': 'Descubre cómo mantener una rutina de higiene dental efectiva para prevenir enfermedades y mantener tu sonrisa saludable.',
-    'blog.post1.date': '15 de Enero, 2024',
-    'blog.post1.author': 'Dr. María González',
-    'blog.post2.title': 'Blanqueamiento Dental: Todo lo que Necesitas Saber',
-    'blog.post2.excerpt': 'Conoce los diferentes tipos de blanqueamiento dental disponibles en nuestras clínicas de Chapala y Guadalajara.',
-    'blog.post2.date': '8 de Enero, 2024',
-    'blog.post2.author': 'Dra. Ana Martínez',
-    'blog.post3.title': 'Ortodoncia Invisible: La Revolución en Moleet Dental',
-    'blog.post3.excerpt': 'Aprende sobre las ventajas de la ortodoncia invisible y cómo puede transformar tu sonrisa sin comprometer tu estilo de vida.',
-    'blog.post3.date': '2 de Enero, 2024',
-    'blog.post3.author': 'Dr. Carlos López',
-    'blog.readMore': 'Leer más',
-    'blog.viewAll': 'Ver todos los artículos',
-
-    // Footer
-    'footer.contact': 'Contacto',
-    'footer.hours': 'Horarios',
-    'footer.services': 'Servicios',
-    'footer.followUs': 'Síguenos',
-    'specialties.general.title': 'Odontologia general',
+    // Specialties
+    'specialties.general.title': 'Odontología General',
     'specialties.endodontics.title': 'Endodoncia',
     'specialties.periodontics.title': 'Periodoncia',
     'specialties.oral_surgery.title': 'Cirugía Maxilofacial',
     'specialties.cosmetic.title': 'Estética Dental',
     'specialties.orthodontics.title': 'Ortodoncia',
     'specialties.pediatric.title': 'Odontopediatría',
+    
+    // Footer
+    'footer.contact': 'Contacto',
+    'footer.hours': 'Horarios',
+    'footer.services': 'Servicios',
+    'footer.followUs': 'Síguenos',
     'context.footer.text': 'Comprometidos con tu salud oral, ofrecemos servicios dentales de calidad con tecnología avanzada y un equipo de especialistas altamente calificados.',
   }
 };
