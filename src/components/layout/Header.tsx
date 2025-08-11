@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Clock, Moon, Sun, Globe } from 'lucide-react';
+import { Menu, X,  Moon, Sun, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -29,6 +30,12 @@ const Header = () => {
     { name: t('specialties.cosmetic.title'), href: '/especialidades/estetica-dental' },
     { name: t('specialties.orthodontics.title'), href: '/especialidades/ortodoncia' },
     { name: t('specialties.pediatric.title'), href: '/especialidades/odontopediatria' },
+  ];
+  const socialLinks = [
+    { icon: Facebook, href: 'https://www.facebook.com/MoleetMedicalUnit', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/moleetdentalunit/', label: 'Instagram' },
+    // { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
+    // { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -133,6 +140,20 @@ const Header = () => {
               </Link>
             </Button>
           </div>
+          <div className="flex gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-dental-accent hover:scale-110 transition-all duration-300"
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
 
           {/* Mobile Menu Button */}
           <Button

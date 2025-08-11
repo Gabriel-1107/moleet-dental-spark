@@ -8,10 +8,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com/moleetdental', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com/moleetdental', label: 'Instagram' },
-    { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
-    { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
+    { icon: Facebook, href: 'https://www.facebook.com/MoleetMedicalUnit', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/moleetdentalunit/', label: 'Instagram' },
+    // { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
+    // { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
   ];
 
   const quickLinks = [

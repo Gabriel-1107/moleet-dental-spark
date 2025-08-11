@@ -61,135 +61,146 @@ const ContactForm = () => {
 
 
   return (
-    <Card id="contacto" className="max-w-md mx-auto bg-white/95 backdrop-blur-sm shadow-2xl border-0">
+   <Card
+  id="contacto"
+  className="w-full max-w-sm mx-auto bg-white/90 backdrop-blur-sm shadow-lg border-0 p-4 sm:p-6 rounded-xl"
+>
+  <CardHeader className="text-center mb-4">
+    <CardTitle className="text-xl sm:text-2xl font-display font-bold text-dental-navy">
+      {t('contact.title')}
+    </CardTitle>
+    <CardDescription className="text-sm sm:text-base">
+      {t('contact.subtitle')}
+    </CardDescription>
+  </CardHeader>
 
-      <CardHeader className="text-center">
-        <CardTitle className="text-2xl font-display font-bold text-dental-navy">
-          {t('contact.title')}
-        </CardTitle>
-        <CardDescription className="text-base">
-          {t('contact.subtitle')}
-        </CardDescription>
-      </CardHeader>
-      
-      <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Name */}
-          <div className="space-y-2">
-            <Label htmlFor="name" className="text-sm font-medium text-dental-navy">
-              {t('contact.name')}
+  <CardContent>
+    <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Name */}
+      <div>
+        <Label htmlFor="name" className="text-sm font-medium text-dental-navy">
+          {t('contact.name')}
+        </Label>
+        <Input
+          id="name"
+          type="text"
+          value={formData.name}
+          onChange={(e) => handleInputChange('name', e.target.value)}
+          required
+          className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue text-sm"
+        />
+      </div>
+
+      {/* Email */}
+      <div>
+        <Label htmlFor="email" className="text-sm font-medium text-dental-navy">
+          {t('contact.email')}
+        </Label>
+        <Input
+          id="email"
+          type="email"
+          value={formData.email}
+          onChange={(e) => handleInputChange('email', e.target.value)}
+          required
+          className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue text-sm"
+        />
+      </div>
+
+      {/* Phone */}
+      <div>
+        <Label htmlFor="phone" className="text-sm font-medium text-dental-navy">
+          {t('contact.phone')}
+        </Label>
+        <Input
+          id="phone"
+          type="tel"
+          value={formData.phone}
+          onChange={(e) => handleInputChange('phone', e.target.value)}
+          required
+          className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue text-sm"
+        />
+      </div>
+
+      {/* Branch */}
+      <div>
+        <Label className="text-sm font-medium text-dental-navy flex items-center">
+          <MapPin className="inline h-4 w-4 mr-1" />
+          {t('contact.branch')}
+        </Label>
+        <Select
+          value={formData.branch}
+          onValueChange={(value) => handleInputChange('branch', value)}
+          required
+        >
+          <SelectTrigger className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue text-sm">
+            <SelectValue placeholder="Selecciona una sucursal" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="guadalajara">{t('contact.guadalajara')}</SelectItem>
+            <SelectItem value="chapala">{t('contact.chapala')}</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+
+      {/* New Patient */}
+      <div>
+        <Label className="text-sm font-medium text-dental-navy">
+          {t('contact.newPatient')}
+        </Label>
+        <RadioGroup
+          value={formData.isNewPatient}
+          onValueChange={(value) => handleInputChange('isNewPatient', value)}
+          className="flex gap-4"
+        >
+          <div className="flex items-center space-x-1">
+            <RadioGroupItem value="yes" id="yes" />
+            <Label htmlFor="yes" className="cursor-pointer text-sm">
+              {t('contact.yes')}
             </Label>
-            <Input
-              id="name"
-              type="text"
-              value={formData.name}
-              onChange={(e) => handleInputChange('name', e.target.value)}
-              required
-              className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue"
-            />
           </div>
-
-          {/* Email */}
-          <div className="space-y-2">
-            <Label htmlFor="email" className="text-sm font-medium text-dental-navy">
-              {t('contact.email')}
+          <div className="flex items-center space-x-1">
+            <RadioGroupItem value="no" id="no" />
+            <Label htmlFor="no" className="cursor-pointer text-sm">
+              {t('contact.no')}
             </Label>
-            <Input
-              id="email"
-              type="email"
-              value={formData.email}
-              onChange={(e) => handleInputChange('email', e.target.value)}
-              required
-              className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue"
-            />
           </div>
+        </RadioGroup>
+      </div>
 
-          {/* Phone */}
-          <div className="space-y-2">
-            <Label htmlFor="phone" className="text-sm font-medium text-dental-navy">
-              {t('contact.phone')}
-            </Label>
-            <Input
-              id="phone"
-              type="tel"
-              value={formData.phone}
-              onChange={(e) => handleInputChange('phone', e.target.value)}
-              required
-              className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue"
-            />
-          </div>
+      {/* Message */}
+      <div>
+        <Label htmlFor="message" className="text-sm font-medium text-dental-navy">
+          {t('contact.message')}
+        </Label>
+        <Textarea
+          id="message"
+          value={formData.message}
+          onChange={(e) => handleInputChange('message', e.target.value)}
+          rows={3}
+          className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue resize-none text-sm"
+          placeholder="Cuéntanos sobre tu consulta..."
+        />
+      </div>
 
-          {/* Branch Selection */}
-          <div className="space-y-2">
-            <Label className="text-sm font-medium text-dental-navy">
-              <MapPin className="inline h-4 w-4 mr-1" />
-              {t('contact.branch')}
-            </Label>
-            <Select value={formData.branch} onValueChange={(value) => handleInputChange('branch', value)} required>
-              <SelectTrigger className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue">
-                <SelectValue placeholder="Selecciona una sucursal" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="guadalajara">{t('contact.guadalajara')}</SelectItem>
-                <SelectItem value="chapala">{t('contact.chapala')}</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+      {/* Submit */}
+      <Button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full bg-gradient-dental hover:opacity-90 text-white font-semibold py-2 text-sm sm:text-base group"
+      >
+        {isSubmitting ? (
+          "Enviando..."
+        ) : (
+          <>
+            {t('contact.submit')}
+            <Send className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          </>
+        )}
+      </Button>
+    </form>
+  </CardContent>
+</Card>
 
-          {/* New Patient */}
-          <div className="space-y-3">
-            <Label className="text-sm font-medium text-dental-navy">
-              {t('contact.newPatient')}
-            </Label>
-            <RadioGroup
-              value={formData.isNewPatient}
-              onValueChange={(value) => handleInputChange('isNewPatient', value)}
-              className="flex gap-6"
-            >
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="yes" id="yes" />
-                <Label htmlFor="yes" className="cursor-pointer">{t('contact.yes')}</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <RadioGroupItem value="no" id="no" />
-                <Label htmlFor="no" className="cursor-pointer">{t('contact.no')}</Label>
-              </div>
-            </RadioGroup>
-          </div>
-
-          {/* Message */}
-          <div className="space-y-2">
-            <Label htmlFor="message" className="text-sm font-medium text-dental-navy">
-              {t('contact.message')}
-            </Label>
-            <Textarea
-              id="message"
-              value={formData.message}
-              onChange={(e) => handleInputChange('message', e.target.value)}
-              rows={4}
-              className="border-gray-300 focus:border-dental-blue focus:ring-dental-blue resize-none"
-              placeholder="Cuéntanos sobre tu consulta..."
-            />
-          </div>
-
-          {/* Submit Button */}
-          <Button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-gradient-dental hover:opacity-90 text-white font-semibold py-3 text-lg group"
-          >
-            {isSubmitting ? (
-              "Enviando..."
-            ) : (
-              <>
-                {t('contact.submit')}
-                <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </>
-            )}
-          </Button>
-        </form>
-      </CardContent>
-    </Card>
   );
 };
 
