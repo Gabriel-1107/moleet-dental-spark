@@ -127,7 +127,7 @@ const Testimonials = () => {
               <div className="text-white/90">Pacientes Atendidos</div>
             </div>
             <div>
-              <div className="text-3xl lg:text-4xl font-bold mb-2">15+</div>
+              <div className="text-3xl lg:text-4xl font-bold mb-2">17+</div>
               <div className="text-white/90">Años de Experiencia</div>
             </div>
             <div>

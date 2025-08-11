@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ContactForm from './ContactForm';
-import heroBackground from '@/assets/hero-bg.jpg';
+import heroBackground from '@/assets/portada.jpeg';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -63,7 +63,7 @@ const Hero = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-3xl font-bold text-dental-accent">15+</div>
+                <div className="text-3xl font-bold text-dental-accent">17+</div>
                 <div className="text-sm text-white/80">{t('hero.stats.experience')}</div>
               </div>
               <div className="text-center">

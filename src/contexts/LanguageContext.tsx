@@ -23,6 +23,8 @@ const translations = {
     'nav.contact': 'Contact',
     'nav.blog': 'Blog',
     'sucursal.desc': 'View Branch',
+    'branches.guadalajara.name': 'Guadalajara Branch',
+    'branches.chapala.name': 'Chapala Branch',
     
     // Common
     'common.back': 'Back',
@@ -248,6 +250,8 @@ const translations = {
     'nav.contact': 'Contacto',
     'nav.blog': 'Blog',
     'sucursal.desc': 'Conocer Sucursal',
+    'branches.guadalajara.name': 'Sucursal Guadalajara',
+    'branches.chapala.name': 'Sucursal Chapala',
     
     // Common
     'common.back': 'Volver',

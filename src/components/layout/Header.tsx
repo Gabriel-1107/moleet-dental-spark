@@ -75,11 +75,9 @@ const Header = () => {
             />
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl text-dental-navy">
-                Moleet
+                Moleet Dental Unit®
               </span>
-              <span className="text-sm text-dental-blue font-medium">
-                dental unit
-              </span>
+              
             </div>
           </Link>
 
