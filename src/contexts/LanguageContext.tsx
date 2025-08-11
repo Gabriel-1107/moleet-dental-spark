@@ -25,6 +25,8 @@ const translations = {
     'sucursal.desc': 'View Branch',
     'branches.guadalajara.name': 'Guadalajara Branch',
     'branches.chapala.name': 'Chapala Branch',
+    'branches.title': 'Our Locations',
+    'branches.subtitle': 'Visit our modern dental clinics in Guadalajara and Chapala',
     
     // Common
     'common.back': 'Back',
@@ -41,6 +43,8 @@ const translations = {
     'hero.stats.patients': 'Satisfied Patients',
     'hero.stats.locations': 'Locations',
     'services.back': 'Explore Our Services',
+    'services.guadalajara.name': 'Modern dental clinic in Zapopan, with over 17 years of experience and state of the art technology.',
+    'services.chapala.name': 'Trusted dentists in Chapala, the best climate in the world, offering personalized and quality care.',
     
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Professional Dental Services in Guadalajara and Chapala',
@@ -75,6 +79,8 @@ const translations = {
     'services.moreInfo': 'More Information',
     'services.cta.title': 'Ready to Transform Your Smile?',
     'services.cta.description': 'Contact us today and discover how we can help you achieve the perfect smile.',
+    'testimonials.title': 'Patient Testimonials',
+    'testimonials.subtitle': 'Real stories of dental transformation',
     
     // Service Categories
     'services.general.title': 'General Dentistry',
@@ -252,6 +258,8 @@ const translations = {
     'sucursal.desc': 'Conocer Sucursal',
     'branches.guadalajara.name': 'Sucursal Guadalajara',
     'branches.chapala.name': 'Sucursal Chapala',
+    'branches.title': 'Nuestras Sucursales',
+    'branches.subtitle': 'Visita nuestras modernas clínicas dentales en Guadalajara y Chapala',
     
     // Common
     'common.back': 'Volver',
@@ -268,6 +276,8 @@ const translations = {
     'hero.stats.patients': 'Pacientes Satisfechos',
     'hero.stats.locations': 'Ubicaciones',
     'services.back': 'Conoce nuestros servicios',
+    'services.guadalajara.name': 'Clínica dental moderna en Zapopan, con más de 17 años de experiencia y tecnología de última generación.',
+    'services.chapala.name': 'Dentistas de confianza en Chapala el mejor clima del mundo, ofreciendo atención personalizada y de calidad.',
     
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Servicios Dentales Profesionales en Guadalajara y Chapala',
@@ -302,6 +312,9 @@ const translations = {
     'services.moreInfo': 'Más Información',
     'services.cta.title': '¿Listo para Transformar tu Sonrisa?',
     'services.cta.description': 'Contáctanos hoy y descubre cómo podemos ayudarte a lograr la sonrisa perfecta.',
+    'testimonials.title': 'Testimonios de Pacientes',
+    'testimonials.subtitle': 'Historias reales de transformación dental',
+
     
     // Service Categories
     'services.general.title': 'Odontología General',

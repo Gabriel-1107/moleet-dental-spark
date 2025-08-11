@@ -11,16 +11,17 @@ const BranchesSection = () => {
     {
       name: t('branches.guadalajara.name'),
       image: 'lovable-uploads/guadalajara.png',
-      location: 'Guadalajara, Jalisco',
-      description: 'Moderna clínica dental en el corazón de Guadalajara con tecnología de vanguardia.',
+      location: 'Guadalajara (Zapopan), Jalisco',
+      description:t('services.guadalajara.name'),
       link: '/sucursales/guadalajara'
     },
     {
       name: t('branches.chapala.name'),
       image: 'lovable-uploads/chapala.png',
       location: 'Chapala, Jalisco',
-      description: 'Sucursal especializada en turismo dental con servicios integrales y transporte incluido.',
+      description: t('services.chapala.name'),
       link: '/sucursales/chapala'
+
     }
   ];
 
