@@ -22,6 +22,7 @@ const translations = {
     'nav.transport': 'Airport Transport',
     'nav.contact': 'Contact',
     'nav.blog': 'Blog',
+    'nav.videos': 'Videos',
     'sucursal.desc': 'View Branch',
     'branches.guadalajara.name': 'Guadalajara Branch',
     'branches.chapala.name': 'Chapala Branch',
@@ -128,19 +129,6 @@ const translations = {
     'services.pediatric.feature3': 'Preventive treatments',
     'services.pediatric.feature4': 'Early orthodontics',
     
-    // Videos
-    'videos.title': 'Educational Videos',
-    'videos.subtitle': 'Discover our treatments and learn more about our services',
-    'videos.tour.title': 'Virtual Clinic Tour',
-    'videos.tour.description': 'Explore our modern facilities',
-    'videos.implants.title': 'Dental Implant Process',
-    'videos.implants.description': 'Discover how we perform implants',
-    'videos.testimonials.title': 'Patient Testimonials',
-    'videos.testimonials.description': 'Real transformation stories',
-    'videos.technology.title': 'Advanced Technology',
-    'videos.technology.description': 'State-of-the-art equipment',
-    'videos.whitening.title': 'Teeth Whitening',
-    'videos.whitening.description': 'Step-by-step process',
     
     // Blog
     'blog.title': 'Dental Blog',
@@ -181,6 +169,37 @@ const translations = {
     'blog.seo.title': 'Dental Blog - Moleet Dental Unit | Information and Tips',
     'blog.seo.description': 'Dental blog with updated information about treatments, oral health, dental implants, whitening and orthodontics in Guadalajara and Chapala.',
     'blog.seo.keywords': 'dental blog, oral health, dental treatments, dentist Guadalajara, dentist Chapala, dental information',
+    'blog.share': 'Share Article',
+    'blog.author.bio': 'Dental specialist at Moleet Dental Unit',
+    
+    // Videos
+    'videos.title': 'Our Videos',
+    'videos.subtitle': 'Discover our procedures and facilities through our video gallery',
+    'videos.seo.title': 'Dental Videos - Moleet Dental Unit | Procedures and Facilities',
+    'videos.seo.description': 'Watch videos of our dental procedures, modern facilities and patient testimonials in Guadalajara and Chapala.',
+    'videos.seo.keywords': 'dental videos, dental procedures, dental clinic Guadalajara, dental clinic Chapala, patient testimonials',
+    
+    'videos.categories.all': 'All Videos',
+    'videos.categories.aesthetic': 'Aesthetic Dentistry',
+    'videos.categories.surgery': 'Dental Surgery',
+    'videos.categories.technology': 'Technology',
+    'videos.categories.testimonials': 'Testimonials',
+    'videos.categories.facilities': 'Our Facilities',
+    
+    'videos.blanqueamiento.title': 'Professional Teeth Whitening',
+    'videos.blanqueamiento.description': 'Discover our professional teeth whitening procedure and achieve a brighter smile.',
+    'videos.implantes.title': 'Dental Implant Procedure',
+    'videos.implantes.description': 'Learn about our advanced dental implant procedures with state-of-the-art technology.',
+    'videos.tecnologia.title': 'Advanced Dental Technology',
+    'videos.tecnologia.description': 'Tour our modern facilities and cutting-edge dental equipment.',
+    'videos.testimonios.title': 'Patient Testimonials',
+    'videos.testimonios.description': 'Real stories from satisfied patients who transformed their smiles with us.',
+    'videos.tour.title': 'Virtual Clinic Tour',
+    'videos.tour.description': 'Take a virtual tour of our modern dental facilities in Guadalajara and Chapala.',
+    
+    'videos.cta.title': 'Ready to Start Your Dental Journey?',
+    'videos.cta.description': 'Contact us today to schedule your appointment and experience our professional care.',
+    'videos.cta.button': 'Schedule Appointment',
     
     // Transport
     'transport.title': 'Airport Transportation Service',
@@ -255,6 +274,7 @@ const translations = {
     'nav.transport': 'Transporte Aeropuerto',
     'nav.contact': 'Contacto',
     'nav.blog': 'Blog',
+    'nav.videos': 'Videos',
     'sucursal.desc': 'Conocer Sucursal',
     'branches.guadalajara.name': 'Sucursal Guadalajara',
     'branches.chapala.name': 'Sucursal Chapala',
@@ -362,19 +382,6 @@ const translations = {
     'services.pediatric.feature3': 'Tratamientos preventivos',
     'services.pediatric.feature4': 'Ortodoncia temprana',
     
-    // Videos
-    'videos.title': 'Videos Informativos',
-    'videos.subtitle': 'Descubre nuestros tratamientos y conoce mejor nuestros servicios',
-    'videos.tour.title': 'Tour Virtual de la Clínica',
-    'videos.tour.description': 'Conoce nuestras modernas instalaciones',
-    'videos.implants.title': 'Proceso de Implantes Dentales',
-    'videos.implants.description': 'Descubre cómo realizamos los implantes',
-    'videos.testimonials.title': 'Testimonios de Pacientes',
-    'videos.testimonials.description': 'Historias reales de transformación',
-    'videos.technology.title': 'Tecnología Avanzada',
-    'videos.technology.description': 'Equipos de última generación',
-    'videos.whitening.title': 'Blanqueamiento Dental',
-    'videos.whitening.description': 'Proceso paso a paso',
     
     // Blog
     'blog.title': 'Blog Dental',
@@ -415,6 +422,37 @@ const translations = {
     'blog.seo.title': 'Blog Dental - Moleet Dental Unit | Información y Consejos',
     'blog.seo.description': 'Blog dental con información actualizada sobre tratamientos, salud oral, implantes dentales, blanqueamiento y ortodoncia en Guadalajara y Chapala.',
     'blog.seo.keywords': 'blog dental, salud oral, tratamientos dentales, dentista Guadalajara, dentista Chapala, información dental',
+    'blog.share': 'Compartir Artículo',
+    'blog.author.bio': 'Especialista dental en Moleet Dental Unit',
+    
+    // Videos
+    'videos.title': 'Nuestros Videos',
+    'videos.subtitle': 'Descubre nuestros procedimientos e instalaciones a través de nuestra galería de videos',
+    'videos.seo.title': 'Videos Dentales - Moleet Dental Unit | Procedimientos e Instalaciones',
+    'videos.seo.description': 'Mira videos de nuestros procedimientos dentales, instalaciones modernas y testimonios de pacientes en Guadalajara y Chapala.',
+    'videos.seo.keywords': 'videos dentales, procedimientos dentales, clínica dental Guadalajara, clínica dental Chapala, testimonios pacientes',
+    
+    'videos.categories.all': 'Todos los Videos',
+    'videos.categories.aesthetic': 'Estética Dental',
+    'videos.categories.surgery': 'Cirugía Dental',
+    'videos.categories.technology': 'Tecnología',
+    'videos.categories.testimonials': 'Testimonios',
+    'videos.categories.facilities': 'Nuestras Instalaciones',
+    
+    'videos.blanqueamiento.title': 'Blanqueamiento Dental Profesional',
+    'videos.blanqueamiento.description': 'Descubre nuestro procedimiento de blanqueamiento dental profesional y logra una sonrisa más brillante.',
+    'videos.implantes.title': 'Procedimiento de Implantes Dentales',
+    'videos.implantes.description': 'Conoce nuestros avanzados procedimientos de implantes dentales con tecnología de vanguardia.',
+    'videos.tecnologia.title': 'Tecnología Dental Avanzada',
+    'videos.tecnologia.description': 'Recorre nuestras modernas instalaciones y equipos dentales de última generación.',
+    'videos.testimonios.title': 'Testimonios de Pacientes',
+    'videos.testimonios.description': 'Historias reales de pacientes satisfechos que transformaron su sonrisa con nosotros.',
+    'videos.tour.title': 'Tour Virtual de la Clínica',
+    'videos.tour.description': 'Haz un recorrido virtual por nuestras modernas instalaciones dentales en Guadalajara y Chapala.',
+    
+    'videos.cta.title': '¿Listo para Comenzar tu Viaje Dental?',
+    'videos.cta.description': 'Contáctanos hoy para agendar tu cita y experimentar nuestro cuidado profesional.',
+    'videos.cta.button': 'Agendar Cita',
     
     // Transport
     'transport.title': 'Servicio de Transporte al Aeropuerto',

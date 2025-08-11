@@ -20,6 +20,8 @@ const Header = () => {
     { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
     { name: t('nav.transport'), href: '/transporte' },
+    { name: t('nav.videos'), href: '/videos' },
+    { name: t('nav.blog'), href: '/blog' },
   ];
 
   const specialties = [
@@ -42,10 +44,31 @@ const Header = () => {
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      {/* Top Bar with only theme and language toggles */}
+      {/* Top Bar with call buttons, theme and language toggles */}
       <div className="bg-primary/10 py-2 px-4">
         <div className="container mx-auto flex justify-end items-center">
           <div className="flex items-center gap-3">
+            {/* Call Buttons with Flags */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.open('tel:+15551234567', '_self')}
+              className="text-primary hover:bg-primary/10 rounded-xl flex items-center gap-2"
+            >
+              🇺🇸
+              <Phone className="h-3 w-3" />
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.open('tel:+15551234568', '_self')}
+              className="text-primary hover:bg-primary/10 rounded-xl flex items-center gap-2"
+            >
+              🇨🇦
+              <Phone className="h-3 w-3" />
+            </Button>
+            
             {/* Theme Toggle */}
             <Button
               variant="ghost"

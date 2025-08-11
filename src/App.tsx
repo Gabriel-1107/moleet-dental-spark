@@ -12,6 +12,9 @@ import Ubicaciones from "./pages/Ubicaciones";
 import Precios from "./pages/Precios";
 import Doctores from "./pages/Doctores";
 import Transport from "./pages/Transport";
+import Videos from "./pages/Videos";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import OdontologiaGeneral from "./pages/especialidades/OdontologiaGeneral";
 import Endodoncia from "./pages/especialidades/Endodoncia";
 import Periodoncia from "./pages/especialidades/Periodoncia";
@@ -40,6 +43,9 @@ const App = () => (
                 <Route path="/ubicaciones" element={<Ubicaciones />} />
                 <Route path="/precios" element={<Precios />} />
                 <Route path="/doctores" element={<Doctores />} />
+                <Route path="/videos" element={<Videos />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/especialidades/odontologia-general" element={<OdontologiaGeneral />} />
                 <Route path="/especialidades/endodoncia" element={<Endodoncia />} />
                 <Route path="/especialidades/periodoncia" element={<Periodoncia />} />
