@@ -17,7 +17,7 @@ const BranchesSection = () => {
     },
     {
       name: t('branches.chapala.name'),
-      image: 'lovable-uploads/chapala.png',
+      image: 'lovable-uploads/sucursal-chapala.png',
       location: 'Chapala, Jalisco',
       description: t('services.chapala.name'),
       link: '/sucursales/chapala'

@@ -65,22 +65,25 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
               </p>
             </div>
             <div className="flex gap-3">
-              <Button
+              {/* <Button
                 onClick={() => setIsFlipped(false)}
                 variant="secondary"
                 className="bg-white/20 text-white hover:bg-white/30 rounded-2xl border-white/30"
               >
                 <X className="h-4 w-4 mr-2" />
                 {t('common.back')}
-              </Button>
-              <Button
-                onClick={() => window.location.href = '/servicios'}
-                variant="secondary"
-                className="bg-white text-primary hover:bg-white/90 rounded-2xl"
-              >
-                {t('services.learnMore')}
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </Button>
+              </Button> */}
+              <div className="flex justify-center">
+            <Button
+              onClick={() => window.location.href = '/servicios'}
+              variant="secondary"
+              className="bg-white text-primary hover:bg-white/90 rounded-2xl"
+            >
+              {t('services.learnMore')}
+              <ArrowRight className="h-4 w-4 ml-2" />
+            </Button>
+          </div>
+
             </div>
           </CardContent>
         </Card>

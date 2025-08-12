@@ -154,13 +154,13 @@ const Servicios = () => {
                   </div>
 
                   {/* CTA */}
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300 rounded-2xl"
                   >
                     {t('services.learnMore')}
                     <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>

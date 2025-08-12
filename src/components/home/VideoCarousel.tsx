@@ -10,19 +10,26 @@ const VideoCarousel = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   const videos = [
+     {
+      id: 'tecnologia',
+      title: 'Caries',
+      description: 'Prevención y tratamiento',
+      thumbnail: 'https://images.pexels.com/photos/4971514/pexels-photo-4971514.jpeg',
+      videoUrl: 'lovable-uploads/caries.mp4'
+    },
     {
       id: 'tour-virtual',
       title: 'Tour Virtual de la Clínica',
       description: 'Conoce nuestras modernas instalaciones',
-      thumbnail: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=600&fit=crop',
-      videoUrl: 'lovable-uploads/tour-virtual.mp4'
+      thumbnail: 'lovable-uploads/instalations.png',
+      videoUrl: 'lovable-uploads/instalations.mp4'
     },
     {
       id: 'implantes',
       title: 'Proceso de Implantes Dentales',
       description: 'Descubre cómo realizamos los implantes',
       thumbnail: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&h=600&fit=crop',
-      videoUrl: 'lovable-uploads/implantes.mp4'
+      videoUrl: 'lovable-uploads/dentales-implantes.mp4'
     },
     {
       id: 'testimonios-video',
@@ -32,18 +39,11 @@ const VideoCarousel = () => {
       videoUrl: 'lovable-uploads/testimonios.mp4'
     },
     {
-      id: 'tecnologia',
-      title: 'Tecnología Avanzada',
-      description: 'Equipos de última generación',
-      thumbnail: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop',
-      videoUrl: 'lovable-uploads/tecnologia.mp4'
-    },
-    {
       id: 'blanqueamiento',
       title: 'Blanqueamiento Dental',
       description: 'Proceso paso a paso',
       thumbnail: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=600&fit=crop',
-      videoUrl: 'lovable-uploads/blanqueamiento.mp4'
+      videoUrl: 'lovable-uploads/caries.mp4'
     }
   ];
 

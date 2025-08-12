@@ -6,36 +6,36 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const BlogSection = () => {
   const { t } = useLanguage();
 
-  const blogPosts = [
-    {
-      titleKey: 'blog.post1.title',
-      excerptKey: 'blog.post1.excerpt',
-      dateKey: 'blog.post1.date',
-      authorKey: 'blog.post1.author',
-      image: '/lovable-uploads/dental-blog-1.jpg',
-      slug: 'importancia-higiene-dental-diaria'
-    },
-    {
-      titleKey: 'blog.post2.title',
-      excerptKey: 'blog.post2.excerpt',
-      dateKey: 'blog.post2.date',
-      authorKey: 'blog.post2.author',
-      image: '/lovable-uploads/dental-blog-2.jpg',
-      slug: 'blanqueamiento-dental-chapala-guadalajara'
-    },
-    {
-      titleKey: 'blog.post3.title',
-      excerptKey: 'blog.post3.excerpt',
-      dateKey: 'blog.post3.date',
-      authorKey: 'blog.post3.author',
-      image: '/lovable-uploads/dental-blog-3.jpg',
-      slug: 'ortodoncia-invisible-moleet-dental'
-    }
-  ];
+  // const blogPosts = [
+  //   {
+  //     titleKey: 'blog.post1.title',
+  //     excerptKey: 'blog.post1.excerpt',
+  //     dateKey: 'blog.post1.date',
+  //     authorKey: 'blog.post1.author',
+  //     image: '/lovable-uploads/dental-blog-1.jpg',
+  //     slug: 'importancia-higiene-dental-diaria'
+  //   },
+  //   {
+  //     titleKey: 'blog.post2.title',
+  //     excerptKey: 'blog.post2.excerpt',
+  //     dateKey: 'blog.post2.date',
+  //     authorKey: 'blog.post2.author',
+  //     image: '/lovable-uploads/dental-blog-2.jpg',
+  //     slug: 'blanqueamiento-dental-chapala-guadalajara'
+  //   },
+  //   {
+  //     titleKey: 'blog.post3.title',
+  //     excerptKey: 'blog.post3.excerpt',
+  //     dateKey: 'blog.post3.date',
+  //     authorKey: 'blog.post3.author',
+  //     image: '/lovable-uploads/dental-blog-3.jpg',
+  //     slug: 'ortodoncia-invisible-moleet-dental'
+  //   }
+  // ];
 
   return (
     <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      {/* <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary via-dental-blue to-dental-accent bg-clip-text text-transparent mb-6">
             {t('blog.title')}
@@ -99,7 +99,7 @@ const BlogSection = () => {
             <ArrowRight className="h-5 w-5 ml-2" />
           </Button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

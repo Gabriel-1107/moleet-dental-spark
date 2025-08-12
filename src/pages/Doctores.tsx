@@ -28,31 +28,42 @@ const Doctores = () => {
       experience: 15,
       education: ['Universidad de Guadalajara', 'Especialidad en Endodoncia - UNAM'],
       certifications: ['Consejo Mexicano de Endodoncia', 'American Association of Endodontists'],
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face',
+      image: 'lovable-uploads/doctors/dr-1.jpg',
       languages: ['Español', 'Inglés'],
       description: 'Especialista en tratamientos de conducto con más de 15 años de experiencia. Pionero en técnicas de endodoncia microscópica.'
     },
     {
-      name: 'Dra. Ana Patricia Silva',
+      name: 'Dr. Roberto García',
       specialty: 'Periodoncia',
       location: 'Chapala',
       experience: 12,
       education: ['Universidad Autónoma de Guadalajara', 'Maestría en Periodoncia - Universidad de Barcelona'],
       certifications: ['Sociedad Mexicana de Periodoncia', 'European Federation of Periodontology'],
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face',
+      image: 'lovable-uploads/doctors/dr-2.jpg',
       languages: ['Español', 'Inglés', 'Francés'],
       description: 'Experta en tratamientos periodontales y cirugía de encías. Especializada en implantes dentales y regeneración ósea.'
     },
     {
-      name: 'Dr. Roberto García',
+      name: 'Dra. Ana Torres',
       specialty: 'Cirugía Maxilofacial',
       location: 'Guadalajara',
       experience: 18,
       education: ['Universidad Nacional Autónoma de México', 'Residencia en Cirugía Maxilofacial - Hospital General'],
       certifications: ['Consejo Mexicano de Cirugía Maxilofacial', 'International Association of Oral and Maxillofacial Surgeons'],
-      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop&crop=face',
+      image: 'lovable-uploads/doctors/dr-3.jpg',
       languages: ['Español', 'Inglés'],
       description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
+    },
+    {
+      name: 'Dr. Ramón Alejandro Monroy Salcedo ',
+      specialty: 'Odontología General',
+      location: 'Chapala',
+      experience: 20,
+      education: ['Universidad Nacional Autónoma de México', 'Diplomado en Rehabilitación Oral'],
+      certifications: ['Colegio Nacional de Cirujanos Dentistas', 'Academy of General Dentistry'],
+      image: 'lovable-uploads/doctors/dr-4.jpg',
+      languages: ['Español', 'Inglés'],
+      description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },
     {
       name: 'Dra. María Elena Rodríguez',
@@ -86,17 +97,6 @@ const Doctores = () => {
       image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face',
       languages: ['Español', 'Inglés'],
       description: 'Especialista en odontología infantil con enfoque en técnicas de manejo conductual y prevención en niños.'
-    },
-    {
-      name: 'Dr. Ramón Alejandro Monroy Salcedo ',
-      specialty: 'Odontología General',
-      location: 'Chapala',
-      experience: 20,
-      education: ['Universidad Nacional Autónoma de México', 'Diplomado en Rehabilitación Oral'],
-      certifications: ['Colegio Nacional de Cirujanos Dentistas', 'Academy of General Dentistry'],
-      image: 'lovable-uploads/dr-monrroy.png',
-      languages: ['Español', 'Inglés'],
-      description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },
     {
       name: 'Dra. Sofia Vega',
