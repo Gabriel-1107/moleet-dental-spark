@@ -29,7 +29,7 @@ const BranchesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-dental-navy mb-4">
-            {t('branches.title')}
+            {t('Sucursales')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             {t('branches.subtitle')}

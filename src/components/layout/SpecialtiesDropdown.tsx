@@ -62,7 +62,10 @@ const SpecialtiesDropdown = () => {
       href: '/especialidades/odontopediatria',
       description: 'Odontología especializada para niños',
       descriptionEn: 'Specialized dentistry for children'
-    }
+    },
+
+  
+
   ];
 
   return (

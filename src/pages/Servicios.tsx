@@ -85,6 +85,20 @@ const Servicios = () => {
       ],
       popular: false,
       color: "from-pink-500 to-rose-500"
+    },
+
+    {
+      icon: Heart,
+      titleKey: "services.rehabilitacionoral.title",
+      descriptionKey: "services.rehabilitacionoral.description",
+      features: [
+        "services.rehabilitacionoral.feature1",
+        "services.rehabilitacionoral.feature2",
+        "services.rehabilitacionoral.feature3",
+        "services.rehabilitacionoral.feature4"
+      ],
+      popular: false,
+      color: "from-pink-500 to-rose-500"
     }
   ];
 
@@ -199,8 +213,12 @@ const Servicios = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Heart className="h-8 w-8 text-white" />
               </div>
+               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Heart className="h-8 w-8 text-white" />
+              </div>
               <h3 className="text-xl font-semibold text-primary mb-2">{t('services.care.title')}</h3>
               <p className="text-muted-foreground text-sm">{t('services.care.description')}</p>
+                   <p className="text-muted-foreground text-sm">{t('services.care.description')}</p>
             </div>
           </div>
         </div>

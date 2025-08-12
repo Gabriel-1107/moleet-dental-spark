@@ -101,7 +101,7 @@ const Footer = () => {
             <div className="space-y-4">
               {/* Guadalajara */}
               <div className="space-y-2">
-                <h4 className="font-medium text-dental-accent">Guadalajara</h4>
+                <h4 className="font-medium text-dental-accent">🇨🇦Canadá</h4>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-dental-accent" />
                   <span className="text-sm text-white/80">
@@ -116,7 +116,7 @@ const Footer = () => {
 
               {/* Chapala */}
               <div className="space-y-2">
-                <h4 className="font-medium text-dental-accent">Chapala</h4>
+                <h4 className="font-medium text-dental-accent">🇺🇸Estados Unidos</h4>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-dental-accent" />
                   <span className="text-sm text-white/80">

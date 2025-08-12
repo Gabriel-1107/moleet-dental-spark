@@ -19,6 +19,7 @@ const Header = () => {
     { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
     { name: t('nav.transport'), href: '/transporte' },
+    
   ];
 
   const specialties = [
@@ -29,6 +30,13 @@ const Header = () => {
     { name: t('specialties.cosmetic.title'), href: '/especialidades/estetica-dental' },
     { name: t('specialties.orthodontics.title'), href: '/especialidades/ortodoncia' },
     { name: t('specialties.pediatric.title'), href: '/especialidades/odontopediatria' },
+    { name: t('services.rehabilitacionoral.title'), href: '/especialidades/rehabilitacion-oral' },
+    
+
+    
+
+
+    
   ];
 
   const isActive = (path: string) => location.pathname === path;

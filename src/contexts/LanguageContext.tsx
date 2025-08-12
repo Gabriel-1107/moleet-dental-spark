@@ -19,7 +19,7 @@ const translations = {
     'nav.locations': 'Locations',
     'nav.prices': 'Prices',
     'nav.doctors': 'Doctors',
-    'nav.transport': 'Airport Transport',
+    'nav.transport': 'dental tourism',
     'nav.contact': 'Contact',
     'nav.blog': 'Blog',
     'sucursal.desc': 'View Branch',
@@ -32,15 +32,33 @@ const translations = {
     'common.loading': 'Loading...',
     
     // Hero Section
-    'hero.title': 'Your Perfect Smile',
-    'hero.subtitle': 'Awaits You',
+    'hero.title': 'Smile with',
+    'hero.subtitle': 'pleasure',
     'hero.description': 'Professional dental services with advanced technology in Guadalajara and Chapala. Specialists committed to your oral health.',
     'hero.cta': 'Schedule Your Appointment',
     'hero.viewServices': 'View Services',
     'hero.stats.experience': 'Years of Experience',
     'hero.stats.patients': 'Satisfied Patients',
     'hero.stats.locations': 'Locations',
+    "hero.oral": 'rehabilitacion oral',
     'services.back': 'Explore Our Services',
+    "hero.descri": 'rehabilitacion oral',
+
+
+  
+
+
+
+  
+
+
+    
+
+
+
+
+
+
     
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Professional Dental Services in Guadalajara and Chapala',
@@ -121,6 +139,20 @@ const translations = {
     'services.pediatric.feature2': 'Dental sealants',
     'services.pediatric.feature3': 'Preventive treatments',
     'services.pediatric.feature4': 'Early orthodontics',
+
+
+    'services.rehabilitacionoral.title': 'Oral rehabilitacion',
+    'services.rehabilitacionoral.description': 'It is a dental specialty focused on restoring the function, aesthetics, and oral health of patients who have lost teeth or have bite problems.',
+    'services.rehabilitacionoral.feature1': 'Dental implants',
+    'services.rehabilitacionoral.feature2': 'Crowns',
+    'services.rehabilitacionoral.feature3': 'Dental bridges',
+    'services.rehabilitacionoral.feature4': 'Veneers',
+
+    
+
+
+
+    
     
     // Videos
     'videos.title': 'Educational Videos',
@@ -246,12 +278,13 @@ const translations = {
     'nav.locations': 'Ubicaciones',
     'nav.prices': 'Precios',
     'nav.doctors': 'Doctores',
-    'nav.transport': 'Transporte Aeropuerto',
+    'nav.transport': 'Turismo dental',
     'nav.contact': 'Contacto',
     'nav.blog': 'Blog',
     'sucursal.desc': 'Conocer Sucursal',
     'branches.guadalajara.name': 'Sucursal Guadalajara',
     'branches.chapala.name': 'Sucursal Chapala',
+
     
     // Common
     'common.back': 'Volver',
@@ -259,15 +292,27 @@ const translations = {
     'common.loading': 'Cargando...',
     
     // Hero Section
-    'hero.title': 'Tu Sonrisa Perfecta',
-    'hero.subtitle': 'Te Espera',
+    'hero.title': 'Sonrie',
+    'hero.subtitle': 'con ganas',
     'hero.description': 'Servicios dentales profesionales con tecnología avanzada en Guadalajara y Chapala. Especialistas comprometidos con tu salud oral.',
     'hero.cta': 'Agenda tu Consulta',
+    "hero.oral": 'rehabilitacion Oral',
     'hero.viewServices': 'Ver Servicios',
     'hero.stats.experience': 'Años de Experiencia',
     'hero.stats.patients': 'Pacientes Satisfechos',
     'hero.stats.locations': 'Ubicaciones',
     'services.back': 'Conoce nuestros servicios',
+
+
+    
+
+    
+  
+
+
+  
+
+    
     
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Servicios Dentales Profesionales en Guadalajara y Chapala',
@@ -348,6 +393,28 @@ const translations = {
     'services.pediatric.feature2': 'Selladores dentales',
     'services.pediatric.feature3': 'Tratamientos preventivos',
     'services.pediatric.feature4': 'Ortodoncia temprana',
+
+    'services.rehabilitacionoral.title': 'Rehabilitacion oral',
+    'services.rehabilitacionoral.description': 'Es una especialidad odontológica enfocada en restaurar la función, estética y salud bucal de pacientes que han perdido dientes o tienen problemas de mordida.',
+    'services.rehabilitacionoral.feature1': 'Implantes dentales',
+    'services.rehabilitacionoral.feature2': 'Coronas',
+    'services.rehabilitacionoral.feature3': 'Puentes',
+    'services.rehabilitacionoral.feature4': 'Carillas',
+
+
+
+
+
+    
+
+
+  
+
+
+  
+
+    
+
     
     // Videos
     'videos.title': 'Videos Informativos',
