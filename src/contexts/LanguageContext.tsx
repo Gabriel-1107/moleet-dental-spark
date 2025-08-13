@@ -19,7 +19,7 @@ const translations = {
     'nav.locations': 'Locations',
     'nav.prices': 'Prices',
     'nav.doctors': 'Doctors',
-    'nav.transport': 'dental tourism',
+    'nav.transport': 'Dental Tourism',
     'nav.contact': 'Contact',
     'nav.blog': 'Blog',
     'nav.videos': 'Videos',

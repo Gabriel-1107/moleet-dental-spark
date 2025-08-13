@@ -17,7 +17,8 @@ const Doctores = () => {
     'Cirugía Maxilofacial',
     'Estética Dental',
     'Ortodoncia',
-    'Odontopediatría'
+    'Odontopediatría',
+    'Rehabilitación Oral'
   ];
 
   const doctors = [
@@ -44,15 +45,15 @@ const Doctores = () => {
       description: 'Experta en tratamientos periodontales y cirugía de encías. Especializada en implantes dentales y regeneración ósea.'
     },
     {
-      name: 'Dra. Ana Torres',
-      specialty: 'Cirugía Maxilofacial',
+      name: 'Dr. Jong kwan Lee',
+      specialty: 'Rehabilitación Oral',
       location: 'Guadalajara',
-      experience: 18,
-      education: ['Universidad Nacional Autónoma de México', 'Residencia en Cirugía Maxilofacial - Hospital General'],
-      certifications: ['Consejo Mexicano de Cirugía Maxilofacial', 'International Association of Oral and Maxillofacial Surgeons'],
-      image: 'lovable-uploads/doctors/dr-3.jpg',
-      languages: ['Español', 'Inglés'],
-      description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
+      experience: 10,
+      education: ['Universidad de Guadalajara', 'Diplomado en Estética Dental - Universidad de São Paulo'],
+      certifications: ['American Academy of Cosmetic Dentistry', 'International Association for Dental Aesthetics'],
+      image: 'lovable-uploads/doctors/dr-5.jpg',
+      languages: ['Español', 'Inglés', 'Portugués'],
+      description: 'Especialista en diseño de sonrisa y estética dental. Pionera en técnicas de carillas ultra delgadas y blanqueamiento avanzado.'
     },
     {
       name: 'Dr. Ramón Alejandro Monroy Salcedo ',
@@ -66,15 +67,15 @@ const Doctores = () => {
       description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },
     {
-      name: 'Dra. María Elena Rodríguez',
-      specialty: 'Estética Dental',
+      name: 'Dra. Ana Torres',
+      specialty: 'Cirugía Maxilofacial',
       location: 'Guadalajara',
-      experience: 10,
-      education: ['Universidad de Guadalajara', 'Diplomado en Estética Dental - Universidad de São Paulo'],
-      certifications: ['American Academy of Cosmetic Dentistry', 'International Association for Dental Aesthetics'],
-      image: 'https://images.unsplash.com/photo-1594824388060-2bfc4ab12d56?w=400&h=400&fit=crop&crop=face',
-      languages: ['Español', 'Inglés', 'Portugués'],
-      description: 'Especialista en diseño de sonrisa y estética dental. Pionera en técnicas de carillas ultra delgadas y blanqueamiento avanzado.'
+      experience: 18,
+      education: ['Universidad Nacional Autónoma de México', 'Residencia en Cirugía Maxilofacial - Hospital General'],
+      certifications: ['Consejo Mexicano de Cirugía Maxilofacial', 'International Association of Oral and Maxillofacial Surgeons'],
+      image: 'lovable-uploads/doctors/dr-3.jpg',
+      languages: ['Español', 'Inglés'],
+      description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
     },
     {
       name: 'Dr. Fernando López',
