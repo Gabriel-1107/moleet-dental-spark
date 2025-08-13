@@ -8,10 +8,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com/moleetdental', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com/moleetdental', label: 'Instagram' },
-    { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
-    { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
+    { icon: Facebook, href: 'https://www.facebook.com/MoleetMedicalUnit', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/moleetdentalunit/', label: 'Instagram' },
+    // { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
+    // { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
   ];
 
   const quickLinks = [
@@ -156,7 +156,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-white/60">
-              © {currentYear} Moleet Dental Unit. Todos los derechos reservados.
+              Ⓡ {currentYear} Moleet Dental Unit. Todos los derechos reservados.
             </div>
             <div className="flex gap-6 text-sm text-white/60">
               <a href="https://udigitalbusiness.com/" className="hover:text-dental-accent transition-colors">

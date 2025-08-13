@@ -79,7 +79,7 @@ const Guadalajara = () => {
       <section className="relative py-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=1080&fit=crop)` }}
+          style={{ backgroundImage: `url(https://images.pexels.com/photos/10039935/pexels-photo-10039935.jpeg)` }}
         >
           <div className="absolute inset-0 bg-dental-navy/80"></div>
         </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Clock, Moon, Sun, Globe } from 'lucide-react';
+import { Menu, X,  Moon, Sun, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -19,7 +20,8 @@ const Header = () => {
     { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
     { name: t('nav.transport'), href: '/transporte' },
-    
+    { name: t('nav.videos'), href: '/videos' },
+    { name: t('nav.blog'), href: '/blog' },
   ];
 
   const specialties = [
@@ -38,15 +40,42 @@ const Header = () => {
 
     
   ];
+  const socialLinks = [
+    { icon: Facebook, href: 'https://www.facebook.com/MoleetMedicalUnit', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/moleetdentalunit/', label: 'Instagram' },
+    // { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
+    // { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
+  ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      {/* Top Bar with only theme and language toggles */}
+      {/* Top Bar with call buttons, theme and language toggles */}
       <div className="bg-primary/10 py-2 px-4">
         <div className="container mx-auto flex justify-end items-center">
           <div className="flex items-center gap-3">
+            {/* Call Buttons with Flags */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.open('tel:+15551234567', '_self')}
+              className="text-primary hover:bg-primary/10 rounded-xl flex items-center gap-2"
+            >
+              🇺🇸
+              <Phone className="h-3 w-3" />
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.open('tel:+15551234568', '_self')}
+              className="text-primary hover:bg-primary/10 rounded-xl flex items-center gap-2"
+            >
+              🇨🇦
+              <Phone className="h-3 w-3" />
+            </Button>
+            
             {/* Theme Toggle */}
             <Button
               variant="ghost"
@@ -141,6 +170,20 @@ const Header = () => {
               </Link>
             </Button>
           </div>
+          <div className="flex gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-dental-accent hover:scale-110 transition-all duration-300"
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
 
           {/* Mobile Menu Button */}
           <Button

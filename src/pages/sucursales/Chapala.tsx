@@ -9,7 +9,7 @@ const Chapala = () => {
 
   const doctors = [
     {
-      name: "Dra. Patricia Hernández",
+      name: "Dr. Ramón Alejandro Monroy Salcedo ",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
       specialty: "Odontología General",
       specialtyEn: "General Dentistry",
@@ -88,7 +88,7 @@ const Chapala = () => {
       <section className="relative py-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&h=1080&fit=crop)` }}
+          style={{ backgroundImage: `url(https://images.pexels.com/photos/30726589/pexels-photo-30726589.jpeg)` }}
         >
           <div className="absolute inset-0 bg-dental-navy/80"></div>
         </div>

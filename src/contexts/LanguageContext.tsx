@@ -22,9 +22,28 @@ const translations = {
     'nav.transport': 'dental tourism',
     'nav.contact': 'Contact',
     'nav.blog': 'Blog',
+    'nav.videos': 'Videos',
     'sucursal.desc': 'View Branch',
     'branches.guadalajara.name': 'Guadalajara Branch',
     'branches.chapala.name': 'Chapala Branch',
+    'branches.title': 'Our Locations',
+    'branches.subtitle': 'Visit our modern dental clinics in Guadalajara and Chapala',
+    'services.advanced.title': 'Featured Services',
+    'services.advanced.subtitle': 'Discover our most popular and effective services',
+    'services.technology.title': 'Advanced Technology',
+    'services.technology.description': 'We use cutting-edge technology to provide precise and effective dental treatments.',
+    'services.safety.title': 'Safety and Hygiene',
+    'services.safety.description': 'We are committed to maintaining the highest standards of safety and hygiene in all our facilities and procedures.',
+    'services.care.title': 'Dental Care',
+    'services.care.description': 'We offer comprehensive dental care for the whole family, from regular check-ups to specialized treatments.',
+    'services.cta.contact': 'Schedule Your Appointment',
+    'services.cta.prices': 'View Prices',
+    'branches.phone': 'Phone',
+    'branches.email': 'Email',
+    'branches.schedule': 'Hours',
+    'branches.whatsapp': 'WhatsApp',
+    'branches.call': 'Call',
+    
     
     // Common
     'common.back': 'Back',
@@ -48,7 +67,20 @@ const translations = {
   
 
 
-
+// Videos
+    'videos.title': 'Educational Videos',
+    'videos.subtitle': 'Discover our treatments and learn more about our services',
+    'videos.tour.title': 'Virtual Clinic Tour',
+    'videos.tour.description': 'Explore our modern facilities',
+    'videos.implants.title': 'Dental Implant Process',
+    'videos.implants.description': 'Discover how we perform implants',
+    'videos.testimonials.title': 'Patient Testimonials',
+    'videos.testimonials.description': 'Real transformation stories',
+    'videos.technology.title': 'Advanced Technology',
+    'videos.technology.description': 'State-of-the-art equipment',
+    'videos.whitening.title': 'Teeth Whitening',
+    'videos.whitening.description': 'Step-by-step process',
+    
   
 
 
@@ -59,6 +91,8 @@ const translations = {
 
 
 
+    'services.guadalajara.name': 'Modern dental clinic in Zapopan, with over 17 years of experience and state of the art technology.',
+    'services.chapala.name': 'Trusted dentists in Chapala, the best climate in the world, offering personalized and quality care.',
     
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Professional Dental Services in Guadalajara and Chapala',
@@ -93,6 +127,8 @@ const translations = {
     'services.moreInfo': 'More Information',
     'services.cta.title': 'Ready to Transform Your Smile?',
     'services.cta.description': 'Contact us today and discover how we can help you achieve the perfect smile.',
+    'testimonials.title': 'Patient Testimonials',
+    'testimonials.subtitle': 'Real stories of dental transformation',
     
     // Service Categories
     'services.general.title': 'General Dentistry',
@@ -154,19 +190,6 @@ const translations = {
 
     
     
-    // Videos
-    'videos.title': 'Educational Videos',
-    'videos.subtitle': 'Discover our treatments and learn more about our services',
-    'videos.tour.title': 'Virtual Clinic Tour',
-    'videos.tour.description': 'Explore our modern facilities',
-    'videos.implants.title': 'Dental Implant Process',
-    'videos.implants.description': 'Discover how we perform implants',
-    'videos.testimonials.title': 'Patient Testimonials',
-    'videos.testimonials.description': 'Real transformation stories',
-    'videos.technology.title': 'Advanced Technology',
-    'videos.technology.description': 'State-of-the-art equipment',
-    'videos.whitening.title': 'Teeth Whitening',
-    'videos.whitening.description': 'Step-by-step process',
     
     // Blog
     'blog.title': 'Dental Blog',
@@ -207,6 +230,35 @@ const translations = {
     'blog.seo.title': 'Dental Blog - Moleet Dental Unit | Information and Tips',
     'blog.seo.description': 'Dental blog with updated information about treatments, oral health, dental implants, whitening and orthodontics in Guadalajara and Chapala.',
     'blog.seo.keywords': 'dental blog, oral health, dental treatments, dentist Guadalajara, dentist Chapala, dental information',
+    'blog.share': 'Share Article',
+    'blog.author.bio': 'Dental specialist at Moleet Dental Unit',
+    
+    // Videos
+   
+    'videos.seo.title': 'Dental Videos - Moleet Dental Unit | Procedures and Facilities',
+    'videos.seo.description': 'Watch videos of our dental procedures, modern facilities and patient testimonials in Guadalajara and Chapala.',
+    'videos.seo.keywords': 'dental videos, dental procedures, dental clinic Guadalajara, dental clinic Chapala, patient testimonials',
+    
+    'videos.categories.all': 'All Videos',
+    'videos.categories.aesthetic': 'Aesthetic Dentistry',
+    'videos.categories.surgery': 'Dental Surgery',
+    'videos.categories.technology': 'Technology',
+    'videos.categories.testimonials': 'Testimonials',
+    'videos.categories.facilities': 'Our Facilities',
+    
+    'videos.blanqueamiento.title': 'Professional Teeth Whitening',
+    'videos.blanqueamiento.description': 'Discover our professional teeth whitening procedure and achieve a brighter smile.',
+    'videos.implantes.title': 'Dental Implant Procedure',
+    'videos.implantes.description': 'Learn about our advanced dental implant procedures with state-of-the-art technology.',
+    'videos.tecnologia.title': 'Advanced Dental Technology',
+    'videos.tecnologia.description': 'Tour our modern facilities and cutting-edge dental equipment.',
+    'videos.testimonios.title': 'Patient Testimonials',
+    'videos.testimonios.description': 'Real stories from satisfied patients who transformed their smiles with us.',
+    
+    
+    'videos.cta.title': 'Ready to Start Your Dental Journey?',
+    'videos.cta.description': 'Contact us today to schedule your appointment and experience our professional care.',
+    'videos.cta.button': 'Schedule Appointment',
     
     // Transport
     'transport.title': 'Airport Transportation Service',
@@ -281,9 +333,28 @@ const translations = {
     'nav.transport': 'Turismo dental',
     'nav.contact': 'Contacto',
     'nav.blog': 'Blog',
+    'nav.videos': 'Videos',
     'sucursal.desc': 'Conocer Sucursal',
     'branches.guadalajara.name': 'Sucursal Guadalajara',
     'branches.chapala.name': 'Sucursal Chapala',
+
+    'branches.title': 'Nuestras Sucursales',
+    'branches.subtitle': 'Visita nuestras modernas clínicas dentales en Guadalajara y Chapala',
+    'services.advanced.title': 'Servicios destacados',
+    'services.advanced.subtitle': 'Conoce nuestros servicios más populares y efectivos',
+    'services.technology.title': 'Tecnología Avanzada',
+    'services.technology.description': 'Utilizamos tecnología de vanguardia para ofrecer tratamientos dentales precisos y efectivos.',
+    'services.safety.title': 'Seguridad e Higiene',
+    'services.safety.description': 'Nos comprometemos a mantener los más altos estándares de seguridad e higiene en todas nuestras instalaciones y procedimientos.',
+    'services.care.title': 'Cuidado Dental',
+    'services.care.description': 'Ofrecemos atención dental integral para toda la familia, desde chequeos regulares hasta tratamientos especializados.',
+    'services.cta.contact': 'Agenda tu cita',
+    'services.cta.prices': 'Ver Precios',
+    'branches.phone': 'Teléfono',
+    'branches.email': 'Correo',
+    'branches.schedule': 'Horarios',
+    'branches.whatsapp': 'WhatsApp',
+    'branches.call': 'Llamar',
 
     
     // Common
@@ -304,6 +375,19 @@ const translations = {
     'services.back': 'Conoce nuestros servicios',
 
 
+    // Videos
+    'videos.title': 'Videos Informativos',
+    'videos.subtitle': 'Descubre nuestros tratamientos y conoce mejor nuestros servicios',
+    'videos.tour.title': 'Tour Virtual de la Clínica',
+    'videos.tour.description': 'Conoce nuestras modernas instalaciones',
+    'videos.implants.title': 'Proceso de Implantes Dentales',
+    'videos.implants.description': 'Descubre cómo realizamos los implantes',
+    'videos.testimonials.title': 'Testimonios de Pacientes',
+    'videos.testimonials.description': 'Historias reales de transformación',
+    'videos.technology.title': 'Tecnología Avanzada',
+    'videos.technology.description': 'Equipos de última generación',
+    'videos.whitening.title': 'Blanqueamiento Dental',
+    'videos.whitening.description': 'Proceso paso a paso',
     
 
     
@@ -347,6 +431,9 @@ const translations = {
     'services.moreInfo': 'Más Información',
     'services.cta.title': '¿Listo para Transformar tu Sonrisa?',
     'services.cta.description': 'Contáctanos hoy y descubre cómo podemos ayudarte a lograr la sonrisa perfecta.',
+    'testimonials.title': 'Testimonios de Pacientes',
+    'testimonials.subtitle': 'Historias reales de transformación dental',
+
     
     // Service Categories
     'services.general.title': 'Odontología General',
@@ -416,19 +503,6 @@ const translations = {
     
 
     
-    // Videos
-    'videos.title': 'Videos Informativos',
-    'videos.subtitle': 'Descubre nuestros tratamientos y conoce mejor nuestros servicios',
-    'videos.tour.title': 'Tour Virtual de la Clínica',
-    'videos.tour.description': 'Conoce nuestras modernas instalaciones',
-    'videos.implants.title': 'Proceso de Implantes Dentales',
-    'videos.implants.description': 'Descubre cómo realizamos los implantes',
-    'videos.testimonials.title': 'Testimonios de Pacientes',
-    'videos.testimonials.description': 'Historias reales de transformación',
-    'videos.technology.title': 'Tecnología Avanzada',
-    'videos.technology.description': 'Equipos de última generación',
-    'videos.whitening.title': 'Blanqueamiento Dental',
-    'videos.whitening.description': 'Proceso paso a paso',
     
     // Blog
     'blog.title': 'Blog Dental',
@@ -469,6 +543,35 @@ const translations = {
     'blog.seo.title': 'Blog Dental - Moleet Dental Unit | Información y Consejos',
     'blog.seo.description': 'Blog dental con información actualizada sobre tratamientos, salud oral, implantes dentales, blanqueamiento y ortodoncia en Guadalajara y Chapala.',
     'blog.seo.keywords': 'blog dental, salud oral, tratamientos dentales, dentista Guadalajara, dentista Chapala, información dental',
+    'blog.share': 'Compartir Artículo',
+    'blog.author.bio': 'Especialista dental en Moleet Dental Unit',
+    
+    // Videos
+   
+    'videos.seo.title': 'Videos Dentales - Moleet Dental Unit | Procedimientos e Instalaciones',
+    'videos.seo.description': 'Mira videos de nuestros procedimientos dentales, instalaciones modernas y testimonios de pacientes en Guadalajara y Chapala.',
+    'videos.seo.keywords': 'videos dentales, procedimientos dentales, clínica dental Guadalajara, clínica dental Chapala, testimonios pacientes',
+    
+    'videos.categories.all': 'Todos los Videos',
+    'videos.categories.aesthetic': 'Estética Dental',
+    'videos.categories.surgery': 'Cirugía Dental',
+    'videos.categories.technology': 'Tecnología',
+    'videos.categories.testimonials': 'Testimonios',
+    'videos.categories.facilities': 'Nuestras Instalaciones',
+    
+    'videos.blanqueamiento.title': 'Blanqueamiento Dental Profesional',
+    'videos.blanqueamiento.description': 'Descubre nuestro procedimiento de blanqueamiento dental profesional y logra una sonrisa más brillante.',
+    'videos.implantes.title': 'Procedimiento de Implantes Dentales',
+    'videos.implantes.description': 'Conoce nuestros avanzados procedimientos de implantes dentales con tecnología de vanguardia.',
+    'videos.tecnologia.title': 'Tecnología Dental Avanzada',
+    'videos.tecnologia.description': 'Recorre nuestras modernas instalaciones y equipos dentales de última generación.',
+    'videos.testimonios.title': 'Testimonios de Pacientes',
+    'videos.testimonios.description': 'Historias reales de pacientes satisfechos que transformaron su sonrisa con nosotros.',
+   
+    
+    'videos.cta.title': '¿Listo para Comenzar tu Viaje Dental?',
+    'videos.cta.description': 'Contáctanos hoy para agendar tu cita y experimentar nuestro cuidado profesional.',
+    'videos.cta.button': 'Agendar Cita',
     
     // Transport
     'transport.title': 'Servicio de Transporte al Aeropuerto',
