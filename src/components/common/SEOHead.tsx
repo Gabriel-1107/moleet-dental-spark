@@ -23,7 +23,7 @@ const SEOHead = ({
   const siteName = 'Moleet Dental Unit';
   const defaultTitle = t('seo.home.title');
   const defaultDescription = t('seo.home.description');
-  const defaultKeywords = t('seo.home.keywords');
+  const defaultKeywords = `${t('seo.home.keywords')}, dentista guadalajara, dentista chapala, clinica dental guadalajara, clinica dental chapala, implantes dentales guadalajara, implantes dentales chapala, ortodoncia guadalajara, ortodoncia chapala, endodoncia guadalajara, endodoncia chapala, blanqueamiento dental guadalajara, blanqueamiento dental chapala, cirujano oral guadalajara, cirujano oral chapala, odontología general guadalajara, odontología general chapala, periodoncia guadalajara, periodoncia chapala, odontopediatría guadalajara, odontopediatría chapala, dentista en guadalajara, dentista en chapala, mejor dentista guadalajara, mejor dentista chapala, clínica dental profesional, dentistas especializados, turismo dental méxico, dental tourism mexico, affordable dental care mexico, moleet dental unit`;
   
   const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
   const finalDescription = description || defaultDescription;

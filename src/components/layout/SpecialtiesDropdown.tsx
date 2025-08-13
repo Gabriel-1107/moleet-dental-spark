@@ -86,10 +86,10 @@ const SpecialtiesDropdown = () => {
                     )}
                   >
                     <div className="text-sm font-medium leading-none">
-                      {t('language') === 'es' ? specialty.name : specialty.nameEn}
+                      {t(`specialties.${specialty.href.split('/').pop()}.name`)}
                     </div>
                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      {t('language') === 'es' ? specialty.description : specialty.descriptionEn}
+                      {t(`specialties.${specialty.href.split('/').pop()}.description`)}
                     </p>
                   </Link>
                 </NavigationMenuLink>

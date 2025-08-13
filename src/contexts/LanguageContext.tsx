@@ -118,6 +118,25 @@ const translations = {
     'contact.success': 'Your message has been sent successfully!',
     'contact.error': 'An error occurred sending your message.',
     
+    // Specialties dropdown
+    'specialties.odontologia-general.name': 'General Dentistry',
+    'specialties.odontologia-general.description': 'Comprehensive care for the whole family',
+    'specialties.endodoncia.name': 'Endodontics',
+    'specialties.endodoncia.description': 'Specialized root canal treatments',
+    'specialties.periodoncia.name': 'Periodontics', 
+    'specialties.periodoncia.description': 'Gum and supporting tissue care',
+    'specialties.cirugia-maxilofacial.name': 'Oral Surgery',
+    'specialties.cirugia-maxilofacial.description': 'Advanced oral and maxillofacial surgery',
+    'specialties.estetica-dental.name': 'Cosmetic Dentistry',
+    'specialties.estetica-dental.description': 'Smile design and aesthetics',
+    'specialties.ortodoncia.name': 'Orthodontics',
+    'specialties.ortodoncia.description': 'Dental alignment correction',
+    'specialties.odontopediatria.name': 'Pediatric Dentistry',
+    'specialties.odontopediatria.description': 'Specialized dentistry for children',
+
+    // Prices
+    'prices.more.treatments': 'more treatments',
+
     // Services
     'services.title': 'Our Services',
     'services.subtitle': 'Complete dental treatments with the highest quality standards',
@@ -422,6 +441,25 @@ const translations = {
     'contact.success': '¡Tu mensaje ha sido enviado exitosamente!',
     'contact.error': 'Ocurrió un error al enviar tu mensaje.',
     
+    // Specialties dropdown  
+    'specialties.odontologia-general.name': 'Odontología General',
+    'specialties.odontologia-general.description': 'Atención integral para toda la familia',
+    'specialties.endodoncia.name': 'Endodoncia',
+    'specialties.endodoncia.description': 'Tratamientos de conducto especializados',
+    'specialties.periodoncia.name': 'Periodoncia',
+    'specialties.periodoncia.description': 'Cuidado de encías y tejidos de soporte',
+    'specialties.cirugia-maxilofacial.name': 'Cirugía Maxilofacial',
+    'specialties.cirugia-maxilofacial.description': 'Cirugía oral y maxilofacial avanzada',
+    'specialties.estetica-dental.name': 'Estética Dental',
+    'specialties.estetica-dental.description': 'Diseño de sonrisa y estética',
+    'specialties.ortodoncia.name': 'Ortodoncia',
+    'specialties.ortodoncia.description': 'Corrección de la alineación dental',
+    'specialties.odontopediatria.name': 'Odontopediatría',
+    'specialties.odontopediatria.description': 'Odontología especializada para niños',
+
+    // Prices
+    'prices.more.treatments': 'tratamientos más',
+
     // Services
     'services.title': 'Nuestros Servicios',
     'services.subtitle': 'Tratamientos dentales completos con los más altos estándares de calidad',

@@ -18,7 +18,7 @@ const Home = () => {
         <VideoCarousel />
         <TestimonialsCarousel />
         <BlogSection />
-        <ContactForm />
+        
       </main>
     </>
   );

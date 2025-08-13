@@ -141,7 +141,7 @@ const Precios = () => {
                   ))}
                   {category.treatments.length > 3 && (
                     <div className="text-center text-sm text-muted-foreground pt-2">
-                      +{category.treatments.length - 3} tratamientos más
+                      +{category.treatments.length - 3} {t('prices.more.treatments')}
                     </div>
                   )}
                 </div>
