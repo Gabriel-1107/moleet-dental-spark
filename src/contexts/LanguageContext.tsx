@@ -354,6 +354,8 @@ const translations = {
     'context.footer.text': 'Committed to your oral health, we offer quality dental services with advanced technology and a team of highly qualified specialists.',
     'branches.ourDoctors': 'Our Doctors',
     'branches.contactInfo': 'Contact Information',
+    'branches.ourDoctors': 'Our Doctors',
+    'branches.contactInfo': 'Contact Information',
   },
   es: {
     // Navigation
