@@ -10,7 +10,7 @@ const Chapala = () => {
   const doctors = [
     {
       name: "Dr. Ramón Alejandro Monroy Salcedo ",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/doctors/dr-4.jpg",
       specialty: "Odontología General",
       specialtyEn: "General Dentistry",
       experience: 15,
@@ -18,8 +18,8 @@ const Chapala = () => {
       descriptionEn: "Specialist in preventive general dentistry with a focus on comprehensive family care."
     },
     {
-      name: "Dr. Carlos Mendoza",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop&crop=face",
+      name: "Dr. Silverio Jafet Vazquez Alcaraz",
+      image: "/lovable-uploads/doctors/dr-1.jpg",
       specialty: "Endodoncia",
       specialtyEn: "Endodontics",
       experience: 12,
@@ -27,8 +27,8 @@ const Chapala = () => {
       descriptionEn: "Endodontist dedicated to dental preservation. Specialized in emergency cases and retreatments."
     },
     {
-      name: "Dra. Ana Jiménez",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+      name: "Dr. Jong kwan Lee",
+      image: "/lovable-uploads/doctors/dr-5.jpg",
       specialty: "Periodoncia",
       specialtyEn: "Periodontics",
       experience: 16,
@@ -36,8 +36,8 @@ const Chapala = () => {
       descriptionEn: "Specialist in preventive and aesthetic periodontics. Comprehensive approach to gingival and periodontal health."
     },
     {
-      name: "Dra. Mónica Cruz",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+      name: "Dra. Andrea Ochoa Martínez",
+      image: "/lovable-uploads/doctors/dr-3.jpg",
       specialty: "Cirugía Maxilofacial",
       specialtyEn: "Oral Surgery",
       experience: 19,
@@ -46,31 +46,13 @@ const Chapala = () => {
     },
     {
       name: "Dr. Sebastián Luna",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/doctors/dr-2.jpg",
       specialty: "Estética Dental",
       specialtyEn: "Cosmetic Dentistry",
       experience: 17,
       description: "Experto en rehabilitación estética integral. Especializado en carillas y armonización facial.",
       descriptionEn: "Expert in comprehensive aesthetic rehabilitation. Specialized in veneers and facial harmonization."
     },
-    {
-      name: "Dr. Eduardo Campos",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
-      specialty: "Ortodoncia",
-      specialtyEn: "Orthodontics",
-      experience: 15,
-      description: "Especialista en ortodoncia para todas las edades. Enfoque personalizado en cada tratamiento ortodóntico.",
-      descriptionEn: "Specialist in orthodontics for all ages. Personalized approach to each orthodontic treatment."
-    },
-    {
-      name: "Dr. José Herrera",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
-      specialty: "Odontopediatría",
-      specialtyEn: "Pediatric Dentistry",
-      experience: 13,
-      description: "Especialista en odontología preventiva infantil. Enfoque lúdico y educativo para crear experiencias positivas.",
-      descriptionEn: "Specialist in preventive pediatric dentistry. Playful and educational approach to create positive experiences."
-    }
   ];
 
   const handleWhatsApp = () => {
@@ -163,6 +145,7 @@ const Chapala = () => {
                     </div>
                   </div>
                 </div>
+                
 
                 <div className="flex gap-3">
                   <Button 
@@ -209,7 +192,8 @@ const Chapala = () => {
       </section>
 
       {/* Doctors Section */}
-      <section className="py-24 bg-gray-50">
+     {/* Doctors Section con misma card que el primer código */}
+  <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl font-bold text-dental-navy mb-4">
@@ -223,35 +207,47 @@ const Chapala = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Grid de doctores */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {doctors.map((doctor, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-dental transition-all duration-300 hover:-translate-y-2 rounded-2xl border-0 shadow-lg">
-                <div className="relative h-64">
+              <Card 
+                key={index} 
+                className="group hover:shadow-dental transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+              >
+                {/* Imagen del doctor */}
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={doctor.image}
                     alt={doctor.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-dental-navy text-white rounded-xl">
-                      {doctor.experience} años
+                    <Badge className="bg-dental-navy text-white">
+                      {doctor.experience} {t('language') === 'es' ? 'años' : 'years'}
                     </Badge>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                      <h3 className="font-bold text-dental-navy text-lg">{doctor.name}</h3>
+                      <p className="text-dental-blue font-medium">
+                        {t('language') === 'es' ? doctor.specialty : doctor.specialtyEn}
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-xl text-dental-navy mb-1">{doctor.name}</h3>
-                  <p className="text-dental-blue font-medium mb-3">
-                    {t('language') === 'es' ? doctor.specialty : doctor.specialtyEn}
-                  </p>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  {/* Descripción */}
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                     {t('language') === 'es' ? doctor.description : doctor.descriptionEn}
                   </p>
+
+                  {/* Botón WhatsApp */}
                   <Button 
-                    className="w-full bg-gradient-dental hover:opacity-90 text-white rounded-xl"
+                    className="w-full bg-gradient-dental hover:opacity-90 text-white"
                     onClick={() => {
                       const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en la sucursal de Chapala.`);
-                      window.open(`https://wa.me/523376543210?text=${message}`, '_blank');
+                      window.open(`https://wa.me/523326312137?text=${message}`, '_blank');
                     }}
                   >
                     {t('language') === 'es' ? 'Agendar Cita' : 'Book Appointment'}
@@ -261,7 +257,8 @@ const Chapala = () => {
             ))}
           </div>
         </div>
-      </section>
+  </section>
+
     </div>
   );
 };

@@ -352,6 +352,8 @@ const translations = {
     'footer.services': 'Services',
     'footer.followUs': 'Follow Us',
     'context.footer.text': 'Committed to your oral health, we offer quality dental services with advanced technology and a team of highly qualified specialists.',
+    'branches.ourDoctors': 'Our Doctors',
+    'branches.contactInfo': 'Contact Information',
   },
   es: {
     // Navigation
@@ -537,6 +539,7 @@ const translations = {
     'services.rehabilitacionoral.feature2': 'Coronas',
     'services.rehabilitacionoral.feature3': 'Puentes',
     'services.rehabilitacionoral.feature4': 'Carillas',
+    'branches.ourDoctors': 'Nuestros Doctores',
 
 
 

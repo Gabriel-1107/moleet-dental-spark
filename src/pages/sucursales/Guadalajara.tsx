@@ -9,59 +9,50 @@ const Guadalajara = () => {
 
   const doctors = [
     {
-      name: "Dr. Miguel Ángel Torres",
-      image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&h=400&fit=crop&crop=face",
+      name: "Dr. Ramón Alejandro Monroy Salcedo ",
+      image: "/lovable-uploads/doctors/dr-4.jpg",
       specialty: "Odontología General",
       specialtyEn: "General Dentistry",
-      experience: 20,
-      description: "Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.",
-      descriptionEn: "General dentist with two decades of experience. Specialized in comprehensive oral rehabilitation and prosthetics."
+      experience: 15,
+      description: "Especialista en odontología general preventiva con enfoque en cuidado familiar integral.",
+      descriptionEn: "Specialist in preventive general dentistry with a focus on comprehensive family care."
     },
     {
-      name: "Dra. Elena Sánchez",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
+      name: "Dr. Silverio Jafet Vazquez Alcaraz",
+      image: "/lovable-uploads/doctors/dr-1.jpg",
       specialty: "Endodoncia",
       specialtyEn: "Endodontics",
-      experience: 18,
-      description: "Especialista en endodoncia con certificación internacional. Experta en tratamientos complejos y microscopía dental.",
-      descriptionEn: "Endodontics specialist with international certification. Expert in complex treatments and dental microscopy."
+      experience: 12,
+      description: "Endodoncista dedicado a la preservación dental. Especializado en casos de urgencias y retratamientos.",
+      descriptionEn: "Endodontist dedicated to dental preservation. Specialized in emergency cases and retreatments."
     },
     {
-      name: "Dr. Ricardo Vega",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
+      name: "Dr. Jong kwan Lee",
+      image: "/lovable-uploads/doctors/dr-5.jpg",
       specialty: "Periodoncia",
       specialtyEn: "Periodontics",
-      experience: 22,
-      description: "Periodoncista con amplia experiencia en cirugía regenerativa. Especialista en casos complejos de enfermedad periodontal.",
-      descriptionEn: "Periodontist with extensive experience in regenerative surgery. Specialist in complex periodontal disease cases."
+      experience: 16,
+      description: "Especialista en periodoncia preventiva y estética. Enfoque integral en la salud gingival y periodontal.",
+      descriptionEn: "Specialist in preventive and aesthetic periodontics. Comprehensive approach to gingival and periodontal health."
     },
     {
-      name: "Dr. Fernando Morales",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop&crop=face",
+      name: "Dra. Andrea Ochoa Martínez",
+      image: "/lovable-uploads/doctors/dr-3.jpg",
       specialty: "Cirugía Maxilofacial",
       specialtyEn: "Oral Surgery",
-      experience: 25,
-      description: "Cirujano maxilofacial con formación internacional. Especialista en implantología y cirugía reconstructiva.",
-      descriptionEn: "Maxillofacial surgeon with international training. Specialist in implantology and reconstructive surgery."
+      experience: 19,
+      description: "Especialista en cirugía oral y trauma facial. Experta en sedación consciente y cirugía ambulatoria.",
+      descriptionEn: "Specialist in oral surgery and facial trauma. Expert in conscious sedation and outpatient surgery."
     },
     {
-      name: "Dra. Gabriela Silva",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
+      name: "Dr. Sebastián Luna",
+      image: "/lovable-uploads/doctors/dr-2.jpg",
       specialty: "Estética Dental",
       specialtyEn: "Cosmetic Dentistry",
-      experience: 14,
-      description: "Especialista en estética dental y diseño de sonrisa. Certificada en técnicas de vanguardia en odontología cosmética.",
-      descriptionEn: "Specialist in dental aesthetics and smile design. Certified in cutting-edge cosmetic dentistry techniques."
+      experience: 17,
+      description: "Experto en rehabilitación estética integral. Especializado en carillas y armonización facial.",
+      descriptionEn: "Expert in comprehensive aesthetic rehabilitation. Specialized in veneers and facial harmonization."
     },
-    {
-      name: "Dra. Patricia Romero",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
-      specialty: "Ortodoncia",
-      specialtyEn: "Orthodontics",
-      experience: 20,
-      description: "Ortodoncista certificada con especialización en Invisalign y ortodoncia digital. Experta en casos complejos.",
-      descriptionEn: "Certified orthodontist specialized in Invisalign and digital orthodontics. Expert in complex cases."
-    }
   ];
 
   const handleWhatsApp = () => {

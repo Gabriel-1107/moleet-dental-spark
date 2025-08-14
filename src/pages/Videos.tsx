@@ -13,33 +13,41 @@ const Videos = () => {
   const videos = [
     {
       id: 1,
+      titleKey: 'videos.tour.title',
+      descriptionKey: 'videos.tour.description',
+      thumbnail: 'lovable-uploads/instalations.png',
+      src: '/lovable-uploads/tour-virtual.mp4',
+      category: 'facilities'
+    },
+    {
+      id: 2,
       titleKey: 'videos.blanqueamiento.title',
       descriptionKey: 'videos.blanqueamiento.description',
-      thumbnail: '/lovable-uploads/blanqueamiento.mp4',
+      thumbnail: 'https://images.pexels.com/photos/6812499/pexels-photo-6812499.jpeg',
       src: '/lovable-uploads/blanqueamiento.mp4',
       category: 'aesthetic'
     },
     {
-      id: 2,
+      id: 3,
       titleKey: 'videos.implantes.title',
       descriptionKey: 'videos.implantes.description',
-      thumbnail: '/lovable-uploads/implantes.mp4',
+      thumbnail: 'https://images.pexels.com/photos/6529111/pexels-photo-6529111.jpeg',
       src: '/lovable-uploads/implantes.mp4',
       category: 'surgery'
     },
     {
-      id: 3,
+      id: 4,
       titleKey: 'videos.tecnologia.title',
       descriptionKey: 'videos.tecnologia.description',
-      thumbnail: '/lovable-uploads/tecnologia.mp4',
+      thumbnail: 'https://images.pexels.com/photos/4971514/pexels-photo-4971514.jpeg',
       src: '/lovable-uploads/tecnologia.mp4',
       category: 'technology'
     },
     {
-      id: 4,
+      id: 5,
       titleKey: 'videos.testimonios.title',
       descriptionKey: 'videos.testimonios.description',
-      thumbnail: '/lovable-uploads/testimonios.mp4',
+      thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop',
       src: '/lovable-uploads/testimonios.mp4',
       category: 'testimonials'
     },
@@ -47,7 +55,7 @@ const Videos = () => {
       id: 5,
       titleKey: 'videos.tour.title',
       descriptionKey: 'videos.tour.description',
-      thumbnail: '/lovable-uploads/tour-virtual.mp4',
+      thumbnail: 'lovable-uploads/instalations.png',
       src: '/lovable-uploads/tour-virtual.mp4',
       category: 'facilities'
     }

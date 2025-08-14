@@ -23,7 +23,7 @@ const Doctores = () => {
 
   const doctors = [
     {
-      name: 'Dr. Carlos Mendoza',
+      name: 'Dr. Silverio Jafet Vazquez Alcaraz',
       specialty: 'Endodoncia',
       location: 'Guadalajara',
       experience: 15,
@@ -67,7 +67,7 @@ const Doctores = () => {
       description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },
     {
-      name: 'Dra. Ana Torres',
+      name: 'Dra. Andrea Ochoa Martínez',
       specialty: 'Cirugía Maxilofacial',
       location: 'Guadalajara',
       experience: 18,
@@ -77,39 +77,39 @@ const Doctores = () => {
       languages: ['Español', 'Inglés'],
       description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
     },
-    {
-      name: 'Dr. Fernando López',
-      specialty: 'Ortodoncia',
-      location: 'Chapala',
-      experience: 14,
-      education: ['Universidad Autónoma de Guadalajara', 'Especialidad en Ortodoncia - Universidad de Michoacán'],
-      certifications: ['Asociación Mexicana de Ortodoncia', 'World Federation of Orthodontists'],
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face',
-      languages: ['Español', 'Inglés'],
-      description: 'Ortodoncista especializado en ortodoncia invisible y técnicas de corrección rápida. Experto en casos complejos.'
-    },
-    {
-      name: 'Dra. Lucía Hernández',
-      specialty: 'Odontopediatría',
-      location: 'Guadalajara',
-      experience: 8,
-      education: ['Universidad de Guadalajara', 'Especialidad en Odontopediatría - Universidad Iberoamericana'],
-      certifications: ['Academia Mexicana de Odontopediatría', 'International Association of Paediatric Dentistry'],
-      image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face',
-      languages: ['Español', 'Inglés'],
-      description: 'Especialista en odontología infantil con enfoque en técnicas de manejo conductual y prevención en niños.'
-    },
-    {
-      name: 'Dra. Sofia Vega',
-      specialty: 'Estética Dental',
-      location: 'Guadalajara',
-      experience: 9,
-      education: ['Universidad Autónoma de Guadalajara', 'Certificación en DSD - Digital Smile Design'],
-      certifications: ['Digital Smile Design Certified', 'International Federation of Esthetic Dentistry'],
-      image: 'https://images.unsplash.com/photo-1627922851687-efd91b60da2f?w=400&h=400&fit=crop&crop=face',
-      languages: ['Español', 'Inglés', 'Italiano'],
-      description: 'Especialista en diseño digital de sonrisa y tecnología CAD/CAM. Experta en rehabilitaciones estéticas complejas.'
-    }
+    // {
+    //   name: 'Dr. Fernando López',
+    //   specialty: 'Ortodoncia',
+    //   location: 'Chapala',
+    //   experience: 14,
+    //   education: ['Universidad Autónoma de Guadalajara', 'Especialidad en Ortodoncia - Universidad de Michoacán'],
+    //   certifications: ['Asociación Mexicana de Ortodoncia', 'World Federation of Orthodontists'],
+    //   image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face',
+    //   languages: ['Español', 'Inglés'],
+    //   description: 'Ortodoncista especializado en ortodoncia invisible y técnicas de corrección rápida. Experto en casos complejos.'
+    // },
+    // {
+    //   name: 'Dra. Lucía Hernández',
+    //   specialty: 'Odontopediatría',
+    //   location: 'Guadalajara',
+    //   experience: 8,
+    //   education: ['Universidad de Guadalajara', 'Especialidad en Odontopediatría - Universidad Iberoamericana'],
+    //   certifications: ['Academia Mexicana de Odontopediatría', 'International Association of Paediatric Dentistry'],
+    //   image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face',
+    //   languages: ['Español', 'Inglés'],
+    //   description: 'Especialista en odontología infantil con enfoque en técnicas de manejo conductual y prevención en niños.'
+    // },
+    // {
+    //   name: 'Dra. Sofia Vega',
+    //   specialty: 'Estética Dental',
+    //   location: 'Guadalajara',
+    //   experience: 9,
+    //   education: ['Universidad Autónoma de Guadalajara', 'Certificación en DSD - Digital Smile Design'],
+    //   certifications: ['Digital Smile Design Certified', 'International Federation of Esthetic Dentistry'],
+    //   image: 'https://images.unsplash.com/photo-1627922851687-efd91b60da2f?w=400&h=400&fit=crop&crop=face',
+    //   languages: ['Español', 'Inglés', 'Italiano'],
+    //   description: 'Especialista en diseño digital de sonrisa y tecnología CAD/CAM. Experta en rehabilitaciones estéticas complejas.'
+    // }
   ];
 
   const filteredDoctors = selectedSpecialty === 'Todos' 
