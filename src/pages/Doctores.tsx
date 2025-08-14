@@ -10,15 +10,15 @@ const Doctores = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState<string>('Todos');
 
   const specialties = [
-    'Todos',
-    'Odontología General',
-    'Endodoncia',
-    'Periodoncia',
-    'Cirugía Maxilofacial',
-    'Estética Dental',
-    'Ortodoncia',
-    'Odontopediatría',
-    'Rehabilitación Oral'
+    { key: 'all', label: t('doctors.filter.all'), value: 'Todos' },
+    { key: 'general', label: t('doctors.filter.general'), value: 'Odontología General' },
+    { key: 'endodontics', label: t('doctors.filter.endodontics'), value: 'Endodoncia' },
+    { key: 'periodontics', label: t('doctors.filter.periodontics'), value: 'Periodoncia' },
+    { key: 'surgery', label: t('doctors.filter.surgery'), value: 'Cirugía Maxilofacial' },
+    { key: 'aesthetics', label: t('doctors.filter.aesthetics'), value: 'Estética Dental' },
+    { key: 'orthodontics', label: t('doctors.filter.orthodontics'), value: 'Ortodoncia' },
+    { key: 'pediatrics', label: t('doctors.filter.pediatrics'), value: 'Odontopediatría' },
+    { key: 'rehabilitation', label: t('doctors.filter.rehabilitation'), value: 'Rehabilitación Oral' }
   ];
 
   const doctors = [
@@ -76,40 +76,7 @@ const Doctores = () => {
       image: 'lovable-uploads/doctors/dr-3.jpg',
       languages: ['Español', 'Inglés'],
       description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
-    },
-    // {
-    //   name: 'Dr. Fernando López',
-    //   specialty: 'Ortodoncia',
-    //   location: 'Chapala',
-    //   experience: 14,
-    //   education: ['Universidad Autónoma de Guadalajara', 'Especialidad en Ortodoncia - Universidad de Michoacán'],
-    //   certifications: ['Asociación Mexicana de Ortodoncia', 'World Federation of Orthodontists'],
-    //   image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face',
-    //   languages: ['Español', 'Inglés'],
-    //   description: 'Ortodoncista especializado en ortodoncia invisible y técnicas de corrección rápida. Experto en casos complejos.'
-    // },
-    // {
-    //   name: 'Dra. Lucía Hernández',
-    //   specialty: 'Odontopediatría',
-    //   location: 'Guadalajara',
-    //   experience: 8,
-    //   education: ['Universidad de Guadalajara', 'Especialidad en Odontopediatría - Universidad Iberoamericana'],
-    //   certifications: ['Academia Mexicana de Odontopediatría', 'International Association of Paediatric Dentistry'],
-    //   image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face',
-    //   languages: ['Español', 'Inglés'],
-    //   description: 'Especialista en odontología infantil con enfoque en técnicas de manejo conductual y prevención en niños.'
-    // },
-    // {
-    //   name: 'Dra. Sofia Vega',
-    //   specialty: 'Estética Dental',
-    //   location: 'Guadalajara',
-    //   experience: 9,
-    //   education: ['Universidad Autónoma de Guadalajara', 'Certificación en DSD - Digital Smile Design'],
-    //   certifications: ['Digital Smile Design Certified', 'International Federation of Esthetic Dentistry'],
-    //   image: 'https://images.unsplash.com/photo-1627922851687-efd91b60da2f?w=400&h=400&fit=crop&crop=face',
-    //   languages: ['Español', 'Inglés', 'Italiano'],
-    //   description: 'Especialista en diseño digital de sonrisa y tecnología CAD/CAM. Experta en rehabilitaciones estéticas complejas.'
-    // }
+    }
   ];
 
   const filteredDoctors = selectedSpecialty === 'Todos' 
@@ -122,10 +89,10 @@ const Doctores = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-dental-navy mb-4">
-            Nuestros Especialistas
+            {t('doctors.title')}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conoce a nuestro equipo de especialistas altamente calificados, comprometidos con tu salud oral
+            {t('doctors.subtitle')}
           </p>
         </div>
 
@@ -133,16 +100,16 @@ const Doctores = () => {
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {specialties.map((specialty) => (
             <Button
-              key={specialty}
-              variant={selectedSpecialty === specialty ? 'default' : 'outline'}
-              onClick={() => setSelectedSpecialty(specialty)}
+              key={specialty.key}
+              variant={selectedSpecialty === specialty.value ? 'default' : 'outline'}
+              onClick={() => setSelectedSpecialty(specialty.value)}
               className={`${
-                selectedSpecialty === specialty 
+                selectedSpecialty === specialty.value 
                   ? 'bg-dental-navy hover:bg-dental-navy/90' 
                   : 'border-dental-blue text-dental-blue hover:bg-dental-light/20'
               }`}
             >
-              {specialty}
+              {specialty.label}
             </Button>
           ))}
         </div>
@@ -163,7 +130,7 @@ const Doctores = () => {
                 />
                 <div className="absolute top-4 right-4">
                   <Badge className="bg-dental-navy text-white">
-                    {doctor.experience} años
+                    {doctor.experience} {t('doctors.experience')}
                   </Badge>
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
@@ -190,7 +157,7 @@ const Doctores = () => {
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-2">
                     <GraduationCap className="h-4 w-4 text-dental-blue" />
-                    <span className="text-sm font-medium text-dental-navy">Educación</span>
+                    <span className="text-sm font-medium text-dental-navy">{t('doctors.education')}</span>
                   </div>
                   <div className="space-y-1">
                     {doctor.education.slice(0, 2).map((edu, idx) => (
@@ -203,7 +170,7 @@ const Doctores = () => {
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-2">
                     <Award className="h-4 w-4 text-dental-blue" />
-                    <span className="text-sm font-medium text-dental-navy">Certificaciones</span>
+                    <span className="text-sm font-medium text-dental-navy">{t('doctors.certifications')}</span>
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {doctor.certifications.slice(0, 2).map((cert, idx) => (
@@ -216,7 +183,7 @@ const Doctores = () => {
 
                 {/* Languages */}
                 <div className="mb-4">
-                  <span className="text-sm font-medium text-dental-navy">Idiomas: </span>
+                  <span className="text-sm font-medium text-dental-navy">{t('doctors.languages')}: </span>
                   <span className="text-sm text-muted-foreground">
                     {doctor.languages.join(', ')}
                   </span>
@@ -230,7 +197,7 @@ const Doctores = () => {
                     window.open(`https://wa.me/523312345678?text=${message}`, '_blank');
                   }}
                 >
-                  Agendar Cita
+                  {t('doctors.schedule')}
                 </Button>
               </CardContent>
             </Card>
@@ -241,16 +208,16 @@ const Doctores = () => {
         <div className="text-center mt-16">
           <Card className="bg-gradient-dental text-white max-w-2xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">¿No sabes qué especialista necesitas?</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('doctors.cta.title')}</h3>
               <p className="text-white/90 mb-6">
-                Agenda una consulta general y te ayudaremos a determinar el tratamiento ideal para ti.
+                {t('doctors.cta.description')}
               </p>
               <Button
                 size="lg"
                 variant="secondary"
                 onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Consulta General
+                {t('doctors.cta.button')}
               </Button>
             </CardContent>
           </Card>

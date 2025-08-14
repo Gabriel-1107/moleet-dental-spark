@@ -86,10 +86,10 @@ const SpecialtiesDropdown = () => {
                     )}
                   >
                     <div className="text-sm font-medium leading-none">
-                      {t(`specialties.${specialty.href.split('/').pop()}.name`)}
+                      {t(`specialties.dropdown.${specialty.href.split('/').pop()}.name`)}
                     </div>
                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                      {t(`specialties.${specialty.href.split('/').pop()}.description`)}
+                      {t(`specialties.dropdown.${specialty.href.split('/').pop()}.description`)}
                     </p>
                   </Link>
                 </NavigationMenuLink>
