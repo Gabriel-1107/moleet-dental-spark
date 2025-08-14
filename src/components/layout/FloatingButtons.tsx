@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/button';
 const FloatingButtons = () => {
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hola, me gustaría obtener información sobre sus servicios dentales.");
-    window.open(`https://wa.me/523312345678?text=${message}`, '_blank');
+    window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
   };
 
   const handleCall = () => {
-    window.open('tel:+523312345678', '_self');
+    window.open('tel:+523310235792', '_self');
   };
 
   return (

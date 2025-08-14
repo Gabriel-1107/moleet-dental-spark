@@ -57,7 +57,7 @@ const Guadalajara = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, me gustaría agendar una cita en su sucursal de Guadalajara.`);
-    window.open(`https://wa.me/3326312137?text=${message}`, '_blank');
+    window.open(`https://wa.me/3315204944?text=${message}`, '_blank');
   };
 
   const handleCall = () => {
@@ -235,7 +235,7 @@ const Guadalajara = () => {
                     className="w-full bg-gradient-dental hover:opacity-90 text-white rounded-xl"
                     onClick={() => {
                       const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en la sucursal de Guadalajara.`);
-                      window.open(`https://wa.me/523312345678?text=${message}`, '_blank');
+                      window.open(`https://wa.me/523315204944?text=${message}`, '_blank');
                     }}
                   >
                     {t('language') === 'es' ? 'Agendar Cita' : 'Book Appointment'}

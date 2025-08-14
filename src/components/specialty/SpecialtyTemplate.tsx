@@ -132,7 +132,7 @@ const SpecialtyTemplate = ({ title, titleEn, description, descriptionEn, image, 
                     onClick={() => {
                       const specialty = t('language') === 'es' ? title.toLowerCase() : (titleEn || title).toLowerCase();
                       const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} para ${specialty}.`);
-                      const phone = doctor.location === 'Guadalajara' ? '523312345678' : '523376543210';
+                      const phone = doctor.location === 'Guadalajara' ? '3310235792' : '523376543210';
                       window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
                     }}
                   >

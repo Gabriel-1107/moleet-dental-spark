@@ -167,7 +167,7 @@ const Header = () => {
               asChild
               className="bg-gradient-dental hover:opacity-90 text-white font-semibold"
             >
-              <Link to="https://wa.me/523326312137" target="_blank">
+              <Link to="https://wa.me/523310235792" target="_blank">
                 {t('contact.title')}
               </Link>
             </Button>

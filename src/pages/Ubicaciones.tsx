@@ -11,7 +11,7 @@ const Ubicaciones = () => {
       name: 'Guadalajara Centro',
       address: 'Av. Juárez 123, Col. Centro, Guadalajara, Jalisco',
       phone: '(33) 1234-5678',
-      whatsapp: '523312345678',
+      whatsapp: '3315204944',
       hours: [
         'Lunes - Viernes: 9:00 AM - 7:00 PM',
         'Sábados: 9:00 AM - 2:00 PM',
@@ -26,7 +26,7 @@ const Ubicaciones = () => {
       name: 'Chapala Lakeside',
       address: 'Av. Madero 456, Centro, Chapala, Jalisco',
       phone: '(376) 765-4321',
-      whatsapp: '523767654321',
+      whatsapp: '3310235792',
       hours: [
         'Lunes - Viernes: 10:00 AM - 6:00 PM',
         'Sábados: 10:00 AM - 1:00 PM',

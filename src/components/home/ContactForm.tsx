@@ -35,8 +35,8 @@ const ContactForm = () => {
 
   // Different WhatsApp numbers for each branch
   const whatsappNumbers = {
-    guadalajara: "523326312137",
-    chapala: "523327971426" // Different number for Chapala
+    guadalajara: "3315204944", // Main number for Guadalajara
+    chapala: "3310235792" // Different number for Chapala
   };
 
   const selectedBranch = branch || location; // Use branch if selected, fallback to location

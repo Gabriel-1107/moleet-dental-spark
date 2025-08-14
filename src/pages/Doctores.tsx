@@ -184,7 +184,7 @@ const Doctores = () => {
                   className="w-full bg-gradient-dental hover:opacity-90 text-white"
                   onClick={() => {
                     const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en ${doctor.location}.`);
-                    window.open(`https://wa.me/523312345678?text=${message}`, '_blank');
+                    window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
                   }}
                 >
                   {t('doctors.schedule')}

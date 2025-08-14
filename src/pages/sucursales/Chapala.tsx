@@ -57,11 +57,11 @@ const Chapala = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, me gustaría agendar una cita en su sucursal de Chapala.`);
-    window.open(`https://wa.me/523326312137?text=${message}`, '_blank');
+    window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
   };
 
   const handleCall = () => {
-    window.open('tel:+523326312137', '_self');
+    window.open('tel:+523310235792', '_self');
   };
 
   return (
@@ -247,7 +247,7 @@ const Chapala = () => {
                     className="w-full bg-gradient-dental hover:opacity-90 text-white"
                     onClick={() => {
                       const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en la sucursal de Chapala.`);
-                      window.open(`https://wa.me/523326312137?text=${message}`, '_blank');
+                      window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
                     }}
                   >
                     {t('language') === 'es' ? 'Agendar Cita' : 'Book Appointment'}
