@@ -334,6 +334,18 @@ const translations = {
     'specialties.orthodontics.title': 'Orthodontics',
     'specialties.pediatric.title': 'Pediatric Dentistry',
     
+    // MisionYvision
+    "missionVision.title": "Our Purpose",
+    "missionVision.subtitle": "What drives us every day",
+    "missionVision.mission.title": "Mission",
+    "missionVision.mission.subtitle": "Our Commitment",
+    "missionVision.mission.problem": "Finding quality dental care with a personal touch can be challenging.",
+    "missionVision.mission.solution": "At Moleet Medical Unit, we are dedicated to transforming smiles with professionalism and passion. We provide high-quality dental care in Chapala, Jalisco, connecting our patients with a team of highly trained specialists in each area of dentistry.",
+    "missionVision.vision.title": "Vision",
+    "missionVision.vision.subtitle": "Our Aspiration",
+    "missionVision.vision.problem": "Dental clinics often lack the combination of excellence, comfort and personalized care.",
+    "missionVision.vision.solution": "To be the most prestigious dental clinic in Chapala, recognized for our excellence in care, quality in treatments and a team of specialists committed to the health and well-being of our patients.",
+
     // Footer
     'footer.contact': 'Contact',
     'footer.hours': 'Hours',
@@ -665,7 +677,18 @@ const translations = {
     'specialties.cosmetic.title': 'Estética Dental',
     'specialties.orthodontics.title': 'Ortodoncia',
     'specialties.pediatric.title': 'Odontopediatría',
-    
+
+    // MisionyVision
+    "missionVision.title": "Nuestro Propósito",
+    "missionVision.subtitle": "Lo que nos impulsa cada día",
+    "missionVision.mission.title": "Misión",
+    "missionVision.mission.subtitle": "Nuestro Compromiso",
+    "missionVision.mission.problem": "Encontrar atención dental de calidad con un toque personal puede ser un desafío.",
+    "missionVision.mission.solution": "En Moleet Medical Unit, nos dedicamos a transformar sonrisas con profesionalismo y pasión. Brindamos atención odontológica de alta calidad en Chapala, Jalisco, acercando a nuestros pacientes a un equipo de especialistas altamente capacitados en cada área de la odontología.",
+    "missionVision.vision.title": "Visión",
+    "missionVision.vision.subtitle": "Nuestra Aspiración",
+    "missionVision.vision.problem": "Las clínicas dentales a menudo carecen de la combinación de excelencia, comodidad y atención personalizada.",
+    "missionVision.vision.solution": "Ser la clínica odontológica de mayor prestigio en Chapala, reconocida por nuestra excelencia en atención, calidad en los tratamientos y un equipo de especialistas comprometidos con la salud y bienestar de nuestros pacientes.",
     // Footer
     'footer.contact': 'Contacto',
     'footer.hours': 'Horarios',
