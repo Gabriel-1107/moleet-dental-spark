@@ -9,7 +9,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/MoleetMedicalUnit', label: 'Facebook' },
-    { icon: Instagram, href: 'https://www.instagram.com/moleetdentalunit/', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/moleetdentalchapala/', label: 'Instagram' },
     // { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
     // { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
   ];
