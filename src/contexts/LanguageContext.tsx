@@ -354,8 +354,7 @@ const translations = {
     'context.footer.text': 'Committed to your oral health, we offer quality dental services with advanced technology and a team of highly qualified specialists.',
     'branches.ourDoctors': 'Our Doctors',
     'branches.contactInfo': 'Contact Information',
-    'branches.ourDoctors': 'Our Doctors',
-    'branches.contactInfo': 'Contact Information',
+   
   },
   es: {
     // Navigation
@@ -682,7 +681,7 @@ const translations = {
     'specialties.cosmetic.title': 'Estética Dental',
     'specialties.orthodontics.title': 'Ortodoncia',
     'specialties.pediatric.title': 'Odontopediatría',
-<<<<<<< Updated upstream
+
 
     // MisionyVision
     "missionVision.title": "Nuestro Propósito",
@@ -695,10 +694,12 @@ const translations = {
     "missionVision.vision.subtitle": "Nuestra Aspiración",
     "missionVision.vision.problem": "Las clínicas dentales a menudo carecen de la combinación de excelencia, comodidad y atención personalizada.",
     "missionVision.vision.solution": "Ser la clínica odontológica de mayor prestigio en Chapala, reconocida por nuestra excelencia en atención, calidad en los tratamientos y un equipo de especialistas comprometidos con la salud y bienestar de nuestros pacientes.",
-=======
+
+
+
     'branches.contactInfo': 'Información de Contacto',
     
->>>>>>> Stashed changes
+
     // Footer
     'footer.contact': 'Contacto',
     'footer.hours': 'Horarios',
