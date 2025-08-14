@@ -9,51 +9,51 @@ const Chapala = () => {
 
   const doctors = [
     {
-      name: "Dr. Ramón Alejandro Monroy Salcedo ",
+      name: "Dr. Ramón Alejandro Monroy Salcedo",
       image: "/lovable-uploads/doctors/dr-4.jpg",
       specialty: "Odontología General",
-      specialtyEn: "General Dentistry",
+      specialtyEn: t('doctors.filter.general'),
       experience: 15,
-      description: "Especialista en odontología general preventiva con enfoque en cuidado familiar integral.",
-      descriptionEn: "Specialist in preventive general dentistry with a focus on comprehensive family care."
+      description: t('doctors.descriptions.dr_ramon'),
+      descriptionEn: t('doctors.descriptions.dr_ramon'),
     },
     {
       name: "Dr. Silverio Jafet Vazquez Alcaraz",
       image: "/lovable-uploads/doctors/dr-1.jpg",
       specialty: "Endodoncia",
-      specialtyEn: "Endodontics",
+      specialtyEn: t('doctors.filter.endodontics'),
       experience: 12,
-      description: "Endodoncista dedicado a la preservación dental. Especializado en casos de urgencias y retratamientos.",
-      descriptionEn: "Endodontist dedicated to dental preservation. Specialized in emergency cases and retreatments."
+      description: t('doctors.descriptions.dr_silverio'),
+      descriptionEn: t('doctors.descriptions.dr_silverio'),
     },
     {
       name: "Dr. Jong kwan Lee",
       image: "/lovable-uploads/doctors/dr-5.jpg",
       specialty: "Periodoncia",
-      specialtyEn: "Periodontics",
+      specialtyEn: t('doctors.filter.periodontics'),
       experience: 16,
-      description: "Especialista en periodoncia preventiva y estética. Enfoque integral en la salud gingival y periodontal.",
-      descriptionEn: "Specialist in preventive and aesthetic periodontics. Comprehensive approach to gingival and periodontal health."
+      description: t('doctors.descriptions.dr_jong'),
+      descriptionEn: t('doctors.descriptions.dr_jong'),
     },
     {
       name: "Dra. Andrea Ochoa Martínez",
       image: "/lovable-uploads/doctors/dr-3.jpg",
       specialty: "Cirugía Maxilofacial",
-      specialtyEn: "Oral Surgery",
+      specialtyEn: t('doctors.filter.surgery'),
       experience: 19,
-      description: "Especialista en cirugía oral y trauma facial. Experta en sedación consciente y cirugía ambulatoria.",
-      descriptionEn: "Specialist in oral surgery and facial trauma. Expert in conscious sedation and outpatient surgery."
+      description: t('doctors.descriptions.dra_andrea'),
+      descriptionEn: t('doctors.descriptions.dra_andrea'),
     },
     {
       name: "Dr. Sebastián Luna",
       image: "/lovable-uploads/doctors/dr-2.jpg",
       specialty: "Estética Dental",
-      specialtyEn: "Cosmetic Dentistry",
+      specialtyEn: t('doctors.filter.aesthetics'),
       experience: 17,
-      description: "Experto en rehabilitación estética integral. Especializado en carillas y armonización facial.",
-      descriptionEn: "Expert in comprehensive aesthetic rehabilitation. Specialized in veneers and facial harmonization."
-    },
-  ];
+      description: t('doctors.descriptions.dr_sebastian'),
+      descriptionEn: t('doctors.descriptions.dr_sebastian'),
+    }
+]
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, me gustaría agendar una cita en su sucursal de Chapala.`);

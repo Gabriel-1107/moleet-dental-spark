@@ -21,6 +21,7 @@ const translations = {
     'nav.doctors': 'Doctors',
     'nav.transport': 'Dental Tourism',
     'nav.contact': 'Contact',
+    'nav.especialities': 'Specialties',
     'nav.blog': 'Blog',
     'nav.videos': 'Videos',
     'sucursal.desc': 'View Branch',
@@ -275,6 +276,8 @@ const translations = {
     
 
 
+    // Doctors
+    'Periodoncia.tt': 'Periodontics',
 
     
     
@@ -367,6 +370,13 @@ const translations = {
     'transport.comfort.description': 'Modern, air-conditioned vehicles for your comfort',
     'transport.hotel.title': 'Hotel Transfer',
     'transport.hotel.description': 'Direct transfer to your accommodation',
+
+    // Doctorssections
+    'doctors.descriptions.dr_ramon': 'Specialist in preventive general dentistry with a focus on comprehensive family care.',
+    'doctors.descriptions.dr_silverio': 'Endodontist dedicated to dental preservation. Specialized in emergency cases and retreatments.',
+    'doctors.descriptions.dr_jong': 'Specialist in preventive and aesthetic periodontics. Comprehensive approach to gingival and periodontal health.',
+    'doctors.descriptions.dra_andrea': 'Specialist in oral surgery and facial trauma. Expert in conscious sedation and outpatient surgery.',
+    'doctors.descriptions.dr_sebastian': 'Expert in comprehensive aesthetic rehabilitation. Specialized in veneers and facial harmonization.',
     
     // Prices
     'prices.title': 'Price List',
@@ -435,6 +445,7 @@ const translations = {
     'nav.doctors': 'Doctores',
     'nav.transport': 'Turismo dental',
     'nav.contact': 'Contacto',
+    'nav.especialities': 'Especialidades',
     'nav.blog': 'Blog',
     'nav.videos': 'Videos',
     'sucursal.desc': 'Conocer Sucursal',
@@ -494,13 +505,18 @@ const translations = {
     
 
     
+    'services.chapala.name': 'Clínica dental moderna en Chapala, con más de 17 años de experiencia y tecnología de vanguardia.',
+    'services.guadalajara.name': 'Clínica dental moderna en Zapopan, con más de 17 años de experiencia y la mejor tecnología.',
+
   
 
-
-  
-
-    
-    
+    // Doctorssections
+    'doctors.descriptions.dr_ramon': 'Especialista en odontología general preventiva con enfoque en cuidado familiar integral.',
+    'doctors.descriptions.dr_silverio': 'Endodoncista dedicado a la preservación dental. Especializado en casos de urgencias y retratamientos.',
+    'doctors.descriptions.dr_jong': 'Especialista en periodoncia preventiva y estética. Enfoque integral en la salud gingival y periodontal.',
+    'doctors.descriptions.dra_andrea': 'Especialista en cirugía oral y trauma facial. Experta en sedación consciente y cirugía ambulatoria.',
+    'doctors.descriptions.dr_sebastian': 'Experto en rehabilitación estética integral. Especializado en carillas y armonización facial.',
+        
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Servicios Dentales Profesionales en Guadalajara y Chapala',
     'seo.home.description': 'Servicios dentales de calidad con tecnología avanzada. Clínica dental en Guadalajara y Chapala con especialistas en odontología general, ortodoncia, endodoncia y estética dental.',
@@ -526,20 +542,7 @@ const translations = {
     'contact.error': 'Ocurrió un error al enviar tu mensaje.',
     
     // Specialties dropdown  
-    'specialties.odontologia-general.name': 'Odontología General',
-    'specialties.odontologia-general.description': 'Atención integral para toda la familia',
-    'specialties.endodoncia.name': 'Endodoncia',
-    'specialties.endodoncia.description': 'Tratamientos de conducto especializados',
-    'specialties.periodoncia.name': 'Periodoncia',
-    'specialties.periodoncia.description': 'Cuidado de encías y tejidos de soporte',
-    'specialties.cirugia-maxilofacial.name': 'Cirugía Maxilofacial',
-    'specialties.cirugia-maxilofacial.description': 'Cirugía oral y maxilofacial avanzada',
-    'specialties.estetica-dental.name': 'Estética Dental',
-    'specialties.estetica-dental.description': 'Diseño de sonrisa y estética',
-    'specialties.ortodoncia.name': 'Ortodoncia',
-    'specialties.ortodoncia.description': 'Corrección de la alineación dental',
-    'specialties.odontopediatria.name': 'Odontopediatría',
-    'specialties.odontopediatria.description': 'Odontología especializada para niños',
+    
 
     // Prices
     'prices.more.treatments': 'tratamientos más',
@@ -555,6 +558,61 @@ const translations = {
     'services.cta.description': 'Contáctanos hoy y descubre cómo podemos ayudarte a lograr la sonrisa perfecta.',
     'testimonials.title': 'Testimonios de Pacientes',
     'testimonials.subtitle': 'Historias reales de transformación dental',
+
+    // Specialties section
+    'specialties.title': 'Nuestras Especialidades',
+'specialties.subtitle': 'Descubre nuestras especialidades dentales integrales diseñadas para cuidar tu salud bucal en cada etapa de la vida',
+'specialties.badge': 'Cuidado Completo',
+'specialties.learnMore': 'Más información',
+
+'specialties.odontologia-general.name': 'Odontología General',
+'specialties.odontologia-general.description': 'Atención integral de salud dental con tratamientos preventivos y curativos de la más alta calidad',
+'specialties.odontologia-general.feature1': 'Limpiezas profesionales',
+'specialties.odontologia-general.feature2': 'Empastes de resina',
+'specialties.odontologia-general.feature3': 'Revisiones periódicas',
+'specialties.odontologia-general.feature4': 'Radiografías digitales',
+
+'specialties.endodoncia.name': 'Endodoncia',
+'specialties.endodoncia.description': 'Tratamientos de conductos especializados para salvar tus dientes naturales con técnicas avanzadas',
+'specialties.endodoncia.feature1': 'Tratamientos de conducto',
+'specialties.endodoncia.feature2': 'Microscopía dental',
+'specialties.endodoncia.feature3': 'Retratamientos',
+'specialties.endodoncia.feature4': 'Diagnóstico digital',
+
+'specialties.periodoncia.name': 'Periodoncia',
+'specialties.periodoncia.description': 'Tratamiento especializado de encías y tejidos de soporte para mantener una base sólida',
+'specialties.periodoncia.feature1': 'Limpieza profunda',
+'specialties.periodoncia.feature2': 'Raspado y alisado radicular',
+'specialties.periodoncia.feature3': 'Injertos de encía',
+'specialties.periodoncia.feature4': 'Mantenimiento periodontal',
+
+'specialties.cirugia-maxilofacial.name': 'Cirugía Oral',
+'specialties.cirugia-maxilofacial.description': 'Cirugía oral y maxilofacial avanzada para tratar condiciones complejas',
+'specialties.cirugia-maxilofacial.feature1': 'Extracciones complejas',
+'specialties.cirugia-maxilofacial.feature2': 'Implantes dentales',
+'specialties.cirugia-maxilofacial.feature3': 'Cirugía de muelas del juicio',
+'specialties.cirugia-maxilofacial.feature4': 'Sedación consciente',
+
+'specialties.estetica-dental.name': 'Odontología Estética',
+'specialties.estetica-dental.description': 'Diseño de sonrisa y tratamientos estéticos para lograr la sonrisa perfecta que siempre has deseado',
+'specialties.estetica-dental.feature1': 'Diseño de sonrisa',
+'specialties.estetica-dental.feature2': 'Carillas de porcelana',
+'specialties.estetica-dental.feature3': 'Blanqueamiento dental',
+'specialties.estetica-dental.feature4': 'Composite estético',
+
+'specialties.ortodoncia.name': 'Ortodoncia',
+'specialties.ortodoncia.description': 'Corrección de alineación dental con tratamientos modernos y personalizados para todas las edades',
+'specialties.ortodoncia.feature1': 'Brackets metálicos',
+'specialties.ortodoncia.feature2': 'Brackets estéticos',
+'specialties.ortodoncia.feature3': 'Invisalign',
+'specialties.ortodoncia.feature4': 'Planificación digital',
+
+'specialties.odontopediatria.name': 'Odontopediatría',
+'specialties.odontopediatria.description': 'Odontología especializada para niños con un ambiente cálido y técnicas adaptadas',
+'specialties.odontopediatria.feature1': 'Primera visita dental',
+'specialties.odontopediatria.feature2': 'Limpieza infantil',
+'specialties.odontopediatria.feature3': 'Sellantes dentales',
+'specialties.odontopediatria.feature4': 'Educación dental',
 
     
     // Service Categories
@@ -612,7 +670,8 @@ const translations = {
     'branches.ourDoctors': 'Nuestros Doctores',
 
 
-
+    // Doctors
+    'Periodoncia.tt': 'Periodoncia',
 
 
     
@@ -661,6 +720,28 @@ const translations = {
     'blog.post3.date': '2 de Enero, 2024',
     'blog.post3.readTime': '6 min de lectura',
     'blog.post3.category': 'Ortodoncia',
+
+
+    // Doctors section
+    'doctors.title': 'Nuestros Especialistas',
+    'doctors.subtitle': 'Conoce a nuestro equipo de especialistas altamente calificados, comprometidos con tu salud bucal',
+    'doctors.filter.all': 'Todos',
+    'doctors.filter.general': 'Odontología General',
+    'doctors.filter.endodontics': 'Endodoncia',
+    'doctors.filter.periodontics': 'Periodoncia',
+    'doctors.filter.surgery': 'Cirugía Oral',
+    'doctors.filter.aesthetics': 'Odontología Estética',
+    'doctors.filter.orthodontics': 'Ortodoncia',
+    'doctors.filter.pediatrics': 'Odontopediatría',
+    'doctors.filter.rehabilitation': 'Rehabilitación Oral',
+    'doctors.experience': 'años',
+    'doctors.education': 'Formación',
+    'doctors.certifications': 'Certificaciones',
+    'doctors.languages': 'Idiomas',
+    'doctors.schedule': 'Agendar Cita',
+    'doctors.cta.title': '¿No sabes qué especialista necesitas?',
+    'doctors.cta.description': 'Agenda una consulta general y te ayudaremos a determinar el tratamiento ideal para ti.',
+    'doctors.cta.button': 'Consulta General',
     
     // Blog SEO
     'blog.seo.title': 'Blog Dental - Moleet Dental Unit | Información y Consejos',

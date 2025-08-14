@@ -24,57 +24,52 @@ const Doctores = () => {
   const doctors = [
     {
       name: 'Dr. Silverio Jafet Vazquez Alcaraz',
-      specialty: 'Endodoncia',
+      specialty: t('doctors.filter.endodontics'),
       location: 'Guadalajara',
       experience: 15,
       education: ['Universidad de Guadalajara', 'Especialidad en Endodoncia - UNAM'],
       certifications: ['Consejo Mexicano de Endodoncia', 'American Association of Endodontists'],
       image: 'lovable-uploads/doctors/dr-1.jpg',
-      languages: ['Español', 'Inglés'],
       description: 'Especialista en tratamientos de conducto con más de 15 años de experiencia. Pionero en técnicas de endodoncia microscópica.'
     },
     {
       name: 'Dr. Roberto García',
-      specialty: 'Periodoncia',
+      specialty:  t('doctors.filter.periodontics'),
       location: 'Chapala',
       experience: 12,
       education: ['Universidad Autónoma de Guadalajara', 'Maestría en Periodoncia - Universidad de Barcelona'],
       certifications: ['Sociedad Mexicana de Periodoncia', 'European Federation of Periodontology'],
       image: 'lovable-uploads/doctors/dr-2.jpg',
-      languages: ['Español', 'Inglés', 'Francés'],
       description: 'Experta en tratamientos periodontales y cirugía de encías. Especializada en implantes dentales y regeneración ósea.'
     },
     {
       name: 'Dr. Jong kwan Lee',
-      specialty: 'Rehabilitación Oral',
+      specialty:  t('doctors.filter.rehabilitation'),
       location: 'Guadalajara',
       experience: 10,
       education: ['Universidad de Guadalajara', 'Diplomado en Estética Dental - Universidad de São Paulo'],
       certifications: ['American Academy of Cosmetic Dentistry', 'International Association for Dental Aesthetics'],
       image: 'lovable-uploads/doctors/dr-5.jpg',
-      languages: ['Español', 'Inglés', 'Portugués'],
       description: 'Especialista en diseño de sonrisa y estética dental. Pionera en técnicas de carillas ultra delgadas y blanqueamiento avanzado.'
     },
     {
       name: 'Dr. Ramón Alejandro Monroy Salcedo ',
-      specialty: 'Odontología General',
+      specialty: t('doctors.filter.general'),
       location: 'Chapala',
       experience: 20,
       education: ['Universidad Nacional Autónoma de México', 'Diplomado en Rehabilitación Oral'],
       certifications: ['Colegio Nacional de Cirujanos Dentistas', 'Academy of General Dentistry'],
       image: 'lovable-uploads/doctors/dr-4.jpg',
-      languages: ['Español', 'Inglés'],
       description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },
     {
       name: 'Dra. Andrea Ochoa Martínez',
-      specialty: 'Cirugía Maxilofacial',
+      specialty: t('doctors.filter.surgery'),
       location: 'Guadalajara',
       experience: 18,
       education: ['Universidad Nacional Autónoma de México', 'Residencia en Cirugía Maxilofacial - Hospital General'],
       certifications: ['Consejo Mexicano de Cirugía Maxilofacial', 'International Association of Oral and Maxillofacial Surgeons'],
       image: 'lovable-uploads/doctors/dr-3.jpg',
-      languages: ['Español', 'Inglés'],
       description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
     }
   ];
@@ -182,12 +177,7 @@ const Doctores = () => {
                 </div>
 
                 {/* Languages */}
-                <div className="mb-4">
-                  <span className="text-sm font-medium text-dental-navy">{t('doctors.languages')}: </span>
-                  <span className="text-sm text-muted-foreground">
-                    {doctor.languages.join(', ')}
-                  </span>
-                </div>
+                
 
                 {/* CTA Button */}
                 <Button 

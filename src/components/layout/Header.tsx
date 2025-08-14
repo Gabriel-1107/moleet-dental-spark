@@ -16,7 +16,8 @@ const Header = () => {
   const navigation = [
     { name: t('nav.home'), href: '/' },
     { name: t('nav.services'), href: '/servicios' },
-    { name: t('nav.specialties'), href: '#', hasDropdown: true },
+    // { name: t('nav.specialties'), href: '#', hasDropdown: true },
+    { name: t('nav.especialities'), href: 'especialidades' },
     { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
     { name: t('nav.transport'), href: '/transporte' },
@@ -24,22 +25,23 @@ const Header = () => {
     { name: t('nav.blog'), href: '/blog' },
   ];
 
-  const specialties = [
-    { name: t('specialties.general.title'), href: '/especialidades/odontologia-general' },
-    { name: t('specialties.endodontics.title'), href: '/especialidades/endodoncia' },
-    { name: t('specialties.periodontics.title'), href: '/especialidades/periodoncia' },
-    { name: t('specialties.oral_surgery.title'), href: '/especialidades/cirugia-maxilofacial' },
-    { name: t('specialties.cosmetic.title'), href: '/especialidades/estetica-dental' },
-    { name: t('specialties.orthodontics.title'), href: '/especialidades/ortodoncia' },
-    { name: t('specialties.pediatric.title'), href: '/especialidades/odontopediatria' },
-    { name: t('services.rehabilitacionoral.title'), href: '/especialidades/rehabilitacion-oral' },
+  // const specialties = [
+  //    { name: t('nav.home'), href: 'especialidades' },
+  //   { name: t('specialties.general.title'), href: '/especialidades/odontologia-general' },
+  //   { name: t('specialties.endodontics.title'), href: '/especialidades/endodoncia' },
+  //   { name: t('specialties.periodontics.title'), href: '/especialidades/periodoncia' },
+  //   { name: t('specialties.oral_surgery.title'), href: '/especialidades/cirugia-maxilofacial' },
+  //   { name: t('specialties.cosmetic.title'), href: '/especialidades/estetica-dental' },
+  //   { name: t('specialties.orthodontics.title'), href: '/especialidades/ortodoncia' },
+  //   { name: t('specialties.pediatric.title'), href: '/especialidades/odontopediatria' },
+  //   { name: t('services.rehabilitacionoral.title'), href: '/especialidades/rehabilitacion-oral' },
     
 
     
 
 
     
-  ];
+  // ];
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/MoleetMedicalUnit', label: 'Facebook' },
     { icon: Instagram, href: 'https://www.instagram.com/moleetdentalchapala/', label: 'Instagram' },
@@ -121,28 +123,28 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navigation.map((item) => {
-              if (item.hasDropdown) {
-                return (
-                  <div key={item.name} className="relative group">
-                    <span className="text-sm font-medium transition-colors hover:text-dental-blue text-muted-foreground cursor-pointer">
-                      {item.name}
-                    </span>
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                      <div className="p-4">
-                        {specialties.map((specialty) => (
-                          <Link
-                            key={specialty.href}
-                            to={specialty.href}
-                            className="block px-4 py-3 text-sm text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-xl transition-colors"
-                          >
-                            {specialty.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
+              // if (item.hasDropdown) {
+              //   return (
+              //     <div key={item.name} className="relative group">
+              //       <span className="text-sm font-medium transition-colors hover:text-dental-blue text-muted-foreground cursor-pointer">
+              //         {item.name}
+              //       </span>
+              //       <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              //         {/* <div className="p-4">
+              //           {specialties.map((specialty) => (
+              //             <Link
+              //               key={specialty.href}
+              //               to={specialty.href}
+              //               className="block px-4 py-3 text-sm text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-xl transition-colors"
+              //             >
+              //               {specialty.name}
+              //             </Link>
+              //           ))}
+              //         </div> */}
+              //       </div>
+              //     </div>
+              //   );
+              // }
               return (
                 <Link
                   key={item.name}
@@ -201,27 +203,27 @@ const Header = () => {
           <div className="md:hidden border-t border-border py-4">
             <nav className="flex flex-col gap-4">
               {navigation.map((item) => {
-                if (item.hasDropdown) {
-                  return (
-                    <div key={item.name}>
-                      <span className="text-sm font-medium text-muted-foreground px-2 py-1 block">
-                        {item.name}
-                      </span>
-                      <div className="ml-4 mt-2 space-y-2">
-                        {specialties.map((specialty) => (
-                          <Link
-                            key={specialty.href}
-                            to={specialty.href}
-                            className="text-sm text-muted-foreground hover:text-primary px-2 py-1 block"
-                            onClick={() => setIsMenuOpen(false)}
-                          >
-                            {specialty.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                }
+                // if (item.hasDropdown) {
+                //   return (
+                //     <div key={item.name}>
+                //       <span className="text-sm font-medium text-muted-foreground px-2 py-1 block">
+                //         {item.name}
+                //       </span>
+                //       {/* <div className="ml-4 mt-2 space-y-2">
+                //         {specialties.map((specialty) => (
+                //           <Link
+                //             key={specialty.href}
+                //             to={specialty.href}
+                //             className="text-sm text-muted-foreground hover:text-primary px-2 py-1 block"
+                //             onClick={() => setIsMenuOpen(false)}
+                //           >
+                //             {specialty.name}
+                //           </Link>
+                //         ))}
+                //       </div> */}
+                //     </div>
+                //   );
+                // }
                 return (
                   <Link
                     key={item.name}
