@@ -1,32 +1,24 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Periodoncia = () => {
+  const { t } = useLanguage();
   const specialtyData = {
-    title: "Periodoncia",
-    titleEn: "Periodontics",
-    description: "Tratamiento especializado de encías y tejidos de soporte dental para mantener una base sólida para tus dientes.",
-    descriptionEn: "Specialized treatment of gums and dental supporting tissues to maintain a solid foundation for your teeth.",
-    image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&h=1080&fit=crop",
-    features: [
-      "Limpieza Profunda",
-      "Raspado y Alisado",
-      "Cirugía Periodontal",
-      "Injertos de Encía",
-      "Regeneración Tisular",
-      "Mantenimiento Periodontal",
-      "Tratamiento de Gingivitis",
-      "Control de Placa"
-    ],
-    featuresEn: [
-      "Deep Cleaning",
-      "Scaling and Root Planing",
-      "Periodontal Surgery",
-      "Gum Grafts",
-      "Tissue Regeneration",
-      "Periodontal Maintenance",
-      "Gingivitis Treatment",
-      "Plaque Control"
-    ],
+    title: t('periodoncia.name'),
+  titleEn: t('periodoncia.name',),
+  description: t('periodoncia.description'),
+  descriptionEn: t('periodoncia.description',),
+  image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&h=1080&fit=crop",
+  features: [
+    t('periodoncia.feature1'),
+    t('periodoncia.feature2'),
+    t('periodoncia.feature3'),
+    t('periodoncia.feature4'),
+    t('periodoncia.feature5'),
+    t('periodoncia.feature6'),
+    t('periodoncia.feature7'),
+    t('periodoncia.feature8'),
+  ],
     testimonials: [
       {
         name: "Lucía Morales",

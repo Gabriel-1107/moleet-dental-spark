@@ -1,32 +1,24 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const CirugiaMaxilofacial = () => {
+  const { t } = useLanguage();
   const specialtyData = {
-    title: "Cirugía Maxilofacial",
-    titleEn: "Oral Surgery",
-    description: "Cirugía oral y maxilofacial avanzada para tratar condiciones complejas de boca, cara y mandíbulas.",
-    descriptionEn: "Advanced oral and maxillofacial surgery to treat complex conditions of the mouth, face, and jaws.",
-    image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&h=1080&fit=crop",
-    features: [
-      "Extracciones Complejas",
-      "Cirugía de Muelas del Juicio",
-      "Implantes Dentales",
-      "Cirugía Pre-protésica",
-      "Quistes y Tumores",
-      "Trauma Facial",
-      "Cirugía Ortognática",
-      "Sedación Consciente"
-    ],
-    featuresEn: [
-      "Complex Extractions",
-      "Wisdom Tooth Surgery",
-      "Dental Implants",
-      "Pre-prosthetic Surgery",
-      "Cysts and Tumors",
-      "Facial Trauma",
-      "Orthognathic Surgery",
-      "Conscious Sedation"
-    ],
+    title: t('cirugia_maxilofacial.name'),
+  titleEn: t('cirugia_maxilofacial.name',),
+  description: t('cirugia_maxilofacial.description'),
+  descriptionEn: t('cirugia_maxilofacial.description',),
+  image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&h=1080&fit=crop",
+  features: [
+    t('cirugia_maxilofacial.feature1'),
+    t('cirugia_maxilofacial.feature2'),
+    t('cirugia_maxilofacial.feature3'),
+    t('cirugia_maxilofacial.feature4'),
+    t('cirugia_maxilofacial.feature5'),
+    t('cirugia_maxilofacial.feature6'),
+    t('cirugia_maxilofacial.feature7'),
+    t('cirugia_maxilofacial.feature8'),
+  ],
     testimonials: [
       {
         name: "David Herrera",

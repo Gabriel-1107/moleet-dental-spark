@@ -1,32 +1,24 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Odontopediatria = () => {
+    const { t } = useLanguage();  
   const specialtyData = {
-    title: "Odontopediatría",
-    titleEn: "Pediatric Dentistry",
-    description: "Odontología especializada para niños con un ambiente cálido y técnicas adaptadas para los más pequeños.",
-    descriptionEn: "Specialized dentistry for children with a warm environment and techniques adapted for the little ones.",
-    image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&h=1080&fit=crop",
-    features: [
-      "Primera Consulta Dental",
-      "Limpieza Infantil",
-      "Selladores de Fosas",
-      "Empastes Pediátricos",
-      "Pulpotomías",
-      "Coronas Infantiles",
-      "Educación Dental",
-      "Prevención de Caries"
-    ],
-    featuresEn: [
-      "First Dental Visit",
-      "Children's Cleaning",
-      "Pit and Fissure Sealants",
-      "Pediatric Fillings",
-      "Pulpotomies",
-      "Children's Crowns",
-      "Dental Education",
-      "Cavity Prevention"
-    ],
+     title: t('odontopediatria.name'),
+  titleEn: t('odontopediatria.name',),
+  description: t('odontopediatria.description'),
+  descriptionEn: t('odontopediatria.description',),
+  image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&h=1080&fit=crop",
+  features: [
+    t('odontopediatria.feature1'),
+    t('odontopediatria.feature2'),
+    t('odontopediatria.feature3'),
+    t('odontopediatria.feature4'),
+    t('odontopediatria.feature5'),
+    t('odontopediatria.feature6'),
+    t('odontopediatria.feature7'),
+    t('odontopediatria.feature8'),
+  ],
     testimonials: [
       {
         name: "María Fernández",

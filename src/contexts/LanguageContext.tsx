@@ -44,6 +44,55 @@ const translations = {
     'branches.schedule': 'Hours',
     'branches.whatsapp': 'WhatsApp',
     'branches.call': 'Call',
+    // sectionprices
+    'prices.general': 'General Dentistry',
+    'prices.aesthetic': 'Aesthetic Dentistry',
+    'prices.endodontics': 'Endodontics',
+    'prices.prosthetics': 'Prosthodontics',
+    'prices.implantology': 'Implantology',
+    'prices.surgery': 'Oral Surgery',
+
+    // Treatments (General)
+    'treatment.consultation': 'Dental Consultation',
+    'treatment.cleaning': 'Professional Cleaning',
+    'treatment.filling': 'Dental Filling',
+    'treatment.extraction.simple': 'Simple Extraction',
+    'treatment.extraction.complex': 'Complex Extraction',
+
+    // Treatments (Aesthetic)
+    'treatment.whitening': 'Teeth Whitening',
+    'treatment.veneer': 'Dental Veneer',
+    'treatment.crown': 'Dental Crown',
+    'treatment.smile.design': 'Smile Design',
+    'treatment.inlay': 'Dental Inlay',
+
+    // Treatments (Endodontics)
+    'treatment.root.canal.1': 'Root Canal (1 canal)',
+    'treatment.root.canal.2': 'Root Canal (2 canals)',
+    'treatment.root.canal.3': 'Root Canal (3 canals)',
+    'treatment.retreatment': 'Endodontic Retreatment',
+    'treatment.apicoectomy': 'Apicoectomy',
+
+    // Treatments (Prosthetics)
+    'treatment.partial.denture': 'Partial Denture',
+    'treatment.full.denture': 'Complete Denture',
+    'treatment.flexible.denture': 'Flexible Denture',
+    'treatment.implant.prosthesis': 'Implant Prosthesis',
+    'treatment.denture.repair': 'Denture Repair',
+
+    // Treatments (Implantology)
+    'treatment.single.implant': 'Single Dental Implant',
+    'treatment.implant.crown': 'Implant Crown',
+    'treatment.all.on.4': 'All-on-4®',
+    'treatment.all.on.6': 'All-on-6®',
+    'treatment.bone.graft': 'Bone Graft',
+
+    // Treatments (Surgery)
+    'treatment.wisdom.tooth': 'Wisdom Tooth Extraction',
+    'treatment.cyst.surgery': 'Cyst Surgery',
+    'treatment.frenectomy': 'Frenectomy',
+    'treatment.oral.biopsy': 'Oral Biopsy',
+    'treatment.periodontal.surgery': 'Periodontal Surgery',
     
     
     // Common
@@ -265,23 +314,14 @@ const translations = {
     'services.pediatric.feature3': 'Preventive treatments',
     'services.pediatric.feature4': 'Early orthodontics',
 
-
     'services.rehabilitacionoral.title': 'Oral rehabilitacion',
     'services.rehabilitacionoral.description': 'It is a dental specialty focused on restoring the function, aesthetics, and oral health of patients who have lost teeth or have bite problems.',
     'services.rehabilitacionoral.feature1': 'Dental implants',
     'services.rehabilitacionoral.feature2': 'Crowns',
     'services.rehabilitacionoral.feature3': 'Dental bridges',
     'services.rehabilitacionoral.feature4': 'Veneers',
-
-    
-
-
     // Doctors
     'Periodoncia.tt': 'Periodontics',
-
-    
-    
-    
     // Blog
     'blog.title': 'Dental Blog',
     'blog.subtitle': 'Updated information about dental health and treatments',
@@ -433,6 +473,93 @@ const translations = {
     'context.footer.text': 'Committed to your oral health, we offer quality dental services with advanced technology and a team of highly qualified specialists.',
     'branches.ourDoctors': 'Our Doctors',
     'branches.contactInfo': 'Contact Information',
+
+    // Espacialidades
+    'odontologia.general.name': 'General Dentistry',  
+    'odontologia.general.description': 'Comprehensive dental health care with the highest quality preventive and curative treatments',  
+    'odontologia.general.feature1': 'Professional cleanings',  
+    'odontologia.general.feature2': 'Resin fillings',  
+    'odontologia.general.feature3': 'Regular check-ups',  
+    'odontologia.general.feature4': 'Digital X-rays',  
+    'odontologia.general.feature5': 'Emergency treatments',  
+    'endodoncia.name': 'Endodontics',
+    'endodoncia.description': 'Specialized root canal treatments to save your natural teeth with advanced techniques and minimal discomfort.',
+    'endodoncia.feature1': 'Root Canal Treatments',
+    'endodoncia.feature2': 'Dental Microscopy',
+    'endodoncia.feature3': 'Retreatments',
+    'endodoncia.feature4': 'Pulpotomies',
+    'endodoncia.feature5': 'Apicoectomies',
+    'endodoncia.feature6': 'Internal Bleaching',
+    'endodoncia.feature7': 'Dental Emergencies',
+    'endodoncia.feature8': 'Digital Diagnosis',
+
+    'periodoncia.name': 'Periodontics',
+    'periodoncia.description': 'Specialized treatment of gums and dental supporting tissues to maintain a solid foundation for your teeth.',
+    'periodoncia.feature1': 'Deep Cleaning',
+    'periodoncia.feature2': 'Scaling and Root Planing',
+    'periodoncia.feature3': 'Periodontal Surgery',
+    'periodoncia.feature4': 'Gum Grafts',
+    'periodoncia.feature5': 'Tissue Regeneration',
+    'periodoncia.feature6': 'Periodontal Maintenance',
+    'periodoncia.feature7': 'Gingivitis Treatment',
+    'periodoncia.feature8': 'Plaque Control',
+
+    'cirugia_maxilofacial.name': 'Oral Surgery',
+    'cirugia_maxilofacial.description': 'Advanced oral and maxillofacial surgery to treat complex conditions of the mouth, face, and jaws.',
+    'cirugia_maxilofacial.feature1': 'Complex Extractions',
+    'cirugia_maxilofacial.feature2': 'Wisdom Teeth Surgery',
+    'cirugia_maxilofacial.feature3': 'Dental Implants',
+    'cirugia_maxilofacial.feature4': 'Pre-Prosthetic Surgery',
+    'cirugia_maxilofacial.feature5': 'Cysts and Tumors',
+    'cirugia_maxilofacial.feature6': 'Facial Trauma',
+    'cirugia_maxilofacial.feature7': 'Orthognathic Surgery',
+    'cirugia_maxilofacial.feature8': 'Conscious Sedation',
+
+    // Cosmetic Dentistry
+    'estetica_dental.name': 'Cosmetic Dentistry',
+    'estetica_dental.description': 'Smile design and aesthetic treatments to achieve the perfect smile you\'ve always wanted.',
+    'estetica_dental.feature1': 'Smile Design',
+    'estetica_dental.feature2': 'Porcelain Veneers',
+    'estetica_dental.feature3': 'Teeth Whitening',
+    'estetica_dental.feature4': 'Aesthetic Inlays',
+    'estetica_dental.feature5': 'Porcelain Crowns',
+    'estetica_dental.feature6': 'Dental Reshaping',
+    'estetica_dental.feature7': 'Composite Bonding',
+    'estetica_dental.feature8': 'Facial Harmonization',
+
+    // Orthodontics
+    'ortodoncia.name': 'Orthodontics',
+    'ortodoncia.description': 'Dental alignment correction with modern and personalized treatments for all ages.',
+    'ortodoncia.feature1': 'Metal Braces',
+    'ortodoncia.feature2': 'Ceramic Braces',
+    'ortodoncia.feature3': 'Clear Aligners',
+    'ortodoncia.feature4': 'Invisalign',
+    'ortodoncia.feature5': 'Removable Appliances',
+    'ortodoncia.feature6': 'Post-Treatment Retention',
+    'ortodoncia.feature7': 'Pediatric Orthodontics',
+    'ortodoncia.feature8': 'Digital Planning',
+
+    // Pediatric Dentistry
+    'odontopediatria.name': 'Pediatric Dentistry',
+    'odontopediatria.description': 'Specialized dentistry for children with a warm environment and techniques adapted for the little ones.',
+    'odontopediatria.feature1': 'First Dental Visit',
+    'odontopediatria.feature2': 'Children\'s Cleaning',
+    'odontopediatria.feature3': 'Dental Sealants',
+    'odontopediatria.feature4': 'Pediatric Fillings',
+    'odontopediatria.feature5': 'Pulpotomies',
+    'odontopediatria.feature6': 'Children\'s Crowns',
+    'odontopediatria.feature7': 'Dental Education',
+    'odontopediatria.feature8': 'Cavity Prevention',
+
+    // trataments
+    'ours.tratamients': 'Our Treatments',
+    'ours.tratamients.description': 'We offer a wide range of dental treatments to meet all your needs. From general dentistry to specialized treatments, our team of experts is here to help you achieve the smile you deserve.',
+
+    // Sucursal
+    'sucursal': 'Dont know which branch to choose?',
+    'contactanos': 'Contact us and well help you choose the most convenient location for you.',
+
+    
    
   },
   es: {
@@ -451,6 +578,56 @@ const translations = {
     'sucursal.desc': 'Conocer Sucursal',
     'branches.guadalajara.name': 'Sucursal Guadalajara',
     'branches.chapala.name': 'Sucursal Chapala',
+
+    // sectionprices
+    'prices.general': 'Odontología General',
+    'prices.aesthetic': 'Odontología Estética',
+    'prices.endodontics': 'Endodoncia',
+    'prices.prosthetics': 'Prótesis Dental',
+    'prices.implantology': 'Implantología',
+    'prices.surgery': 'Cirugía Oral',
+
+    // Treatments (General)
+    'treatment.consultation': 'Consulta Dental',
+    'treatment.cleaning': 'Limpieza Profesional',
+    'treatment.filling': 'Resina/Obturación',
+    'treatment.extraction.simple': 'Extracción Simple',
+    'treatment.extraction.complex': 'Extracción Compleja',
+
+    // Treatments (Aesthetic)
+    'treatment.whitening': 'Blanqueamiento Dental',
+    'treatment.veneer': 'Carilla Dental',
+    'treatment.crown': 'Corona Dental',
+    'treatment.smile.design': 'Diseño de Sonrisa',
+    'treatment.inlay': 'Incrustación Dental',
+
+    // Treatments (Endodontics)
+    'treatment.root.canal.1': 'Endodoncia (1 conducto)',
+    'treatment.root.canal.2': 'Endodoncia (2 conductos)',
+    'treatment.root.canal.3': 'Endodoncia (3 conductos)',
+    'treatment.retreatment': 'Retratamiento',
+    'treatment.apicoectomy': 'Apicectomía',
+
+    // Treatments (Prosthetics)
+    'treatment.partial.denture': 'Prótesis Parcial',
+    'treatment.full.denture': 'Prótesis Completa',
+    'treatment.flexible.denture': 'Prótesis Flexible',
+    'treatment.implant.prosthesis': 'Prótesis sobre Implantes',
+    'treatment.denture.repair': 'Reparación de Prótesis',
+
+    // Treatments (Implantology)
+    'treatment.single.implant': 'Implante Dental Unitario',
+    'treatment.implant.crown': 'Corona sobre Implante',
+    'treatment.all.on.4': 'All-on-4®',
+    'treatment.all.on.6': 'All-on-6®',
+    'treatment.bone.graft': 'Injerto Óseo',
+
+    // Treatments (Surgery)
+    'treatment.wisdom.tooth': 'Extracción de Muela del Juicio',
+    'treatment.cyst.surgery': 'Cirugía de Quiste',
+    'treatment.frenectomy': 'Frenectomía',
+    'treatment.oral.biopsy': 'Biopsia Oral',
+    'treatment.periodontal.surgery': 'Cirugía Periodontal',
 
     'branches.title': 'Nuestras Sucursales',
     'branches.subtitle': 'Visita nuestras modernas clínicas dentales en Guadalajara y Chapala',
@@ -561,60 +738,60 @@ const translations = {
 
     // Specialties section
     'specialties.title': 'Nuestras Especialidades',
-'specialties.subtitle': 'Descubre nuestras especialidades dentales integrales diseñadas para cuidar tu salud bucal en cada etapa de la vida',
-'specialties.badge': 'Cuidado Completo',
-'specialties.learnMore': 'Más información',
+    'specialties.subtitle': 'Descubre nuestras especialidades dentales integrales diseñadas para cuidar tu salud bucal en cada etapa de la vida',
+    'specialties.badge': 'Cuidado Completo',
+    'specialties.learnMore': 'Más información',
 
-'specialties.odontologia-general.name': 'Odontología General',
-'specialties.odontologia-general.description': 'Atención integral de salud dental con tratamientos preventivos y curativos de la más alta calidad',
-'specialties.odontologia-general.feature1': 'Limpiezas profesionales',
-'specialties.odontologia-general.feature2': 'Empastes de resina',
-'specialties.odontologia-general.feature3': 'Revisiones periódicas',
-'specialties.odontologia-general.feature4': 'Radiografías digitales',
+    'specialties.odontologia-general.name': 'Odontología General',
+    'specialties.odontologia-general.description': 'Atención integral de salud dental con tratamientos preventivos y curativos de la más alta calidad',
+    'specialties.odontologia-general.feature1': 'Limpiezas profesionales',
+    'specialties.odontologia-general.feature2': 'Empastes de resina',
+    'specialties.odontologia-general.feature3': 'Revisiones periódicas',
+    'specialties.odontologia-general.feature4': 'Radiografías digitales',
 
-'specialties.endodoncia.name': 'Endodoncia',
-'specialties.endodoncia.description': 'Tratamientos de conductos especializados para salvar tus dientes naturales con técnicas avanzadas',
-'specialties.endodoncia.feature1': 'Tratamientos de conducto',
-'specialties.endodoncia.feature2': 'Microscopía dental',
-'specialties.endodoncia.feature3': 'Retratamientos',
-'specialties.endodoncia.feature4': 'Diagnóstico digital',
+    'specialties.endodoncia.name': 'Endodoncia',
+    'specialties.endodoncia.description': 'Tratamientos de conductos especializados para salvar tus dientes naturales con técnicas avanzadas',
+    'specialties.endodoncia.feature1': 'Tratamientos de conducto',
+    'specialties.endodoncia.feature2': 'Microscopía dental',
+    'specialties.endodoncia.feature3': 'Retratamientos',
+    'specialties.endodoncia.feature4': 'Diagnóstico digital',
 
-'specialties.periodoncia.name': 'Periodoncia',
-'specialties.periodoncia.description': 'Tratamiento especializado de encías y tejidos de soporte para mantener una base sólida',
-'specialties.periodoncia.feature1': 'Limpieza profunda',
-'specialties.periodoncia.feature2': 'Raspado y alisado radicular',
-'specialties.periodoncia.feature3': 'Injertos de encía',
-'specialties.periodoncia.feature4': 'Mantenimiento periodontal',
+    'specialties.periodoncia.name': 'Periodoncia',
+    'specialties.periodoncia.description': 'Tratamiento especializado de encías y tejidos de soporte para mantener una base sólida',
+    'specialties.periodoncia.feature1': 'Limpieza profunda',
+    'specialties.periodoncia.feature2': 'Raspado y alisado radicular',
+    'specialties.periodoncia.feature3': 'Injertos de encía',
+    'specialties.periodoncia.feature4': 'Mantenimiento periodontal',
 
-'specialties.cirugia-maxilofacial.name': 'Cirugía Oral',
-'specialties.cirugia-maxilofacial.description': 'Cirugía oral y maxilofacial avanzada para tratar condiciones complejas',
-'specialties.cirugia-maxilofacial.feature1': 'Extracciones complejas',
-'specialties.cirugia-maxilofacial.feature2': 'Implantes dentales',
-'specialties.cirugia-maxilofacial.feature3': 'Cirugía de muelas del juicio',
-'specialties.cirugia-maxilofacial.feature4': 'Sedación consciente',
+    'specialties.cirugia-maxilofacial.name': 'Cirugía Oral',
+    'specialties.cirugia-maxilofacial.description': 'Cirugía oral y maxilofacial avanzada para tratar condiciones complejas',
+    'specialties.cirugia-maxilofacial.feature1': 'Extracciones complejas',
+    'specialties.cirugia-maxilofacial.feature2': 'Implantes dentales',
+    'specialties.cirugia-maxilofacial.feature3': 'Cirugía de muelas del juicio',
+    'specialties.cirugia-maxilofacial.feature4': 'Sedación consciente',
 
-'specialties.estetica-dental.name': 'Odontología Estética',
-'specialties.estetica-dental.description': 'Diseño de sonrisa y tratamientos estéticos para lograr la sonrisa perfecta que siempre has deseado',
-'specialties.estetica-dental.feature1': 'Diseño de sonrisa',
-'specialties.estetica-dental.feature2': 'Carillas de porcelana',
-'specialties.estetica-dental.feature3': 'Blanqueamiento dental',
-'specialties.estetica-dental.feature4': 'Composite estético',
+    'specialties.estetica-dental.name': 'Odontología Estética',
+    'specialties.estetica-dental.description': 'Diseño de sonrisa y tratamientos estéticos para lograr la sonrisa perfecta que siempre has deseado',
+    'specialties.estetica-dental.feature1': 'Diseño de sonrisa',
+    'specialties.estetica-dental.feature2': 'Carillas de porcelana',
+    'specialties.estetica-dental.feature3': 'Blanqueamiento dental',
+    'specialties.estetica-dental.feature4': 'Composite estético',
 
-'specialties.ortodoncia.name': 'Ortodoncia',
-'specialties.ortodoncia.description': 'Corrección de alineación dental con tratamientos modernos y personalizados para todas las edades',
-'specialties.ortodoncia.feature1': 'Brackets metálicos',
-'specialties.ortodoncia.feature2': 'Brackets estéticos',
-'specialties.ortodoncia.feature3': 'Invisalign',
-'specialties.ortodoncia.feature4': 'Planificación digital',
+    'specialties.ortodoncia.name': 'Ortodoncia',
+    'specialties.ortodoncia.description': 'Corrección de alineación dental con tratamientos modernos y personalizados para todas las edades',
+    'specialties.ortodoncia.feature1': 'Brackets metálicos',
+    'specialties.ortodoncia.feature2': 'Brackets estéticos',
+    'specialties.ortodoncia.feature3': 'Invisalign',
+    'specialties.ortodoncia.feature4': 'Planificación digital',
 
-'specialties.odontopediatria.name': 'Odontopediatría',
-'specialties.odontopediatria.description': 'Odontología especializada para niños con un ambiente cálido y técnicas adaptadas',
-'specialties.odontopediatria.feature1': 'Primera visita dental',
-'specialties.odontopediatria.feature2': 'Limpieza infantil',
-'specialties.odontopediatria.feature3': 'Sellantes dentales',
-'specialties.odontopediatria.feature4': 'Educación dental',
+    'specialties.odontopediatria.name': 'Odontopediatría',
+    'specialties.odontopediatria.description': 'Odontología especializada para niños con un ambiente cálido y técnicas adaptadas',
+    'specialties.odontopediatria.feature1': 'Primera visita dental',
+    'specialties.odontopediatria.feature2': 'Limpieza infantil',
+    'specialties.odontopediatria.feature3': 'Sellantes dentales',
+    'specialties.odontopediatria.feature4': 'Educación dental',
 
-    
+        
     // Service Categories
     'services.general.title': 'Odontología General',
     'services.general.description': 'Cuidado integral de tu salud dental con tratamientos preventivos y curativos.',
@@ -831,6 +1008,7 @@ const translations = {
     'specialties.cosmetic.title': 'Estética Dental',
     'specialties.orthodontics.title': 'Ortodoncia',
     'specialties.pediatric.title': 'Odontopediatría',
+    
 
 
     // MisionyVision
@@ -856,6 +1034,95 @@ const translations = {
     'footer.services': 'Servicios',
     'footer.followUs': 'Síguenos',
     'context.footer.text': 'Comprometidos con tu salud oral, ofrecemos servicios dentales de calidad con tecnología avanzada y un equipo de especialistas altamente calificados.',
+
+     // Espacialidades
+    'odontologia.general.name': 'Odontología General',
+    'odontologia.general.description': 'Atención integral de salud dental con tratamientos preventivos y curativos de la más alta calidad',
+    'odontologia.general.feature1': 'Limpiezas profesionales',
+    'odontologia.general.feature2': 'Empastes de resina',
+    'odontologia.general.feature3': 'Revisiones periódicas',
+    'odontologia.general.feature4': 'Radiografías digitales',
+    'odontologia.general.feature5': 'Tratamientos de urgencia',
+    'endodoncia.name': 'Endodoncia',
+    'endodoncia.nameEn': 'Endodoncia', // Opcional: para consistencia en español
+    'endodoncia.description': 'Tratamientos de conducto especializados para salvar tus dientes naturales con técnicas avanzadas y mínimas molestias.',
+    'endodoncia.feature1': 'Tratamientos de Conducto',
+    'endodoncia.feature2': 'Microscopía Dental',
+    'endodoncia.feature3': 'Retratamientos',
+    'endodoncia.feature4': 'Pulpotomías',
+    'endodoncia.feature5': 'Apicectomías',
+    'endodoncia.feature6': 'Blanqueamiento Interno',
+    'endodoncia.feature7': 'Urgencias Dentales',
+    'endodoncia.feature8': 'Diagnóstico Digital',
+
+    'periodoncia.name': 'Periodoncia',
+    'periodoncia.description': 'Tratamiento especializado de encías y tejidos de soporte dental para mantener una base sólida para tus dientes.',
+    'periodoncia.feature1': 'Limpieza Profunda',
+    'periodoncia.feature2': 'Raspado y Alisado',
+    'periodoncia.feature3': 'Cirugía Periodontal',
+    'periodoncia.feature4': 'Injertos de Encía',
+    'periodoncia.feature5': 'Regeneración Tisular',
+    'periodoncia.feature6': 'Mantenimiento Periodontal',
+    'periodoncia.feature7': 'Tratamiento de Gingivitis',
+    'periodoncia.feature8': 'Control de Placa',
+
+    'cirugia_maxilofacial.name': 'Cirugía Maxilofacial',
+    'cirugia_maxilofacial.description': 'Cirugía oral y maxilofacial avanzada para tratar condiciones complejas de boca, cara y mandíbulas.',
+    'cirugia_maxilofacial.feature1': 'Extracciones Complejas',
+    'cirugia_maxilofacial.feature2': 'Cirugía de Muelas del Juicio',
+    'cirugia_maxilofacial.feature3': 'Implantes Dentales',
+    'cirugia_maxilofacial.feature4': 'Cirugía Pre-protésica',
+    'cirugia_maxilofacial.feature5': 'Quistes y Tumores',
+    'cirugia_maxilofacial.feature6': 'Trauma Facial',
+    'cirugia_maxilofacial.feature7': 'Cirugía Ortognática',
+    'cirugia_maxilofacial.feature8': 'Sedación Consciente',
+
+    // Estética Dental
+    'estetica_dental.name': 'Estética Dental',
+    'estetica_dental.description': 'Diseño de sonrisa y tratamientos estéticos para lograr la sonrisa perfecta que siempre has deseado.',
+    'estetica_dental.feature1': 'Diseño de Sonrisa',
+    'estetica_dental.feature2': 'Carillas de Porcelana',
+    'estetica_dental.feature3': 'Blanqueamiento Dental',
+    'estetica_dental.feature4': 'Incrustaciones Estéticas',
+    'estetica_dental.feature5': 'Coronas de Porcelana',
+    'estetica_dental.feature6': 'Remodelado Dental',
+    'estetica_dental.feature7': 'Composite Estético',
+    'estetica_dental.feature8': 'Armonización Facial',
+
+    // Ortodoncia
+    'ortodoncia.name': 'Ortodoncia',
+    'ortodoncia.description': 'Corrección de la alineación dental con tratamientos modernos y personalizados para todas las edades.',
+    'ortodoncia.feature1': 'Brackets Metálicos',
+    'ortodoncia.feature2': 'Brackets Estéticos',
+    'ortodoncia.feature3': 'Ortodoncia Invisible',
+    'ortodoncia.feature4': 'Invisalign',
+    'ortodoncia.feature5': 'Aparatos Removibles',
+    'ortodoncia.feature6': 'Retención Post-tratamiento',
+    'ortodoncia.feature7': 'Ortodoncia Infantil',
+    'ortodoncia.feature8': 'Planificación Digital',
+
+    // Odontopediatría
+    'odontopediatria.name': 'Odontopediatría',
+    'odontopediatria.description': 'Odontología especializada para niños con un ambiente cálido y técnicas adaptadas para los más pequeños.',
+    'odontopediatria.feature1': 'Primera Consulta Dental',
+    'odontopediatria.feature2': 'Limpieza Infantil',
+    'odontopediatria.feature3': 'Selladores de Fosas',
+    'odontopediatria.feature4': 'Empastes Pediátricos',
+    'odontopediatria.feature5': 'Pulpotomías',
+    'odontopediatria.feature6': 'Coronas Infantiles',
+    'odontopediatria.feature7': 'Educación Dental',
+    'odontopediatria.feature8': 'Prevención de Caries',
+
+    'ours.tratamients': 'Nuestros Tratamientos',
+    'ours.tratamients.description': 'Ofrecemos una amplia gama de tratamientos dentales para satisfacer todas tus necesidades. Desde odontología general hasta tratamientos especializados, nuestro equipo de expertos está aquí para ayudarte a lograr la sonrisa que mereces.',
+
+    // Sucursal
+    'sucursal': '¿No sabes cuál sucursal elegir?',
+    'contactanos': 'Contáctanos y te ayudaremos a elegir la ubicación más conveniente para ti.',
+    
+   
+    
+
   }
 };
 

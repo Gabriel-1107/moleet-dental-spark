@@ -1,32 +1,34 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Endodoncia = () => {
+  const { t } = useLanguage();
   const specialtyData = {
-    title: "Endodoncia",
-    titleEn: "Endodontics",
-    description: "Tratamientos de conducto especializados para salvar tus dientes naturales con técnicas avanzadas y mínimas molestias.",
-    descriptionEn: "Specialized root canal treatments to save your natural teeth with advanced techniques and minimal discomfort.",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&h=1080&fit=crop",
-    features: [
-      "Tratamientos de Conducto",
-      "Microscopía Dental",
-      "Retratamientos",
-      "Pulpotomías",
-      "Apicectomías",
-      "Blanqueamiento Interno",
-      "Urgencias Dentales",
-      "Diagnóstico Digital"
-    ],
-    featuresEn: [
-      "Root Canal Treatments",
-      "Dental Microscopy",
-      "Retreatments",
-      "Pulpotomies",
-      "Apicoectomies",
-      "Internal Bleaching",
-      "Dental Emergencies",
-      "Digital Diagnosis"
-    ],
+   title: t('endodoncia.name'),          // 'endodoncia.name': 'Endodoncia'
+  titleEn: t('endodoncia.name'),      // 'endodoncia.nameEn': 'Endodontics'
+  description: t('endodoncia.description'),      // 'endodoncia.description': 'Tratamientos de conducto especializados...'
+  descriptionEn: t('endodoncia.description'),  // 'endodoncia.descriptionEn': 'Specialized root canal treatments...'
+  image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&h=1080&fit=crop",
+  features: [
+    t('endodoncia.feature1'),  // 'endodoncia.feature1': 'Tratamientos de Conducto'
+    t('endodoncia.feature2'),  // 'endodoncia.feature2': 'Microscopía Dental'
+    t('endodoncia.feature3'),  // 'endodoncia.feature3': 'Retratamientos'
+    t('endodoncia.feature4'),  // 'endodoncia.feature4': 'Pulpotomías'
+    t('endodoncia.feature5'),  // 'endodoncia.feature5': 'Apicectomías'
+    t('endodoncia.feature6'),  // 'endodoncia.feature6': 'Blanqueamiento Interno'
+    t('endodoncia.feature7'),  // 'endodoncia.feature7': 'Urgencias Dentales'
+    t('endodoncia.feature8')   // 'endodoncia.feature8': 'Diagnóstico Digital'
+  ],
+  featuresEn: [
+    t('endodoncia.feature1'),  // 'endodoncia.feature1': 'Root Canal Treatments'
+    t('endodoncia.feature2'),  // 'endodoncia.feature2': 'Dental Microscopy'
+    t('endodoncia.feature3'),  // 'endodoncia.feature3': 'Retreatments'
+    t('endodoncia.feature4'),  // 'endodoncia.feature4': 'Pulpotomies'
+    t('endodoncia.feature5'),  // 'endodoncia.feature5': 'Apicoectomies'
+    t('endodoncia.feature6'),  // 'endodoncia.feature6': 'Internal Bleaching'
+    t('endodoncia.feature7'),  // 'endodoncia.feature7': 'Dental Emergencies'
+    t('endodoncia.feature8')   // 'endodoncia.feature8': 'Digital Diagnosis'
+  ],
     testimonials: [
       {
         name: "Roberto Martínez",

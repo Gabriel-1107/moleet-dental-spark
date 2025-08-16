@@ -1,31 +1,27 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const OdontologiaGeneral = () => {
+  const { t } = useLanguage();
   const specialtyData = {
-    title: "Odontología General",
-    titleEn: "General Dentistry",
-    description: "Cuidado integral de tu salud dental con tratamientos preventivos y curativos de la más alta calidad.",
-    descriptionEn: "Comprehensive dental health care with preventive and curative treatments of the highest quality.",
+    title: t('odontologia.general.name'),
+    titleEn: t('odontologia.general.name'),
+    description: t('odontologia.general.description'),
+    descriptionEn: t('odontologia.general.description'),
     image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=1080&fit=crop",
     features: [
-      "Limpiezas Profesionales",
-      "Empastes de Resina",
-      "Extracciones Dentales", 
-      "Revisiones Regulares",
-      "Prevención de Caries",
-      "Tratamiento de Gingivitis",
-      "Radiografías Digitales",
-      "Diagnóstico Integral"
+      t('odontologia.general.feature1'),
+      t('odontologia.general.feature2'),
+      t('odontologia.general.feature3'),
+      t('odontologia.general.feature4'),
+      t('odontologia.general.feature5'),
     ],
     featuresEn: [
-      "Professional Cleanings",
-      "Resin Fillings",
-      "Dental Extractions",
-      "Regular Check-ups",
-      "Cavity Prevention",
-      "Gingivitis Treatment",
-      "Digital X-rays",
-      "Comprehensive Diagnosis"
+      t('odontologia.general.feature1'),
+      t('odontologia.general.feature2'),
+      t('odontologia.general.feature3'),
+      t('odontologia.general.feature4'),
+      t('odontologia.general.feature5'),
     ],
     testimonials: [
       {

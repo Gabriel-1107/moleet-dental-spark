@@ -1,32 +1,24 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Ortodoncia = () => {
+  const { t } = useLanguage();
   const specialtyData = {
-    title: "Ortodoncia",
-    titleEn: "Orthodontics",
-    description: "Corrección de la alineación dental con tratamientos modernos y personalizados para todas las edades.",
-    descriptionEn: "Dental alignment correction with modern and personalized treatments for all ages.",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&h=1080&fit=crop",
-    features: [
-      "Brackets Metálicos",
-      "Brackets Estéticos",
-      "Ortodoncia Invisible",
-      "Invisalign",
-      "Aparatos Removibles",
-      "Retención Post-tratamiento",
-      "Ortodoncia Infantil",
-      "Planificación Digital"
-    ],
-    featuresEn: [
-      "Metal Braces",
-      "Aesthetic Braces",
-      "Invisible Orthodontics",
-      "Invisalign",
-      "Removable Appliances",
-      "Post-treatment Retention",
-      "Children's Orthodontics",
-      "Digital Planning"
-    ],
+    title: t('ortodoncia.name'),
+  titleEn: t('ortodoncia.name',),
+  description: t('ortodoncia.description'),
+  descriptionEn: t('ortodoncia.description',),
+  image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&h=1080&fit=crop",
+  features: [
+    t('ortodoncia.feature1'),
+    t('ortodoncia.feature2'),
+    t('ortodoncia.feature3'),
+    t('ortodoncia.feature4'),
+    t('ortodoncia.feature5'),
+    t('ortodoncia.feature6'),
+    t('ortodoncia.feature7'),
+    t('ortodoncia.feature8'),
+  ],
     testimonials: [
       {
         name: "Andrea López",

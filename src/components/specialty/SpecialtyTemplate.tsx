@@ -65,10 +65,10 @@ const SpecialtyTemplate = ({ title, titleEn, description, descriptionEn, image, 
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl font-bold text-dental-navy mb-4">
-              Ours tratamients
+               {t('ours.tratamients')}
             </h2>
             <p className="text-xl text-muted-foreground">
-              Specialized services with the best technology
+              {t('ours.tratamients.description')}
             </p>
           </div>
 

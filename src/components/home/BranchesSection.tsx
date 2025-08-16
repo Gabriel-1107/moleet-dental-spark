@@ -83,9 +83,9 @@ const BranchesSection = () => {
         <div className="text-center mt-16">
           <Card className="bg-gradient-dental text-white max-w-2xl mx-auto border-0">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">¿No sabes cuál sucursal elegir?</h3>
+              <h3 className="text-2xl font-bold mb-4"> {t('sucursal')}</h3>
               <p className="text-white/90 mb-6">
-                Contáctanos y te ayudaremos a elegir la ubicación más conveniente para ti
+                {t('contactanos')}
               </p>
               <Button
                 size="lg"

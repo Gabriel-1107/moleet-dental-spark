@@ -1,32 +1,24 @@
 import SpecialtyTemplate from '@/components/specialty/SpecialtyTemplate';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const EsteticaDental = () => {
+  const { t } = useLanguage();
   const specialtyData = {
-    title: "Estética Dental",
-    titleEn: "Cosmetic Dentistry",
-    description: "Diseño de sonrisa y tratamientos estéticos para lograr la sonrisa perfecta que siempre has deseado.",
-    descriptionEn: "Smile design and aesthetic treatments to achieve the perfect smile you've always wanted.",
-    image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1920&h=1080&fit=crop",
-    features: [
-      "Diseño de Sonrisa",
-      "Carillas de Porcelana",
-      "Blanqueamiento Dental",
-      "Incrustaciones Estéticas",
-      "Coronas de Porcelana",
-      "Remodelado Dental",
-      "Composite Estético",
-      "Armonización Facial"
-    ],
-    featuresEn: [
-      "Smile Design",
-      "Porcelain Veneers",
-      "Teeth Whitening",
-      "Aesthetic Inlays",
-      "Porcelain Crowns",
-      "Dental Reshaping",
-      "Aesthetic Composite",
-      "Facial Harmonization"
-    ],
+    title: t('estetica_dental.name'),
+  titleEn: t('estetica_dental.name',),
+  description: t('estetica_dental.description'),
+  descriptionEn: t('estetica_dental.description',),
+  image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1920&h=1080&fit=crop",
+  features: [
+    t('estetica_dental.feature1'),
+    t('estetica_dental.feature2'),
+    t('estetica_dental.feature3'),
+    t('estetica_dental.feature4'),
+    t('estetica_dental.feature5'),
+    t('estetica_dental.feature6'),
+    t('estetica_dental.feature7'),
+    t('estetica_dental.feature8'),
+  ],
     testimonials: [
       {
         name: "Valentina Castillo",
