@@ -99,6 +99,20 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://dentalmoleet.com/especialidades/RehabilitacionOral</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+    <url>
+    <loc>https://dentalmoleet.com/especialidades/implantologia</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Sucursales -->
   <url>
     <loc>https://dentalmoleet.com/sucursales/guadalajara</loc>

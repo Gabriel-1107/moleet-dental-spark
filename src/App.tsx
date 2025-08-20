@@ -23,6 +23,8 @@ import CirugiaMaxilofacial from "./pages/especialidades/CirugiaMaxilofacial";
 import EsteticaDental from "./pages/especialidades/EsteticaDental";
 import Ortodoncia from "./pages/especialidades/Ortodoncia";
 import Odontopediatria from "./pages/especialidades/Odontopediatria";
+import RehabilitacionOral from "./pages/especialidades/RehabilicacionOral";
+import Implantologia from "./pages/especialidades/Implantologia";
 import Guadalajara from "./pages/sucursales/Guadalajara";
 import Chapala from "./pages/sucursales/Chapala";
 import NotFound from "./pages/NotFound";
@@ -55,6 +57,8 @@ const App = () => (
                 <Route path="/especialidades/estetica-dental" element={<EsteticaDental />} />
                 <Route path="/especialidades/ortodoncia" element={<Ortodoncia />} />
                 <Route path="/especialidades/odontopediatria" element={<Odontopediatria />} />
+                <Route path="/especialidades/RehabilitacionOral" element={<RehabilitacionOral />} />
+                <Route path="/especialidades/Implantologia" element={<Implantologia />} />
                 <Route path="/sucursales/guadalajara" element={<Guadalajara />} />
                 <Route path="/transporte" element={<Transport />} />
                 <Route path="/sucursales/chapala" element={<Chapala />} />

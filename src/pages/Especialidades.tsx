@@ -125,8 +125,23 @@ const Especialidades = () => {
       ],
       popular: false,
       color: "from-yellow-500 to-orange-500",
-      image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&h=1080&fit=crop",
-      href: "/especialidades/odontopediatria"
+      image: "https://images.pexels.com/photos/12148417/pexels-photo-12148417.jpeg",
+      href: "/especialidades/RehabilitacionOral"
+    },
+     {
+      icon: Heart,
+      titleKey: "implantology.title",
+      descriptionKey: "implantology.subtitle",
+      features: [
+        "implantology.treatment1",
+        "implantology.treatment2",
+        "implantology.treatment3",
+        "implantology.treatment4"
+      ],
+      popular: true, // Cambié a true ya que la implantología suele ser popular
+      color: "from-blue-500 to-cyan-500", // Cambié colores para diferenciar de rehabilitación
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&h=1080&fit=crop",
+      href: "/especialidades/implantologia"
     }
   ];
 

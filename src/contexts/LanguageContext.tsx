@@ -268,6 +268,20 @@ const translations = {
     'oralRehabilitation.treatment7': 'Implant-Supported Dentures',
     'oralRehabilitation.treatment8': 'Full Mouth Rehabilitation',
 
+    'implantology.title': 'Dental Implantology',
+    'implantology.subtitle': 'Specialized in permanent dental solutions with state-of-the-art implants that restore function and aesthetics naturally.',
+    'implantology.ctaButton': 'Schedule Your Appointment',
+    'implantology.treatmentsHeader': 'Our Implant Solutions',
+    'implantology.treatmentsDescription': 'We offer comprehensive implant treatments from single tooth replacement to full arch restorations, using the highest quality materials and advanced technology.',
+    'implantology.treatment1': 'Single Dental Implants',
+    'implantology.treatment2': 'Multiple Dental Implants',
+    'implantology.treatment3': 'Full Arch Implants',
+    'implantology.treatment4': 'Immediate Loading Implants',
+    'implantology.treatment5': 'Bone Grafting and Regeneration',
+    'implantology.treatment6': 'Sinus Lifts',
+    'implantology.treatment7': 'All-on 4® and All on 6®',
+    'implantology.treatment8': 'Implant-Supported Dentures',
+
     // Doctors section
     'doctors.title': 'Our Specialists',
     'doctors.subtitle': 'Meet our team of highly qualified specialists, committed to your oral health',
@@ -857,6 +871,20 @@ const translations = {
     'oralRehabilitation.treatment6': 'Prótesis de Zirconio',
     'oralRehabilitation.treatment7': 'Prótesis sobre Implantes',
     'oralRehabilitation.treatment8': 'Rehabilitación Oral Completa', 
+
+    'implantology.title': 'Implantología Dental',
+    'implantology.subtitle': 'Especializados en soluciones dentales permanentes con implantes de última generación que restauran la función y estética de forma natural.',
+    'implantology.ctaButton': 'Agendar Cita',
+    'implantology.treatmentsHeader': 'Nuestras Soluciones de Implantes',
+    'implantology.treatmentsDescription': 'Ofrecemos tratamientos de implantes integrales desde reposición de dientes individuales hasta restauraciones completas, utilizando materiales de la más alta calidad y tecnología avanzada.',
+    'implantology.treatment1': 'Implantes Dentales Unitarios',
+    'implantology.treatment2': 'Implantes Dentales Múltiples',
+    'implantology.treatment3': 'Implantes de Arcada Completa',
+    'implantology.treatment4': 'Implantes de Carga Inmediata',
+    'implantology.treatment5': 'Injertos Óseos y Regeneración',
+    'implantology.treatment6': 'Elevación de Seno Maxilar',
+    'implantology.treatment7': 'All-on 4® y All on 6®',
+    'implantology.treatment8': 'Prótesis sobre Implantes',
 
     
 
