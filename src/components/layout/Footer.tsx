@@ -15,10 +15,15 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: t('nav.home'), href: '/' },
-    { name: t('nav.locations'), href: '/ubicaciones' },
-    { name: t('nav.prices'), href: '/precios' },
-    { name: t('nav.doctors'), href: '/doctores' }
+     { name: t('nav.home'), href: '/' },
+    // { name: t('nav.services'), href: '/servicios' },
+    // { name: t('nav.specialties'), href: '#', hasDropdown: true },
+    { name: t('nav.especialities'), href: 'especialidades' },
+    // { name: t('nav.prices'), href: '/precios' },
+    { name: t('nav.doctors'), href: '/doctores' },
+    { name: t('nav.transport'), href: '/transporte' },
+    { name: t('nav.videos'), href: '/videos' },
+    { name: t('nav.blog'), href: '/blog' },
   ];
 
   // const services = [
@@ -44,8 +49,7 @@ const Footer = () => {
                 className="h-12 w-auto"
               />
               <div className="flex flex-col">
-                <span className="font-display font-bold text-xl">Moleet</span>
-                <span className="text-sm text-dental-accent">dental unit</span>
+                <span className="font-display font-bold text-xl"> Moleet Dental Unit®</span>
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
@@ -101,32 +105,50 @@ const Footer = () => {
             <div className="space-y-4">
               {/* Guadalajara */}
               <div className="space-y-2">
-                <h4 className="font-medium text-dental-accent">🇨🇦Canadá</h4> 
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-dental-accent" />
-                  <span className="text-sm text-white/80">
-                   Av. Sebastian Bach 4754, Prados Guadalupe, 45030 Zapopan, Jal.
-                  </span>
-                </div>
+                <h4 className="font-medium text-dental-accent">🇲🇽 México</h4> 
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-dental-accent" />
-                  <span className="text-sm text-white/80">(33) 3629 2077</span>
+                  <button 
+                    onClick={() => window.open('https://wa.me/3315204944', '_blank')}
+                    className="text-sm text-white/80 hover:text-white transition-colors text-left"
+                  >
+                    {t('branches.guadalajara.name')}
+                  </button>
+                  <Phone className="h-4 w-4 text-dental-accent" />
+                  <button 
+                    onClick={() => window.open('https://wa.me/3310235792', '_blank')}
+                    className="text-sm text-white/80 hover:text-white transition-colors text-left"
+                  >
+                    {t('branches.chapala.name')}
+                  </button>
+                  
                 </div>
               </div>
 
               {/* Chapala */}
               <div className="space-y-2">
-                <h4 className="font-medium text-dental-accent">🇺🇸Estados Unidos</h4>
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-dental-accent" />
-                  <span className="text-sm text-white/80">
-                    Av. Madero 456, Centro<br />
-                    Chapala, Jalisco
-                  </span>
-                </div>
+                <h4 className="font-medium text-dental-accent">🇨🇦 Canadá</h4> 
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-dental-accent" />
-                  <span className="text-sm text-white/80">(33) 5021 1248</span>
+                  <button 
+                    onClick={() => window.open('https://wa.me/17806808367', '_blank')}
+                    className="text-sm text-white/80 hover:text-white transition-colors text-left"
+                  >
+                    (780) 680 8367
+                  </button>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <h4 className="font-medium text-dental-accent">🇺🇸 Estados Unidos</h4> 
+                <div className="flex items-center gap-3">
+                  <Phone className="h-4 w-4 text-dental-accent" />
+                  <button 
+                    onClick={() => window.open('https://wa.me/17806808367', '_blank')}
+                    className="text-sm text-white/80 hover:text-white transition-colors text-left"
+                  >
+                    (780) 680 8367
+                  </button>
                 </div>
               </div>
 
@@ -135,7 +157,7 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <Clock className="h-4 w-4 text-dental-accent" />
                   <div className="text-sm text-white/80">
-                    <div>Lun-Vie: 9:00-19:00</div>
+                    <div>Lun-Vie: 9:00-20:00</div>
                     <div>Sáb: 9:00-14:00</div>
                   </div>
                 </div>

@@ -112,6 +112,21 @@ const Especialidades = () => {
       color: "from-yellow-500 to-orange-500",
       image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&h=1080&fit=crop",
       href: "/especialidades/odontopediatria"
+    },
+    {
+      icon: Heart,
+      titleKey: "specialties.rehabilitacion-oral.name",
+      descriptionKey: "specialties.rehabilitacion-oral.description",
+      features: [
+        "specialties.rehabilitacion-oral.feature1",
+        "specialties.rehabilitacion-oral.feature2",
+        "specialties.rehabilitacion-oral.feature3",
+        "specialties.rehabilitacion-oral.feature4"
+      ],
+      popular: false,
+      color: "from-yellow-500 to-orange-500",
+      image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&h=1080&fit=crop",
+      href: "/especialidades/odontopediatria"
     }
   ];
 

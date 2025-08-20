@@ -15,10 +15,10 @@ const Header = () => {
 
   const navigation = [
     { name: t('nav.home'), href: '/' },
-    { name: t('nav.services'), href: '/servicios' },
+    // { name: t('nav.services'), href: '/servicios' },
     // { name: t('nav.specialties'), href: '#', hasDropdown: true },
     { name: t('nav.especialities'), href: 'especialidades' },
-    { name: t('nav.prices'), href: '/precios' },
+    // { name: t('nav.prices'), href: '/precios' },
     { name: t('nav.doctors'), href: '/doctores' },
     { name: t('nav.transport'), href: '/transporte' },
     { name: t('nav.videos'), href: '/videos' },
@@ -48,6 +48,10 @@ const Header = () => {
     // { icon: Youtube, href: 'https://youtube.com/moleetdental', label: 'YouTube' },
     // { icon: Twitter, href: 'https://twitter.com/moleetdental', label: 'Twitter' }
   ];
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent(`Hola, Me gustaría agendar una cita, me pueden proporcionar?`);
+    window.open(`https://wa.me/3315204944?text=${message}`, '_blank');
+  };
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -58,10 +62,19 @@ const Header = () => {
         <div className="container mx-auto flex justify-end items-center">
           <div className="flex items-center gap-3">
             {/* Call Buttons with Flags */}
+             <Button
+              variant="ghost"
+              size="sm"
+               onClick={handleWhatsApp}
+              >
+              
+              🇲🇽
+              <Phone className="h-3 w-3" />
+            </Button>
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.open('tel:+15551234567', '_self')}
+               onClick={handleWhatsApp}
               className="text-primary hover:bg-primary/10 rounded-xl flex items-center gap-2"
             >
               🇺🇸
@@ -71,7 +84,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.open('tel:+15551234568', '_self')}
+               onClick={handleWhatsApp}
               className="text-primary hover:bg-primary/10 rounded-xl flex items-center gap-2"
             >
               🇨🇦

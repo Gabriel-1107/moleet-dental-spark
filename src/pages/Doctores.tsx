@@ -25,58 +25,53 @@ const Doctores = () => {
     {
       name: 'Dr. Silverio Jafet Vazquez Alcaraz',
       specialty: t('doctors.filter.endodontics'),
-      location: 'Guadalajara',
-      experience: 15,
-      education: ['Universidad de Guadalajara', 'Especialidad en Endodoncia - UNAM'],
-      certifications: ['Consejo Mexicano de Endodoncia', 'American Association of Endodontists'],
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Silverio.pdf',
+      location: 'Zapopan/Chapala',
+      experience: 18,
       image: 'lovable-uploads/doctors/dr-1.jpg',
-      description: 'Especialista en tratamientos de conducto con más de 15 años de experiencia. Pionero en técnicas de endodoncia microscópica.'
     },
     {
-      name: 'Dr. Roberto García',
-      specialty:  t('doctors.filter.periodontics'),
+      name: 'Dr. Ivan Sanches Salazar',
+      specialty: t('doctors.filter.general'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Ivan.pdf',
       location: 'Chapala',
-      experience: 12,
-      education: ['Universidad Autónoma de Guadalajara', 'Maestría en Periodoncia - Universidad de Barcelona'],
-      certifications: ['Sociedad Mexicana de Periodoncia', 'European Federation of Periodontology'],
+      experience: 2,
       image: 'lovable-uploads/doctors/dr-2.jpg',
-      description: 'Experta en tratamientos periodontales y cirugía de encías. Especializada en implantes dentales y regeneración ósea.'
     },
     {
       name: 'Dr. Jong kwan Lee',
-      specialty:  t('doctors.filter.rehabilitation'),
-      location: 'Guadalajara',
-      experience: 10,
-      education: ['Universidad de Guadalajara', 'Diplomado en Estética Dental - Universidad de São Paulo'],
-      certifications: ['American Academy of Cosmetic Dentistry', 'International Association for Dental Aesthetics'],
+      specialty: t('doctors.filter.rehabilitation'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Jong.pdf',
+      location: 'Zapopan',
+      experience: 18,
       image: 'lovable-uploads/doctors/dr-5.jpg',
-      description: 'Especialista en diseño de sonrisa y estética dental. Pionera en técnicas de carillas ultra delgadas y blanqueamiento avanzado.'
     },
     {
       name: 'Dr. Ramón Alejandro Monroy Salcedo ',
       specialty: t('doctors.filter.general'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Ramon.pdf',
       location: 'Chapala',
-      experience: 20,
-      education: ['Universidad Nacional Autónoma de México', 'Diplomado en Rehabilitación Oral'],
-      certifications: ['Colegio Nacional de Cirujanos Dentistas', 'Academy of General Dentistry'],
+      experience: 18,
       image: 'lovable-uploads/doctors/dr-4.jpg',
-      description: 'Odontólogo general con dos décadas de experiencia. Especializado en rehabilitación oral integral y prótesis.'
     },
     {
-      name: 'Dra. Andrea Ochoa Martínez',
+      name: 'Dra. Sara Cruz Delgadillo',
       specialty: t('doctors.filter.surgery'),
-      location: 'Guadalajara',
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Sara.pdf',
+      location: 'Zapopan',
       experience: 18,
-      education: ['Universidad Nacional Autónoma de México', 'Residencia en Cirugía Maxilofacial - Hospital General'],
-      certifications: ['Consejo Mexicano de Cirugía Maxilofacial', 'International Association of Oral and Maxillofacial Surgeons'],
       image: 'lovable-uploads/doctors/dr-3.jpg',
-      description: 'Cirujano maxilofacial con amplia experiencia en cirugía reconstructiva, implantes complejos y traumatología facial.'
     }
   ];
 
   const filteredDoctors = selectedSpecialty === 'Todos' 
     ? doctors 
     : doctors.filter(doctor => doctor.specialty === selectedSpecialty);
+
+  // Función para abrir el PDF
+  const openCurriculumPdf = (pdfUrl: string) => {
+    window.open(pdfUrl, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-subtle pt-20">
@@ -143,48 +138,17 @@ const Doctores = () => {
                   <span className="text-sm text-muted-foreground">{doctor.location}</span>
                 </div>
 
-                {/* Description */}
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {doctor.description}
-                </p>
-
-                {/* Education */}
-                <div className="mb-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <GraduationCap className="h-4 w-4 text-dental-blue" />
-                    <span className="text-sm font-medium text-dental-navy">{t('doctors.education')}</span>
-                  </div>
-                  <div className="space-y-1">
-                    {doctor.education.slice(0, 2).map((edu, idx) => (
-                      <p key={idx} className="text-xs text-muted-foreground">• {edu}</p>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Certifications */}
-                <div className="mb-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Award className="h-4 w-4 text-dental-blue" />
-                    <span className="text-sm font-medium text-dental-navy">{t('doctors.certifications')}</span>
-                  </div>
-                  <div className="flex flex-wrap gap-1">
-                    {doctor.certifications.slice(0, 2).map((cert, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs">
-                        {cert.split(' ')[0]}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Languages */}
-                
-
-                {/* CTA Button */}
+                {/* CTA Button - Ahora abre el PDF */}
                 <Button 
                   className="w-full bg-gradient-dental hover:opacity-90 text-white"
                   onClick={() => {
-                    const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en ${doctor.location}.`);
-                    window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
+                    if (doctor.curriculumPdf) {
+                      openCurriculumPdf(doctor.curriculumPdf);
+                    } else {
+                      // Si no hay PDF, mantener el comportamiento original de WhatsApp
+                      const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en ${doctor.location}.`);
+                      window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
+                    }
                   }}
                 >
                   {t('doctors.schedule')}

@@ -3,6 +3,7 @@ import BranchesSection from '@/components/home/BranchesSection';
 import Services from '@/components/home/Services';
 import BlogSection from '@/components/home/BlogSection';
 import VideoCarousel from '@/components/home/VideoCarousel';
+import Carrousel from '@/components/home/Carrousel';
 import TestimonialsCarousel from '@/components/home/TestimonialsCarousel';
 import SEOHead from '@/components/common/SEOHead';
 import ContactForm from '@/components/home/ContactForm';
@@ -18,6 +19,7 @@ const Home = () => {
         <BranchesSection />
         <Services />
         <MissionVisionSection/>
+        <Carrousel/>
         <VideoCarousel />
         <TestimonialsCarousel />
         <BlogSection />

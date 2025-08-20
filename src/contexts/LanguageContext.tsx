@@ -25,7 +25,7 @@ const translations = {
     'nav.blog': 'Blog',
     'nav.videos': 'Videos',
     'sucursal.desc': 'View Branch',
-    'branches.guadalajara.name': 'Guadalajara Branch',
+    'branches.guadalajara.name': 'Zapopan Branch',
     'branches.chapala.name': 'Chapala Branch',
     'branches.title': 'Our Locations',
     'branches.subtitle': 'Visit our modern dental clinics in Guadalajara and Chapala',
@@ -44,6 +44,7 @@ const translations = {
     'branches.schedule': 'Hours',
     'branches.whatsapp': 'WhatsApp',
     'branches.call': 'Call',
+    'implants.title': 'Implants Placed',
     // sectionprices
     'prices.general': 'General Dentistry',
     'prices.aesthetic': 'Aesthetic Dentistry',
@@ -141,8 +142,8 @@ const translations = {
 
 
 
-    'services.guadalajara.name': 'Modern dental clinic in Zapopan, with over 17 years of experience and state of the art technology.',
-    'services.chapala.name': 'Trusted dentists in Chapala, the best climate in the world, offering personalized and quality care.',
+    'services.guadalajara.name': 'Dental clinic in Chapala, with more experience and cutting-edge technology.',
+    'services.chapala.name': 'Dental clinic in Zapopan, with more than 17 years of experience and the best technology.',
     
     // SEO
     'seo.home.title': 'Moleet Dental Unit - Professional Dental Services in Guadalajara and Chapala',
@@ -246,6 +247,26 @@ const translations = {
     'specialties.odontopediatria.feature2': 'Children\'s cleaning',
     'specialties.odontopediatria.feature3': 'Dental sealants',
     'specialties.odontopediatria.feature4': 'Dental education',
+    'specialties.rehabilitacion-oral.name': 'Oral Rehabilitation',
+    'specialties.rehabilitacion-oral.description': 'Comprehensive restoration of dental function and aesthetics through advanced prosthetic solutions',
+    'specialties.rehabilitacion-oral.feature1': 'Dental crowns and bridges',
+    'specialties.rehabilitacion-oral.feature2': 'Complete and partial dentures',
+    'specialties.rehabilitacion-oral.feature3': 'Dental implants restoration',
+    'specialties.rehabilitacion-oral.feature4': 'Bite reconstruction',
+
+    'oralRehabilitation.title': 'Oral Rehabilitation',
+    'oralRehabilitation.subtitle': 'Specialized dentistry for comprehensive oral restoration with advanced techniques and customized solutions.',
+    'oralRehabilitation.ctaButton': 'Schedule Your Appointment',
+    'oralRehabilitation.treatmentsHeader': 'Our Treatments',
+    'oralRehabilitation.treatmentsDescription': 'We offer a complete range of prosthetic solutions to restore function and aesthetics. From single teeth to full mouth rehabilitation, our team of specialists is here to help you recover your smile and quality of life.',
+    'oralRehabilitation.treatment1': 'Dental Crowns and Bridges',
+    'oralRehabilitation.treatment2': 'Complete and Partial Dentures',
+    'oralRehabilitation.treatment3': 'Dental Implants Restoration',
+    'oralRehabilitation.treatment4': 'Bite Reconstruction',
+    'oralRehabilitation.treatment5': 'Porcelain Veneers and Inlays',
+    'oralRehabilitation.treatment6': 'Zirconium Prosthetics',
+    'oralRehabilitation.treatment7': 'Implant-Supported Dentures',
+    'oralRehabilitation.treatment8': 'Full Mouth Rehabilitation',
 
     // Doctors section
     'doctors.title': 'Our Specialists',
@@ -263,7 +284,7 @@ const translations = {
     'doctors.education': 'Education',
     'doctors.certifications': 'Certifications',
     'doctors.languages': 'Languages',
-    'doctors.schedule': 'Schedule Appointment',
+    'doctors.schedule': 'Expercience',
     'doctors.cta.title': 'Don\'t know which specialist you need?',
     'doctors.cta.description': 'Schedule a general consultation and we\'ll help you determine the ideal treatment for you.',
     'doctors.cta.button': 'General Consultation',
@@ -394,7 +415,7 @@ const translations = {
     // Transport
     'transport.title': 'Airport Transportation Service',
     'transport.subtitle': 'Comfortable and reliable transport from/to the airport',
-    'transport.description': 'We offer professional transportation service to make your visit as comfortable as possible. We pick you up at the airport and take you to your accommodation or directly to our clinic.',
+    'transport.description': 'Dental tourism is a trend in which people travel to tourist destinations to receive high-quality dental treatments at affordable prices, combining oral health care with a relaxing and recreational experience. The goal is to offer a convenient and attractive alternative for patients, especially foreigners, seeking specialized care while enjoying their stay in a charming place like Chapala.',
     'transport.features.title': 'What We Offer',
     'transport.features.comfortable': 'Comfortable vehicles',
     'transport.features.punctual': 'Punctual service',
@@ -410,6 +431,17 @@ const translations = {
     'transport.comfort.description': 'Modern, air-conditioned vehicles for your comfort',
     'transport.hotel.title': 'Hotel Transfer',
     'transport.hotel.description': 'Direct transfer to your accommodation',
+
+    // English
+    'language.1': 'Strategic collaboration',
+    'language.2': 'Chapala Branch in partnership with Red Dentalia',
+    'language.3': 'We are proud to be part of the network of clinics associated with Dentalia, the largest dental services chain in Mexico. This alliance allows us to offer you the best of both worlds: the warmth and personalized attention of a local clinic with the quality standards, technology, and backing of the most important dental network in the country.',
+    'language.4': 'Advanced technology',
+    'language.5': 'Access to state-of-the-art equipment',
+    'language.6': 'Certified protocols',
+    'language.7': 'Following international standards',
+    'language.8': 'Quality guarantee',
+    'language.9': 'Backed by the largest network in Mexico',
 
     // Doctorssections
     'doctors.descriptions.dr_ramon': 'Specialist in preventive general dentistry with a focus on comprehensive family care.',
@@ -459,11 +491,24 @@ const translations = {
     "missionVision.mission.title": "Mission",
     "missionVision.mission.subtitle": "Our Commitment",
     "missionVision.mission.problem": "Finding quality dental care with a personal touch can be challenging.",
-    "missionVision.mission.solution": "At Moleet Medical Unit, we are dedicated to transforming smiles with professionalism and passion. We provide high-quality dental care in Chapala, Jalisco, connecting our patients with a team of highly trained specialists in each area of dentistry.",
+    "missionVision.mission.solution": "At Moleet Medical Unit, we are dedicated to transforming smiles with professionalism and passion. We provide high-quality dental care in Zapopan/Chapala, Jalisco, offering our patients a team of highly trained specialists in every area of dentistry.",
     "missionVision.vision.title": "Vision",
     "missionVision.vision.subtitle": "Our Aspiration",
     "missionVision.vision.problem": "Dental clinics often lack the combination of excellence, comfort and personalized care.",
-    "missionVision.vision.solution": "To be the most prestigious dental clinic in Chapala, recognized for our excellence in care, quality in treatments and a team of specialists committed to the health and well-being of our patients.",
+    "missionVision.vision.solution": "To be the most prestigious dental clinic in Zapopan and Chapala, recognized for our excellence in care, quality of treatment, and a team of specialists committed to the health and well-being of our patients.",
+    'historia': 'It began in 2008 in Zapopan, Jalisco, when some dentist friends we met during dental school got together and decided to open a dental clinic. The goal was to do what we loved most: helping people with dental problems, while also working as part of a team of dentists capable of solving the challenges of the profession in different dental specialties. After 17 years, we expanded to Chapala to continue helping people smile with gusto.',
+    'historia.title': 'History of Moleet Dental Unit',
+    'about.brandDescription': 'Moleet Dental Unit are multi-specialty dental clinics and offices for patients of all ages and diagnoses, located in the Chapala area, Jalisco',
+    'brand.values.title': 'Brand Essentials (Values)',
+    'brand.values.profesionalidad.title': 'PROFESSIONALISM',
+    'brand.values.profesionalidad.description': 'Because every patient deserves to be treated with experience, ethics and commitment.',
+    'brand.values.calidad.title': 'QUALITY',
+    'brand.values.calidad.description': 'We work with the best materials, techniques and specialists.',
+    'brand.values.honestidad.title': 'HONESTY',
+    'brand.values.honestidad.description': 'Trust is built through clear diagnoses and fair treatments.',
+    'brand.values.pasion.title': 'PASSION',
+    'brand.values.pasion.description': 'Because we love what we do and it shows in every smile we transform.',
+
 
     // Footer
     'footer.contact': 'Contact',
@@ -576,7 +621,7 @@ const translations = {
     'nav.blog': 'Blog',
     'nav.videos': 'Videos',
     'sucursal.desc': 'Conocer Sucursal',
-    'branches.guadalajara.name': 'Sucursal Guadalajara',
+    'branches.guadalajara.name': 'Sucursal Zapopan',
     'branches.chapala.name': 'Sucursal Chapala',
 
     // sectionprices
@@ -646,6 +691,7 @@ const translations = {
     'branches.schedule': 'Horarios',
     'branches.whatsapp': 'WhatsApp',
     'branches.call': 'Llamar',
+    'implants.title': 'Implantes Colocados',
 
     
     // Common
@@ -682,8 +728,8 @@ const translations = {
     
 
     
-    'services.chapala.name': 'Clínica dental moderna en Chapala, con más de 17 años de experiencia y tecnología de vanguardia.',
-    'services.guadalajara.name': 'Clínica dental moderna en Zapopan, con más de 17 años de experiencia y la mejor tecnología.',
+    'services.chapala.name': 'Clínica dental en Chapala, con más experiencia y tecnología de vanguardia.',
+    'services.guadalajara.name': 'Clínica dental en Zapopan, con más de 17 años de experiencia y la mejor tecnología.',
 
   
 
@@ -790,6 +836,29 @@ const translations = {
     'specialties.odontopediatria.feature2': 'Limpieza infantil',
     'specialties.odontopediatria.feature3': 'Sellantes dentales',
     'specialties.odontopediatria.feature4': 'Educación dental',
+
+    'specialties.rehabilitacion-oral.name': 'Rehabilitación Oral',
+    'specialties.rehabilitacion-oral.description': 'Restauración integral de la función y estética dental mediante soluciones protésicas avanzadas',
+    'specialties.rehabilitacion-oral.feature1': 'Coronas y puentes dentales',
+    'specialties.rehabilitacion-oral.feature2': 'Prótesis completas y parciales',
+    'specialties.rehabilitacion-oral.feature3': 'Restauración sobre implantes dentales',
+    'specialties.rehabilitacion-oral.feature4': 'Reconstrucción de mordida',
+
+    'oralRehabilitation.title': 'Rehabilitación Oral',
+    'oralRehabilitation.subtitle': 'Odontología especializada en restauración oral integral con técnicas avanzadas y soluciones personalizadas.',
+    'oralRehabilitation.ctaButton': 'Agendar Cita',
+    'oralRehabilitation.treatmentsHeader': 'Nuestros Tratamientos',
+    'oralRehabilitation.treatmentsDescription': 'Ofrecemos un completo rango de soluciones protésicas para restaurar función y estética. Desde dientes individuales hasta rehabilitación oral completa, nuestro equipo de especialistas está aquí para ayudarte a recuperar tu sonrisa y calidad de vida.',
+    'oralRehabilitation.treatment1': 'Coronas y Puentes Dentales',
+    'oralRehabilitation.treatment2': 'Prótesis Completas y Parciales',
+    'oralRehabilitation.treatment3': 'Restauración sobre Implantes Dentales',
+    'oralRehabilitation.treatment4': 'Reconstrucción de Mordida',
+    'oralRehabilitation.treatment5': 'Carillas e Incrustaciones de Porcelana',
+    'oralRehabilitation.treatment6': 'Prótesis de Zirconio',
+    'oralRehabilitation.treatment7': 'Prótesis sobre Implantes',
+    'oralRehabilitation.treatment8': 'Rehabilitación Oral Completa', 
+
+    
 
         
     // Service Categories
@@ -915,7 +984,7 @@ const translations = {
     'doctors.education': 'Formación',
     'doctors.certifications': 'Certificaciones',
     'doctors.languages': 'Idiomas',
-    'doctors.schedule': 'Agendar Cita',
+    'doctors.schedule': 'Experiencia',
     'doctors.cta.title': '¿No sabes qué especialista necesitas?',
     'doctors.cta.description': 'Agenda una consulta general y te ayudaremos a determinar el tratamiento ideal para ti.',
     'doctors.cta.button': 'Consulta General',
@@ -957,7 +1026,7 @@ const translations = {
     // Transport
     'transport.title': 'Servicio de Transporte al Aeropuerto',
     'transport.subtitle': 'Transporte cómodo y confiable desde/hacia el aeropuerto',
-    'transport.description': 'Ofrecemos servicio de transporte profesional para hacer tu visita lo más cómoda posible. Te recogemos en el aeropuerto y te llevamos a tu hospedaje o directamente a nuestra clínica.',
+    'transport.description': 'Turismo dental es una tendencia en la que las personas viajan a destinos turísticos para recibir tratamientos odontológicos de alta calidad a precios accesibles, combinando el cuidado de su salud bucal con una experiencia de descanso y recreación. El objetivo es una alternativa conveniente y atractiva para pacientes, especialmente extranjeros, que buscan atención especializada mientras disfrutan de su estancia en un lugar con encanto, como Chapala.',
     'transport.features.title': 'Lo que Ofrecemos',
     'transport.features.comfortable': 'Vehículos cómodos',
     'transport.features.punctual': 'Servicio puntual',
@@ -973,6 +1042,17 @@ const translations = {
     'transport.comfort.description': 'Vehículos modernos y climatizados para tu comodidad',
     'transport.hotel.title': 'Traslado a Hotel',
     'transport.hotel.description': 'Traslado directo a tu hospedaje',
+
+    // language
+    'language.1' : 'Colaboración estratégica',
+    'language.2': 'Sucursal Chapala de la mano con Red Dentalia',
+    'language.3': 'Nos enorgullece formar parte de la red de clínicas asociadas a Dentalia, la cadena de servicios dentales más grande de México. Esta alianza nos permite ofrecerte lo mejor de ambos mundos: la calidez y atención personalizada de una clínica local con los estándares de calidad, tecnología y respaldo de la red dental más importante del país.',
+    'language.4': 'Tecnología avanzada',
+    'language.5': 'Acceso a equipos de última generación',
+    'language.6': 'Protocolos certificados',
+    'language.7': 'Seguimiento de estándares internacionales',
+    'language.8': 'Garantía de calidad',
+    'language.9': 'Respaldados por la red más grande de México',
     
     // Prices
     'prices.title': 'Lista de Precios',
@@ -1017,11 +1097,23 @@ const translations = {
     "missionVision.mission.title": "Misión",
     "missionVision.mission.subtitle": "Nuestro Compromiso",
     "missionVision.mission.problem": "Encontrar atención dental de calidad con un toque personal puede ser un desafío.",
-    "missionVision.mission.solution": "En Moleet Medical Unit, nos dedicamos a transformar sonrisas con profesionalismo y pasión. Brindamos atención odontológica de alta calidad en Chapala, Jalisco, acercando a nuestros pacientes a un equipo de especialistas altamente capacitados en cada área de la odontología.",
+    "missionVision.mission.solution": "En Moleet Medical Unit, nos dedicamos a transformar sonrisas con profesionalismo y pasión. Brindamos atención odontológica de alta calidad en Zapopan/Chapala, Jalisco, acercando a nuestros pacientes a un equipo de especialistas altamente capacitados en cada área de la odontología.",
     "missionVision.vision.title": "Visión",
     "missionVision.vision.subtitle": "Nuestra Aspiración",
     "missionVision.vision.problem": "Las clínicas dentales a menudo carecen de la combinación de excelencia, comodidad y atención personalizada.",
-    "missionVision.vision.solution": "Ser la clínica odontológica de mayor prestigio en Chapala, reconocida por nuestra excelencia en atención, calidad en los tratamientos y un equipo de especialistas comprometidos con la salud y bienestar de nuestros pacientes.",
+    "missionVision.vision.solution": "Ser las clínicas de odontológica de mayor prestigio en Zapopan y Chapala, reconocida por nuestra excelencia en atención, calidad en los tratamientos y un equipo de especialistas comprometidos con la salud y bienestar de nuestros pacientes.",
+    'historia': 'Comenzó en 2008 en Zapopan Jalisco al reunirnos amigos dentistas que nos conocimos en la carrera de odontología y decidimos poner una clínica dental. El objetivo era hacer lo que más nos gustaba, ayudar a la gente con los problemas dentales, pero al mismo tiempo trabajar en un equipo de odontólogos capaces de resolver los desafíos de la profesión en distintas especialidades dentales. Después de 17 años nos extendermos a Chapala, para seguir ayudando a la gente a sonreír con ganas.',
+    'historia.title': 'Historia de Moleet Dental Unit',
+    'about.brandDescription': 'Moleet Dental Unit son clínicas odontológicas y consultorios dentales multi especialidad para pacientes de todas las edades y diagnósticos, ubicados en la zona de Chapala, Jalisco',
+    'brand.values.title': 'Esencial de marca (valores)',
+    'brand.values.profesionalidad.title': 'PROFESIONALIDAD',
+    'brand.values.profesionalidad.description': 'Porque cada paciente merece ser atendido con experiencia, ética y compromiso.',
+    'brand.values.calidad.title': 'CALIDAD',
+    'brand.values.calidad.description': 'Trabajamos con los mejores materiales, técnicas y especialistas.',
+    'brand.values.honestidad.title': 'HONESTIDAD',
+    'brand.values.honestidad.description': 'La confianza se construye con diagnósticos claros y tratamientos justos.',
+    'brand.values.pasion.title': 'PASIÓN',
+    'brand.values.pasion.description': 'Porque amamos lo que hacemos y eso se nota en cada sonrisa que transformamos.',
 
 
 

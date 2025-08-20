@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Mail, Globe, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, MessageCircle, Heart } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -9,51 +9,51 @@ const Chapala = () => {
 
   const doctors = [
     {
-      name: "Dr. Ramón Alejandro Monroy Salcedo",
-      image: "/lovable-uploads/doctors/dr-4.jpg",
-      specialty: "Odontología General",
-      specialtyEn: t('doctors.filter.general'),
-      experience: 15,
-      description: t('doctors.descriptions.dr_ramon'),
-      descriptionEn: t('doctors.descriptions.dr_ramon'),
+      name: 'Dr. Silverio Jafet Vazquez Alcaraz',
+      specialty: t('doctors.filter.endodontics'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Silverio.pdf',
+      location: 'Zapopan/Chapala',
+      experience: 18,
+      image: '/lovable-uploads/doctors/dr-1.jpg',
     },
     {
-      name: "Dr. Silverio Jafet Vazquez Alcaraz",
-      image: "/lovable-uploads/doctors/dr-1.jpg",
-      specialty: "Endodoncia",
-      specialtyEn: t('doctors.filter.endodontics'),
-      experience: 12,
-      description: t('doctors.descriptions.dr_silverio'),
-      descriptionEn: t('doctors.descriptions.dr_silverio'),
+      name: 'Dr. Ivan Sanches Salazar',
+      specialty: t('doctors.filter.general'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Ivan.pdf',
+      location: 'Chapala',
+      experience: 2,
+      image: '/lovable-uploads/doctors/dr-2.jpg',
     },
     {
-      name: "Dr. Jong kwan Lee",
-      image: "/lovable-uploads/doctors/dr-5.jpg",
-      specialty: "Periodoncia",
-      specialtyEn: t('doctors.filter.periodontics'),
-      experience: 16,
-      description: t('doctors.descriptions.dr_jong'),
-      descriptionEn: t('doctors.descriptions.dr_jong'),
+      name: 'Dr. Jong kwan Lee',
+      specialty: t('doctors.filter.rehabilitation'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Jong.pdf',
+      location: 'Zapopan',
+      experience: 18,
+      image: '/lovable-uploads/doctors/dr-5.jpg',
     },
     {
-      name: "Dra. Andrea Ochoa Martínez",
-      image: "/lovable-uploads/doctors/dr-3.jpg",
-      specialty: "Cirugía Maxilofacial",
-      specialtyEn: t('doctors.filter.surgery'),
-      experience: 19,
-      description: t('doctors.descriptions.dra_andrea'),
-      descriptionEn: t('doctors.descriptions.dra_andrea'),
+      name: 'Dr. Ramón Alejandro Monroy Salcedo ',
+      specialty: t('doctors.filter.general'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Ramon.pdf',
+      location: 'Chapala',
+      experience: 18,
+      image: '/lovable-uploads/doctors/dr-4.jpg',
     },
     {
-      name: "Dr. Sebastián Luna",
-      image: "/lovable-uploads/doctors/dr-2.jpg",
-      specialty: "Estética Dental",
-      specialtyEn: t('doctors.filter.aesthetics'),
-      experience: 17,
-      description: t('doctors.descriptions.dr_sebastian'),
-      descriptionEn: t('doctors.descriptions.dr_sebastian'),
+      name: 'Dra. Sara Cruz Delgadillo',
+      specialty: t('doctors.filter.surgery'),
+      curriculumPdf: '/lovable-uploads/curriculum/curriculum-Sara.pdf',
+      location: 'Zapopan',
+      experience: 18,
+      image: '/lovable-uploads/doctors/dr-3.jpg',
     }
-]
+  ];
+
+  // Función para abrir el PDF
+  const openCurriculumPdf = (pdfUrl: string) => {
+    window.open(pdfUrl, '_blank');
+  };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, me gustaría agendar una cita en su sucursal de Chapala.`);
@@ -86,6 +86,70 @@ const Chapala = () => {
           </p>
         </div>
       </section>
+      <section className="py-16 bg-gradient-to-r from-dental-navy to-dental-blue">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="lg:w-1/3 flex justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-dental">
+                <img 
+                  src="/lovable-uploads/dentalia-logo.png" 
+                  alt="Red Dentalia-chapala" 
+                  className="h-24 mx-auto object-contain"
+                />
+              </div>
+            </div>
+            
+            <div className="lg:w-2/3 text-center lg:text-left text-white">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                <Heart className="h-5 w-5 text-dental-light" />
+                <span className="font-medium">{t('language.1') }</span>
+              </div>
+              
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+                {t('language.2') 
+                }
+              </h2>
+              
+              <p className="text-lg opacity-90 mb-6">
+                {t('language.3') 
+                }
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <div className="bg-white/10 p-4 rounded-xl">
+                  <h4 className="font-bold text-dental-light mb-2">
+                    {t('language.4')}
+                  </h4>
+                  <p className="text-sm opacity-80">
+                    {t('language.5')
+                    }
+                  </p>
+                </div>
+                
+                <div className="bg-white/10 p-4 rounded-xl">
+                  <h4 className="font-bold text-dental-light mb-2">
+                    {t('language.6')}
+                  </h4>
+                  <p className="text-sm opacity-80">
+                    {t('language.7') 
+                    }
+                  </p>
+                </div>
+                
+                <div className="bg-white/10 p-4 rounded-xl">
+                  <h4 className="font-bold text-dental-light mb-2">
+                    {t('language.8')}
+                  </h4>
+                  <p className="text-sm opacity-80">
+                    {t('language.9') 
+                    }
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Branch Info */}
       <section className="py-24 bg-white">
@@ -116,7 +180,6 @@ const Chapala = () => {
                     <div>
                       <p className="font-medium text-dental-navy">Dirección</p>
                       <p className="text-muted-foreground">Av. Madero 567, Centro, Chapala, Jalisco</p>
-                      
                     </div>
                   </div>
                   
@@ -171,8 +234,9 @@ const Chapala = () => {
             <Card className="h-fit shadow-dental rounded-2xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="h-96 bg-gradient-to-br from-dental-light to-dental-blue/20 flex items-center justify-center">
-                   <MapPin className="h-16 w-16 mx-auto mb-4 text-dental-blue" />
-                      <h3 className="font-display text-xl font-bold mb-2">Ubicación Interactiva</h3>
+                  <div className="text-center">
+                    <MapPin className="h-16 w-16 mx-auto mb-4 text-dental-blue" />
+                    <h3 className="font-display text-xl font-bold mb-2">Ubicación Interactiva</h3>
                     <div className="flex justify-center">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3732.9231309389825!2d-103.4209521!3d20.6727061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9063727195%3A0xb658138b4ecc912b!2sMOLEET%20DENTAL%20UNIT%20(Dentistas%20Especializados)!5e0!3m2!1ses-419!2smx!4v1754328402650!5m2!1ses-419!2smx"
@@ -184,6 +248,7 @@ const Chapala = () => {
                         className="rounded-xl shadow-lg"
                       ></iframe>
                     </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -192,8 +257,7 @@ const Chapala = () => {
       </section>
 
       {/* Doctors Section */}
-     {/* Doctors Section con misma card que el primer código */}
-  <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl font-bold text-dental-navy mb-4">
@@ -207,7 +271,7 @@ const Chapala = () => {
             </p>
           </div>
 
-          {/* Grid de doctores */}
+          {/* Grid de doctores - Versión simplificada sin filtros */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {doctors.map((doctor, index) => (
               <Card 
@@ -229,36 +293,48 @@ const Chapala = () => {
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3">
                       <h3 className="font-bold text-dental-navy text-lg">{doctor.name}</h3>
-                      <p className="text-dental-blue font-medium">
-                        {t('language') === 'es' ? doctor.specialty : doctor.specialtyEn}
-                      </p>
+                      <p className="text-dental-blue font-medium">{doctor.specialty}</p>
                     </div>
                   </div>
                 </div>
 
                 <CardContent className="p-6">
-                  {/* Descripción */}
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                    {t('language') === 'es' ? doctor.description : doctor.descriptionEn}
-                  </p>
+                  {/* Location */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <MapPin className="h-4 w-4 text-dental-blue" />
+                    <span className="text-sm text-muted-foreground">{doctor.location}</span>
+                  </div>
 
-                  {/* Botón WhatsApp */}
+                  {/* Botón para ver curriculum */}
                   <Button 
-                    className="w-full bg-gradient-dental hover:opacity-90 text-white"
+                    className="w-full bg-gradient-dental hover:opacity-90 text-white mb-2"
+                    onClick={() => {
+                      if (doctor.curriculumPdf) {
+                        openCurriculumPdf(doctor.curriculumPdf);
+                      }
+                    }}
+                  >
+                     {t('doctors.schedule')}
+                  </Button>
+                  
+                  {/* Botón para agendar cita */}
+                  {/* <Button 
+                    variant="outline"
+                    className="w-full border-dental-blue text-dental-blue hover:bg-dental-light/20"
                     onClick={() => {
                       const message = encodeURIComponent(`Hola, me gustaría agendar una cita con ${doctor.name} en la sucursal de Chapala.`);
                       window.open(`https://wa.me/523310235792?text=${message}`, '_blank');
                     }}
                   >
                     {t('language') === 'es' ? 'Agendar Cita' : 'Book Appointment'}
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
+              
             ))}
           </div>
         </div>
-  </section>
-
+      </section>
     </div>
   );
 };
